@@ -1,7 +1,8 @@
-#+TITLE: React-ES6 Starter Project
+#+TITLE: Unofficial Reactive PennyPixels
 
-This is a starter project for React programmers. The project uses:
+This is a starter project for React programmers working at PennyMac.
 
+ 1. [[http://pennypixels.pennymacusa.com/#navs][PennyPixels]]
  1. [[http://facebook.github.io/react/][React.js]]
  2. [[http://gaearon.github.io/react-hot-loader/][Babel Hot Loader]].
  3. [[http://webpack.github.io/docs/webpack-dev-server.html][Webpack dev server]]
