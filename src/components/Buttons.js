@@ -1,6 +1,5 @@
 import React from 'react';
-
-let buttonTypes = ['Default', 'Primary', 'Success', 'Info', 'Warning', 'Danger', 'Link'];
+import {buttonTypes} from '../constants/PennyPixels'
 
 export default class Buttons extends React.Component {
   handleClick(event) {
@@ -34,7 +33,7 @@ export default class Buttons extends React.Component {
             </div>
             <div className="bs-example" style={{marginBottom: 15}}>
               <div className="btn-toolbar" style={{margin: 0}}>
-                { buttonTypes.slice(0,3).map( (n) => {
+                { buttonTypes.slice(0,2).map( (n) => {
                   return (
                     <div className="btn-group">
                       <button type="button" className={ 'btn btn-' + n.toLowerCase() }>{ n }</button>
