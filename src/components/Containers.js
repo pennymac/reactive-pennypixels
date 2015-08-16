@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Intro extends React.Component {
+export default class Containers extends React.Component {
   render() {
     return (
       <div className="bs-docs-section">
