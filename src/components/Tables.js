@@ -21,7 +21,7 @@ export default class Tables extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                  { [1,2,3,4,5,6,7].map(function(n,i){
+                  { [1,2,3,4,5,6,7,8,9,10].map((n) => {
                     return (
                       <tr className={ SWITCH(n, 4, 'success', 5, 'danger', 6, 'warning', 7, 'active', '') }>
                         <td>{n}</td>
@@ -32,10 +32,10 @@ export default class Tables extends React.Component {
                     ) }) }
                 </tbody>
               </table>
-            </div>{/* /example */}
+            </div>
           </div>
         </div>
-      </div>        
+      </div>
     );
   }
 }

@@ -1,6 +1,11 @@
 import React from 'react';
 
+let buttonTypes = ['Default', 'Primary', 'Success', 'Info', 'Warning', 'Danger', 'Link'];
+
 export default class Buttons extends React.Component {
+  handleClick(event) {
+    alert('I\'ve got class: ' + event.target.className);
+  }
   render() {
     return (
       <div className="bs-docs-section">
@@ -15,84 +20,34 @@ export default class Buttons extends React.Component {
           <div className="col-lg-6">
             <div className="bs-example">
               <p>
-                <button type="button" className="btn btn-default">Default</button>
-                <button type="button" className="btn btn-primary">Primary</button>
-                <button type="button" className="btn btn-success">Success</button>
-                <button type="button" className="btn btn-info">Info</button><br /><br />
-                <button type="button" className="btn btn-warning">Warning</button>
-                <button type="button" className="btn btn-danger">Danger</button>
-                <button type="button" className="btn btn-link">Link</button>
+                { buttonTypes.map( (n) => {
+                    return <button type="button" className={'btn btn-' + n.toLowerCase() } onClick={ this.handleClick.bind(this) }>{n}</button>
+                }) }
               </p>
             </div>
             <div className="bs-example">
               <p>
-                <button type="button" className="btn btn-default disabled">Default</button>
-                <button type="button" className="btn btn-primary disabled">Primary</button>
-                <button type="button" className="btn btn-success disabled">Success</button>
-                <button type="button" className="btn btn-info disabled">Info</button><br /><br />
-                <button type="button" className="btn btn-warning disabled">Warning</button>
-                <button type="button" className="btn btn-danger disabled">Danger</button>
-                <button type="button" className="btn btn-link disabled">Link</button>
+                { buttonTypes.map( (n) => {
+                    return <button type="button" className={'btn btn-' + n.toLowerCase() + ' disabled'}>{n}</button>
+                }) }
               </p>
             </div>
             <div className="bs-example" style={{marginBottom: 15}}>
               <div className="btn-toolbar" style={{margin: 0}}>
-                <div className="btn-group">
-                  <button type="button" className="btn btn-default">Default</button>
-                  <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown"><span className="caret" /></button>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li className="divider" />
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>{/* /btn-group */}
-                <div className="btn-group">
-                  <button type="button" className="btn btn-primary">Primary</button>
-                  <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span className="caret" /></button>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li className="divider" />
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>{/* /btn-group */}
-                <div className="btn-group">
-                  <button type="button" className="btn btn-success">Success</button>
-                  <button type="button" className="btn btn-success dropdown-toggle" data-toggle="dropdown"><span className="caret" /></button>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li className="divider" />
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>{/* /btn-group */}
-                <br /><br />
-                <div className="btn-group">
-                  <button type="button" className="btn btn-info">Info</button>
-                  <button type="button" className="btn btn-info dropdown-toggle" data-toggle="dropdown"><span className="caret" /></button>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li className="divider" />
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>{/* /btn-group */}
-                <div className="btn-group">
-                  <button type="button" className="btn btn-warning">Warning</button>
-                  <button type="button" className="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span className="caret" /></button>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li className="divider" />
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>{/* /btn-group */}
+                { buttonTypes.slice(0,3).map( (n) => {
+                  return (
+                    <div className="btn-group">
+                      <button type="button" className={ 'btn btn-' + n.toLowerCase() }>{ n }</button>
+                      <button type="button" className={'btn btn-' + n.toLowerCase() + ' dropdown-toggle'} data-toggle="dropdown"><span className="caret" /></button>
+                      <ul className="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li className="divider" />
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  ); } ) }
               </div>{/* /btn-toolbar */}
             </div>
             <div className="bs-example">
@@ -107,7 +62,9 @@ export default class Buttons extends React.Component {
           <div className="col-lg-6">
             <div className="bs-example">
               <p>
-                <button type="button" className="btn btn-default btn-lg btn-block">Block level button</button>
+                <button type="button" className="btn btn-default btn-lg btn-block">
+                  Block level button
+                </button>
               </p>
             </div>
             <div className="bs-example" style={{marginBottom: 15}}>
@@ -133,7 +90,9 @@ export default class Buttons extends React.Component {
                 <div className="btn-group">
                   <button type="button" className="btn btn-default">8</button>
                   <div className="btn-group">
-                    <button type="button" className="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <button type="button"
+                            className="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
                       Dropdown
                       <span className="caret" />
                     </button>
@@ -148,10 +107,12 @@ export default class Buttons extends React.Component {
             </div>
             <div className="bs-example">
               <div className="btn-group-vertical">
-                <button type="button" className="btn btn-default">Button</button>
-                <button type="button" className="btn btn-default">Button</button>
-                <button type="button" className="btn btn-default">Button</button>
-                <button type="button" className="btn btn-default">Button</button>
+                { [1,2,3,4].map( (n) =>
+                  <button type="button"
+                    className="btn btn-default">
+                    Button # {n}
+                  </button>
+                )}
               </div>
             </div>
           </div>
