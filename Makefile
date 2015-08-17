@@ -24,7 +24,7 @@ test:
 lint:
 	eslint src
 
-install -g-prereqs:
+install-prereqs:
 	npm install -g wr
 	npm install -g http-server
 	npm install -g cucumber
