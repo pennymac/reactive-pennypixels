@@ -11,6 +11,22 @@ This is a starter project for React programmers working at PennyMac.
 
 To get started clone the repo, delete the .git folder and start a new program.
 
+* Why another framework?
+
+  There are many ways to program the browser.
+
+  React automates away the manual task of writing imperative code to 
+  update the DOM. Additionally it provides a Sythetic Event System that
+  can normalizes the event behavior and implements the standarized behavior.
+
+  The automation ensures that your user interface stays consistent over a 
+  series of changes by rendering on every state change. The results are captured
+  in a virtual DOM which is a JavaScript representation of DOM elements. Each
+  render the before and after are compared and the user interface is automatically
+  updated to reflect the changes whether it is an add, update or delete.
+
+  Additionally, this framework adopts JavaScript 2015 which is final as of June 2015.
+
 * Developer Workflow
 
   The workflow uses [[http://gaearon.github.io/react-hot-loader/][babel-hot-loader]].
