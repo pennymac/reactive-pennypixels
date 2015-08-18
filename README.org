@@ -27,6 +27,8 @@ To get started clone the repo, delete the .git folder and start a new program.
 
   Additionally, this framework adopts JavaScript 2015 which is final as of June 2015.
 
+  Finally, the live code editing makes the experience simple and easy to develop.
+
 * Developer Workflow
 
   The workflow uses [[http://gaearon.github.io/react-hot-loader/][babel-hot-loader]].
