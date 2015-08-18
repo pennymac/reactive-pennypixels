@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "formula-switch": "^1.0.0",
+    "lodash.range": "^3.0.1",
     "react": "~0.13.0"
   }
 }
