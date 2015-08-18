@@ -1,4 +1,5 @@
 import React from 'react';
+import IF from 'formula-if'
 import SWITCH from 'formula-switch'
 import range from 'lodash.range';
 
@@ -15,14 +16,14 @@ export default class Tables extends React.Component {
       sucessRow: 4,
       dangerRow: 5,
       warningRow: 6,
-      activeRow: 10
+      selectedRows: [10],
     };
   }
 
   handleStartRowChanged(event) {
     this.setState( { startRow: +event.currentTarget.value });
   }
-  
+
   handleRowNumChanged(event) {
     this.setState( { rowNum: +event.currentTarget.value });
   }
@@ -40,9 +41,17 @@ export default class Tables extends React.Component {
   }
 
   handleRowClicked(event) {
-    this.setState( { activeRow: +event.currentTarget.rowIndex } );
+    var rowIndex = +event.currentTarget.rowIndex + this.state.startRow;
+    var index = this.state.selectedRows.indexOf(rowIndex-1);
+    var rows = this.state.selectedRows;
+    if (index === -1) {
+      rows.push(rowIndex-1);
+    } else {
+      rows.splice(index, 1);
+    }
+    this.setState({ selectedRows: rows })
   }
-  
+
   render() {
     return (
       <div className="bs-docs-section">
@@ -54,37 +63,55 @@ export default class Tables extends React.Component {
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
                 <label className="control-label" htmlFor="focusedInput">Start Row</label>
-                <input className="form-control" min="1" max="49" type="number" onKeyUp={ this.handleStartRowChanged.bind(this) } defaultValue={ this.state.startRow }/>
+                <input className="form-control" min="1" max="49" type="number"
+                  onKeyUp={ this.handleStartRowChanged.bind(this) } defaultValue={ this.state.startRow }/>
               </div>
             </div>
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
                 <label className="control-label" htmlFor="focusedInput">Number of Rows</label>
-                <input className="form-control" min="1" max={ this.state.rows.length+1 } type="number" onKeyUp={ this.handleRowNumChanged.bind(this) } defaultValue={ this.state.rowNum }/>
+                <input className="form-control" min="1" max={ this.state.rows.length+1 }
+                  type="number" onKeyUp={ this.handleRowNumChanged.bind(this) }
+                  defaultValue={ this.state.rowNum }/>
               </div>
             </div>
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
                 <label className="control-label" htmlFor="focusedInput">Success Row</label>
-                <input className="form-control" min="1" max={ this.state.rows.length+1 } type="number" onKeyUp={ this.handleSuccessRowChanged.bind(this) } defaultValue={ this.state.sucessRow }/>
+                <input className="form-control" min="1" max={ this.state.rows.length+1 }
+                  type="number" onKeyUp={ this.handleSuccessRowChanged.bind(this) }
+                  defaultValue={ this.state.sucessRow }/>
               </div>
             </div>
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
                 <label className="control-label" htmlFor="focusedInput">Danger Row</label>
-                <input className="form-control" min="1" max={ this.state.rows.length+1 } type="number" onKeyUp={ this.handleDangerRowChanged.bind(this) } defaultValue={ this.state.dangerRow }/>
+                <input className="form-control" min="1" max={ this.state.rows.length+1 }
+                  type="number" onKeyUp={ this.handleDangerRowChanged.bind(this) }
+                  defaultValue={ this.state.dangerRow }/>
               </div>
             </div>
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
                 <label className="control-label" htmlFor="focusedInput">Warning Row</label>
-                <input className="form-control" min="1" max={ this.state.rows.length+1 } type="number" onKeyUp={ this.handleWarningRowChanged.bind(this) } defaultValue={ this.state.warningRow }/>
+                <input className="form-control" min="1" max={ this.state.rows.length+1 }
+                  type="number" onKeyUp={ this.handleWarningRowChanged.bind(this) }
+                  defaultValue={ this.state.warningRow }/>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-2">
+              <div className="form-group">
+                <label className="control-label" htmlFor="focusedInput">Selected Row(s)</label>
+                <input className="form-control" min="1" max={ this.state.rows.length+1 } readOnly
+                  type="text" onKeyUp={ this.handleWarningRowChanged.bind(this) }
+                  value={ this.state.selectedRows.join(',') }/>
               </div>
             </div>
             <div className="bs-example col-sm-12">
               <table className="table table-bordered table-hover">
                 <thead>
                   <tr>
+                    <th><input type="checkbox" /></th>
                     <th>#</th>
                     <th>Column heading</th>
                     <th>Column heading</th>
@@ -93,20 +120,30 @@ export default class Tables extends React.Component {
                 </thead>
                 <tbody>
                   { rows.slice(this.state.startRow-1, this.state.startRow + this.state.rowNum-1).map((n) => {
+                    var rowIndex = n,
+                        index = this.state.selectedRows.indexOf(rowIndex),
+                        isSelected = index > -1;
                     return (
-                      <tr onClick={ this.handleRowClicked.bind(this) } className={ SWITCH(n, this.state.activeRow, 'active', this.state.sucessRow, 'success', this.state.dangerRow, 'danger', this.state.warningRow, 'warning', '') }>
-                        <td>{n}</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                    ) }) }
-                </tbody>
-              </table>
+                      <tr onClick={ this.handleRowClicked.bind(this) }
+                        className={ IF( isSelected, 'active',
+                          SWITCH(n,
+                            this.state.sucessRow, 'success',
+                            this.state.dangerRow, 'danger',
+                            this.state.warningRow, 'warning', ''))
+                          }>
+                          <td><input type="checkbox" checked={ isSelected }/></td>
+                          <td>{n}</td>
+                          <td>Column content</td>
+                          <td>Column content</td>
+                          <td>Column content</td>
+                        </tr>
+                      ) }) }
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    );
-  }
-}
+        );
+      }
+    }
