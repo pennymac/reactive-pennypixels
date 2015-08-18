@@ -19,16 +19,12 @@ serve:
 	node server.js
 
 test:
-	cucumber-js
+	cucumber-js -f pretty
 
 lint:
 	eslint src
 
 install-prereqs:
-	npm install -g wr
-	npm install -g http-server
-	npm install -g cucumber
-	npm install -g webpack
-	npm install -g browserify
-	npm install -g webmake
-	npm install -g eslint babel-eslint
+	npm install -g cucumber			# Because writing tests is good
+	npm install -g eslint babel-eslint	# Because lint is only annoying when you suck
+	npm install -g webpack			# Because it is better than make
