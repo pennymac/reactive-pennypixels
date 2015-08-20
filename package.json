@@ -1,7 +1,7 @@
 {
-  "name": "react-es6-starter-kit",
+  "name": "reactive-pennypixels",
   "version": "0.1.0",
-  "description": "Minimal project layout for react and es6",
+  "description": "Starter project for React",
   "author": "Peter Moresi",
   "license": "MIT",
   "devDependencies": {
@@ -17,6 +17,7 @@
     "formula-if": "^1.0.0",
     "formula-switch": "^1.0.0",
     "lodash.range": "^3.0.1",
-    "react": "~0.13.0"
+    "react": "~0.13.0",
+    "react-state-animation": "0.0.6"
   }
 }

@@ -59,6 +59,7 @@ export default class Tables extends React.Component {
           <div className="col-lg-12">
             <div className="page-header">
               <h2 id="tables">Tables</h2>
+              <p>PennyPixels sets the basic formatting but what you want is a dynamic table.s</p>
             </div>
             <div className="col-sm-12 col-md-2">
               <div className="form-group">
