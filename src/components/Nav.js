@@ -35,6 +35,7 @@ export default class Nav extends React.Component {
                   <li><a href="#nav-tabs">Navs</a></li>
                   <li><a href="#indicators">Indicators</a></li>
                   <li><a href="#containers">Containers</a></li>
+                  <li><a href="#animation">AnimationDemo</a></li>
                 </ul>
               </li>
               <li><a href="mailto:uxhelp@pnmac.com">Get Help</a></li>
