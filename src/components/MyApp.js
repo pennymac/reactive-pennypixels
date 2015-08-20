@@ -14,6 +14,7 @@ import Forms from './Forms';
 import Navs from './Navs';
 import Indicators from './Indicators';
 import Containers from './Containers';
+import AnimationDemo from './AnimationDemo';
 
 /* Write some great components about what data
 * this application displays and how it needs to be
@@ -34,6 +35,7 @@ export default class MyApp extends React.Component {
           <Navs />
           <Indicators />
           <Containers />
+          <AnimationDemo width="200" height="300"/>
         </div>
       </div>
       );
