@@ -30,7 +30,7 @@ export default class Nav extends React.Component {
                 <ul className="dropdown-menu">
                   <li><a href="#buttons">Buttons</a></li>
                   <li><a href="#type">Typography</a></li>
-                  <li><a href="#tables">Tables</a></li>
+                  <li><a href="#tables">Dynamic Tables</a></li>
                   <li><a href="#forms">Forms</a></li>
                   <li><a href="#nav-tabs">Navs</a></li>
                   <li><a href="#indicators">Indicators</a></li>
