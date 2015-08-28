@@ -11,23 +11,20 @@ This is a starter project for React programmers working at PennyMac.
 
 To get started clone the repo, delete the .git folder and start a new program.
 
-## Why another framework?
+## Motivation
 
-There are many ways to program the browser.
+There are many ways to program a browser. Why should I use React?
 
-React automates away the manual task of writing imperative code to
-update the DOM. Additionally it provides a Sythetic Event System that
-can normalizes the event behavior and implements the standarized behavior.
+React keeps your UI consistent by rendering the page on every change.
 
-The automation ensures that your user interface stays consistent over a
-series of changes by rendering on every state change. The results are captured
-in a virtual DOM which is a JavaScript representation of DOM elements. Each
-render the before and after are compared and the user interface is automatically
-updated to reflect the changes whether it is an add, update or delete.
+That sounds expensive but the React library has figured out how to automate
+this task and keep it reasonably efficient at the same time.
 
-Additionally, this framework adopts JavaScript 2015 which is final as of June 2015.
+Writing web applications in this way is similar to 90s style ASP or PHP
+code. A consistent snapshot of data is rendered to a template. The templates
+are written in plain old JavaScript or by any tool that writes JavaScript.
 
-Finally, the live code editing makes the experience simple and easy to develop.
+Goodbye hand-coded, brittle imperative code to manipulate the DOM.
 
 ## Developer Workflow
 
