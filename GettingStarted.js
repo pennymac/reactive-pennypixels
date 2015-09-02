@@ -26,9 +26,7 @@ export default class GettingStarted extends React.Component {
           <div className="col-md-6">
             <div className="well">
               <a href="http://github.com/petermoresi/reactive-pennypixels" className="btn btn-primary btn-lg btn-block">Clone the Starter Template Repo</a>
-              <p className="lead" style={{textAlign: 'center', lineHeight: '200%'}}>or
-                <a href="mailto:uxhelp@pnmac.com" className="btn btn-default btn-lg btn-block">Get Help from PennyMac UX</a>
-              </p></div>
+            </div>
           </div>
           <div className="modal fade bs-example-modal-lg" tabindex={-1} role="dialog" aria-labelledby="myLargeModalLabel">
             <div className="modal-dialog modal-lg">
@@ -40,7 +38,7 @@ export default class GettingStarted extends React.Component {
             </div>
           </div>
         </div>
-      </div>      
+      </div>
     );
   }
 }

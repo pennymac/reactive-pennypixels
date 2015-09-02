@@ -24,22 +24,13 @@ export default class Nav extends React.Component {
               <li><Link to="/getting-started">
                 Getting Started
               </Link></li>
-              <li className="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements
-                  <span className="caret" />
-                </a>
-                <ul className="dropdown-menu">
-                  <li><Link to="/buttons">Buttons</Link></li>
-                  <li><Link to="/type">Typography</Link></li>
-                  <li><Link to="/tables">Dynamic Tables</Link></li>
-                  <li><Link to="/forms">Forms</Link></li>
-                  <li><Link to="/nav-tabs">Navs</Link></li>
-                  <li><Link to="/indicators">Indicators</Link></li>
-                  <li><Link to="/containers">Containers</Link></li>
-                  <li><Link to="/animation">AnimationDemo</Link></li>
-                </ul>
-              </li>
-              <li><a href="mailto:uxhelp@pnmac.com">Get Help</a></li>
+              <li><Link to="/buttons">Buttons</Link></li>
+              <li><Link to="/type">Typography</Link></li>
+              <li><Link to="/tables">Dynamic Tables</Link></li>
+              <li><Link to="/forms">Forms</Link></li>
+              <li><Link to="/nav-tabs">Navs</Link></li>
+              <li><Link to="/indicators">Indicators</Link></li>
+              <li><Link to="/containers">Containers</Link></li>
             </ul>
           </div>{/* /.navbar-collapse */}
         </div>{/* /.container-fluid */}

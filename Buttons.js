@@ -1,5 +1,5 @@
 import React from 'react';
-import {buttonTypes} from '../constants/PennyPixels'
+import {buttonTypes} from './Constants'
 
 export default class Buttons extends React.Component {
   constructor() {
