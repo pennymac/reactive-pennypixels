@@ -16,7 +16,7 @@ bundle:
 	webpack
 
 serve:
-	node server.js
+	node devServer.js
 
 test:
 	cucumber-js -f pretty

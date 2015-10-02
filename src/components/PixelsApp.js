@@ -3,8 +3,19 @@
 */
 
 import React from 'react';
-import {RouteHandler} from 'react-router';
 import Header from './Header';
+
+import Intro from './Intro';
+import GettingStarted from './GettingStarted';
+import Buttons from './Buttons';
+import Typography from './Typography';
+import Tables from './Tables';
+import Forms from './Forms';
+import Navs from './Navs';
+import Indicators from './Indicators';
+import Containers from './Containers';
+import AnimationDemo from './AnimationDemo';
+
 
 /* Write some great components about what data
 * this application displays and how it needs to be
@@ -16,7 +27,16 @@ export default class PixelsApp extends React.Component {
       <div>
         <Header />
         <div className="container main">
-          <RouteHandler />
+          <Intro />
+          <GettingStarted />
+          <Buttons />
+          <Typography />
+          <Tables />
+          <Forms />
+          <Navs />
+          <Indicators />
+          <Containers />
+          <AnimationDemo />
         </div>
       </div>
       );
