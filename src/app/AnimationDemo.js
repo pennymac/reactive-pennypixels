@@ -68,5 +68,5 @@ Demo.propTypes = {
 
 Demo.defaultProps = {
   width: 50,
-  height: 50
+  height: 150
 }

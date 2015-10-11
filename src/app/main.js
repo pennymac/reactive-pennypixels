@@ -4,6 +4,7 @@
 */
 
 import Router, {Route} from 'react-router';
-import App from './components/PixelsApp';
+import App from './PixelsApp';
+import React from 'react';
 
 React.render( <App />, document.body );
