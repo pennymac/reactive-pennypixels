@@ -2,11 +2,11 @@
 
 This is a starter project for React programmers working at PennyMac.
 
-1.  [PennyPixels](http://pennypixels.pennymacusa.com/#navs) (Because you "should" be using it)
-2.  [React.js](http://facebook.github.io/react/) (Because it is awesome)
-3.  [Babel Hot Loader](http://gaearon.github.io/react-hot-loader/) (Because we automate common work)
-4.  [Webpack dev server](http://webpack.github.io/docs/webpack-dev-server.html) (If you want live code editing)
-5.  [Cucumber-js to automate testing](https://github.com/cucumber/cucumber-js) (Or substitute another test approach)
+1.  [PennyPixels](http://pennypixels.pennymacusa.com/#navs) 
+2.  [React.js](http://facebook.github.io/react/) 
+3.  [React Hot Module Reload](https://github.com/gaearon/react-transform-hmr)
+4.  [Webpack Hot Middleware](https://www.npmjs.com/package/webpack-hot-middleware)
+5.  [Cucumber-js](https://github.com/cucumber/cucumber-js)
 
 To get started clone the repo, delete the .git folder and start a new program.
 
