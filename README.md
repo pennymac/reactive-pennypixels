@@ -37,17 +37,17 @@ npm start
 To bundle the project:
 
 ```sh
-make bundle
+npm run build:webpack
 ```
 
 To run the tests:
 
 ```sh
-make test
+npm test
 ```
 
 To lint the code:
 
 ```sh
-make lint
+npm run lint
 ```
