@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {buttonTypes} from '../constants/PennyPixels'
 
 export default class Buttons extends React.Component {
@@ -24,7 +24,7 @@ export default class Buttons extends React.Component {
           <div className="col-lg-6">
             <div className="bs-example">
               <p>
-                { buttonTypes.map( (n) => {
+                { buttonTypes.slice(2,7).map( (n) => {
                     return <button type="button" className={'btn btn-' + n.toLowerCase() } onClick={ this.handleClick }>{n}</button>
                 }) }
               </p>
