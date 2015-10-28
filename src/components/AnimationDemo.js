@@ -1,38 +1,38 @@
 import React from 'react'
-import ReactStateAnimation from 'react-state-animation'
+import Animator from 'react-state-animation'
 
 export default class Demo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       x: 0,
+      y: 0,
       alpha: 1
     }
     // react state animation wrapper
-    this._animate = new ReactStateAnimation(this);
+    this._animate = new Animator(this);
   }
 
   start() {
     var last_alpha = this.state.alpha;
-    this._animate.easeInOutCubic('x', 850/*end value*/, 1200/*duration(ms)*/)
-    .then(() => this._animate.easeOutCubic('alpha', last_alpha * 0.5, 1000))
-    .then(() => this._animate.easeInOutCubic('x', 0, 2000));
+    this._animate.quadOut('x', 850/*end value*/, 1200/*duration(ms)*/)
+    .then(() => this._animate.cubicInOut('x', 0, 2000));
+
   }
 
   stop() {
     this._animate.stop()
   }
 
-  getStyle() {
+  getAnimatedStyle() {
     return {
       position: 'relative',
       color: 'black',
       backgroundColor: 'blue',
-      //left: this.state.x + 'px',
       opacity: this.state.alpha,
-      left: '0px',
-      width: (this.state.x + 100), //this.props.width,
-      height: this.props.height,
+      left: this.state.x,
+      height: this.state.y + 200,
+      width: 100 + (100 * (1 / (this.state.x+1))),
       cursor: 'pointer'
     }
   }
@@ -51,10 +51,8 @@ export default class Demo extends React.Component {
             </div>
           </div>
         </div>
-        <div style={this.getStyle()} onClick={this.handleClick.bind(this)}>
-          Click here to start a recursive animation sequence. Keep clicking me
-          but I never go away...or do I?
-          <div>{this.state.alpha}</div>
+        <div style={this.getAnimatedStyle()} onClick={this.handleClick.bind(this)}>
+          <h1>Animate movement</h1>
         </div>
       </div>
     )

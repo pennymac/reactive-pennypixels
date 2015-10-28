@@ -9,7 +9,7 @@ import Intro from './Intro';
 import GettingStarted from './GettingStarted';
 import Buttons from './Buttons';
 import Typography from './Typography';
-import Tables from './Tables';
+// import Tables from './Tables';
 import Forms from './Forms';
 import Navs from './Navs';
 import Indicators from './Indicators';
@@ -31,12 +31,10 @@ export default class PixelsApp extends React.Component {
           <GettingStarted />
           <Buttons />
           <Typography />
-          <Tables />
           <Forms />
-          <Navs />
           <Indicators />
           <Containers />
-          <AnimationDemo />
+          <AnimationDemo height={200} />
         </div>
       </div>
       );

@@ -3,6 +3,8 @@
 *
 */
 
+import React from 'react';
+import {render} from 'react-dom';
 import App from './components/PixelsApp';
 
-React.render( <App />, document.body );
+render( <App />, document.getElementById('root') );
