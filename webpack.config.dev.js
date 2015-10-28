@@ -3,10 +3,8 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval',
-  externals: {
-    react: 'React'
-  },
   entry: [
+    'webpack-hot-middleware/client',
     './src/index'
   ],
   output: {

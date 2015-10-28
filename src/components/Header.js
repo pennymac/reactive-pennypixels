@@ -11,7 +11,7 @@ export default class Header extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <p className="lead">Reactive PennyPixels v0.0.1</p>
+                <p className="lead">Reactive PennyPixels v0.1.0</p>
               </div>
             </div>
           </div>
