@@ -53,11 +53,6 @@ export default class Nav extends AnimatedComponent {
             className={ `navbar-collapse collapse ${this.state.height > 0 ? ' in' : ''}` }
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">
-                  Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
             <li>
               <a href="#getting-started">
               Getting Started
