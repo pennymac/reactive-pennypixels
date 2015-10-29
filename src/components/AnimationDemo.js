@@ -1,5 +1,5 @@
 import React from 'react'
-import {AnimatedComponent} from 'react-state-animation'
+import {AnimatedComponent} from 'react-set-animate'
 
 export default class Demo extends AnimatedComponent {
   constructor(props) {
