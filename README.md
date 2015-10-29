@@ -1,6 +1,6 @@
-# Unoffcial Reactive PennyPixels
+# React with PennyPixels
 
-This is a starter project for React programmers working at PennyMac.
+Boilerplate code to start any project.
 
 1.  [PennyPixels](http://pennypixels.pennymacusa.com/#navs) 
 2.  [React.js](http://facebook.github.io/react/) 
@@ -8,11 +8,8 @@ This is a starter project for React programmers working at PennyMac.
 4.  [Webpack Hot Middleware](https://www.npmjs.com/package/webpack-hot-middleware)
 5.  [Cucumber-js](https://github.com/cucumber/cucumber-js)
 
-To get started clone the repo, delete the .git folder and start a new program.
+Copy this repo and make it your own.
 
-## Developer Workflow
-
-The workflow uses [babel-hot-loader](http://gaearon.github.io/react-hot-loader/).
 
 ## Getting Setup
 
@@ -37,7 +34,7 @@ npm start
 To bundle the project:
 
 ```sh
-npm run build:webpack
+npm run build
 ```
 
 To run the tests:
