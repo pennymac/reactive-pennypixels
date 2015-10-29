@@ -15,7 +15,7 @@ export default class Nav extends AnimatedComponent {
   }
 
   handleClick(e) {
-    var min = -1, max = 340, duration = 200;
+    var min = -1, max = 300, duration = 200;
     this.state.show = !this.state.show;
     this.state.height = this.state.show ? min : max;
     this.setAnimate( 'cubic-in-out', 'height', this.state.show ? max : min, duration )
