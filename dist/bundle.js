@@ -12681,15 +12681,6 @@
 	                null,
 	                _react2['default'].createElement(
 	                  'a',
-	                  { href: '#getting-started' },
-	                  'Getting Started'
-	                )
-	              ),
-	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  'a',
 	                  { href: '#buttons' },
 	                  'Buttons'
 	                )

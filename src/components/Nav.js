@@ -54,11 +54,6 @@ export default class Nav extends AnimatedComponent {
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#getting-started">
-              Getting Started
-              </a>
-            </li>
-            <li>
               <a href="#buttons">
               Buttons
               </a>
