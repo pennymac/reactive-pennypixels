@@ -34,7 +34,7 @@ export default class PixelsApp extends React.Component {
           <Forms />
           <Indicators />
           <Containers />
-          <AnimationDemo height={200} />
+          <AnimationDemo />
         </div>
       </div>
       );

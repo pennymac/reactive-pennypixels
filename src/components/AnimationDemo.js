@@ -1,22 +1,26 @@
 import React from 'react'
-import Animator from 'react-state-animation'
+import {AnimatedComponent} from 'react-state-animation'
 
-export default class Demo extends React.Component {
+export default class Demo extends AnimatedComponent {
   constructor(props) {
     super(props)
     this.state = {
-      x: 0,
+      x: 1000,
       y: 0,
-      alpha: 1
+      alpha: 1,
+      enableClick: false
     }
-    // react state animation wrapper
-    this._animate = new Animator(this);
+  }
+
+  componentDidMount() {
+    this.setAnimate('bounce-in',  'x', 0, 5000)
+    .then( () => this.setState({ enableClick: true }))
   }
 
   start() {
     var last_alpha = this.state.alpha;
-    this._animate.quadOut('x', 850/*end value*/, 1200/*duration(ms)*/)
-    .then(() => this._animate.cubicInOut('x', 0, 2000));
+    this.setAnimate('quad-out', 'x', 550/*end value*/, 200/*duration(ms)*/)
+    .then(() => this.setAnimate('cubic-in-out', 'x', 0, 5000));
 
   }
 
@@ -38,7 +42,9 @@ export default class Demo extends React.Component {
   }
 
   handleClick() {
-    this.start();
+    if (this.state.enableClick) {
+      this.start();
+    }
   }
 
   render() {

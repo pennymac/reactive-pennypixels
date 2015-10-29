@@ -37,6 +37,6 @@
     "lodash.range": "^3.0.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-state-animation": "file:../../src/react-state-animation"
+    "react-state-animation": "https://github.com/petermoresi/react-state-animation.git"
   }
 }

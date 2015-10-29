@@ -1,6 +1,7 @@
 import React from 'react';
+import {AnimatedComponent} from 'react-state-animation'
 
-export default class Nav extends React.Component {
+export default class Nav extends AnimatedComponent {
 
   constructor(props) {
     super(props)
@@ -9,12 +10,15 @@ export default class Nav extends React.Component {
 
   state = {
     show: false,
-    isShowing: false
+    isShowing: false,
+    height: 0
   }
 
   handleClick(e) {
-    this.setState( { show: !this.state.show });
-    console.log(this.state.show)
+    var min = -1, max = 340, duration = 200;
+    this.state.show = !this.state.show;
+    this.state.height = this.state.show ? min : max;
+    this.setAnimate( 'cubic-in-out', 'height', this.state.show ? max : min, duration )
   }
 
   render() {
@@ -45,8 +49,8 @@ export default class Nav extends React.Component {
             </a>
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
-          <div
-            className={ 'navbar-collapse collapse' + (this.state.show ? ' in' : '') }
+          <div style={{ height: this.state.height }}
+            className={ `navbar-collapse collapse ${this.state.height > 0 ? ' in' : ''}` }
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
               <li>
@@ -82,6 +86,11 @@ export default class Nav extends React.Component {
             <li>
               <a href="#containers">
                 Containers
+              </a>
+            </li>
+            <li>
+              <a href="#animation">
+                Animation
               </a>
             </li>
           </ul>
