@@ -10,7 +10,7 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(5000, 'localhost', function(err) {
+app.listen(5000, function(err) {
   if (err) {
     console.log(err);
     return;

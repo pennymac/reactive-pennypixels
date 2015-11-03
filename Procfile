@@ -1,1 +1,1 @@
-web: node prodServer.js
+web: npm run build && node prodServer.js
