@@ -8,7 +8,7 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(80, '*', function(err) {
+app.listen(80, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
