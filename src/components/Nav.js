@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router'
 import {AnimatedComponent} from 'react-set-animate'
 
 export default class Nav extends AnimatedComponent {
@@ -18,7 +19,7 @@ export default class Nav extends AnimatedComponent {
     var min = -1, max = 300, duration = 200;
     this.state.show = !this.state.show;
     this.state.height = this.state.show ? min : max;
-    this.setAnimate( 'cubic-in-out', 'height', this.state.show ? max : min, duration )
+    this.setAnimate( 'height', this.state.show ? max : min, duration )
   }
 
   render() {
@@ -42,11 +43,11 @@ export default class Nav extends AnimatedComponent {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/">
               <img
                 src="http://pennypixels.pennymacusa.com/img/logo.svg"
                 width="100px" />
-            </a>
+            </Link>
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
           <div style={{ height: this.state.height }}
@@ -54,34 +55,32 @@ export default class Nav extends AnimatedComponent {
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#buttons">
-              Buttons
-              </a>
+              <Link to="/buttons">Buttons</Link>
             </li>
             <li>
-              <a href="#type">
+              <Link to="/type">
               Typography
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#forms">
+              <Link to="/forms">
               Forms
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#indicators">
+              <Link to="/indicators">
                 Indicators
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#containers">
+              <Link to="/containers">
                 Containers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#animation">
+              <Link to="/animation">
                 Animation
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

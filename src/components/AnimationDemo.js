@@ -8,31 +8,25 @@ export default class Demo extends AnimatedComponent {
       x: 1000,
       y: 0,
       alpha: 1,
+      backgroundColor: 'green',
       enableClick: false
     }
   }
 
   componentDidMount() {
-    this.setAnimate('bounce-in',  'x', 0, 5000)
+    this.setAnimate('x', 0, 3000)
     .then( () => this.setState({ enableClick: true }))
-  }
 
-  start() {
-    var last_alpha = this.state.alpha;
-    this.setAnimate('quad-out', 'x', 550/*end value*/, 200/*duration(ms)*/)
-    .then(() => this.setAnimate('cubic-in-out', 'x', 0, 5000));
-
-  }
-
-  stop() {
-    this._animate.stop()
   }
 
   getAnimatedStyle() {
     return {
       position: 'relative',
-      color: 'black',
-      backgroundColor: 'blue',
+      color: 'white',
+      backgroundColor: this.state.backgroundColor,
+      textAlign: 'center',
+      paddingTop: 60,
+      fontSize: '2em',
       opacity: this.state.alpha,
       left: this.state.x,
       height: this.state.y + 200,
@@ -43,7 +37,12 @@ export default class Demo extends AnimatedComponent {
 
   handleClick() {
     if (this.state.enableClick) {
-      this.start();
+      var last_alpha = this.state.alpha;
+      this.setAnimate('x', 550/*end value*/, 800/*duration(ms)*/)
+      .then(() => this.setAnimate('x', 0, 1600));
+
+      this.setAnimate('backgroundColor', 'red'/*end value*/, 800/*duration(ms)*/)
+      .then(() => this.setAnimate('backgroundColor', 'green', 1600));
     }
   }
 
@@ -58,7 +57,7 @@ export default class Demo extends AnimatedComponent {
           </div>
         </div>
         <div style={this.getAnimatedStyle()} onClick={this.handleClick.bind(this)}>
-          <h1>Animate movement</h1>
+          {this.state.enableClick ? '\nClick here' : 'Animated movement'}
         </div>
       </div>
     )
