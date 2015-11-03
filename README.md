@@ -1,15 +1,8 @@
 # React with PennyPixels
 
-Boilerplate code to start any project.
+Boilerplate code to start a new PennyPixels or bootstrap project.
 
-1.  [PennyPixels](http://pennypixels.pennymacusa.com/#navs) 
-2.  [React.js](http://facebook.github.io/react/) 
-3.  [React Hot Module Reload](https://github.com/gaearon/react-transform-hmr)
-4.  [Webpack Hot Middleware](https://www.npmjs.com/package/webpack-hot-middleware)
-5.  [Cucumber-js](https://github.com/cucumber/cucumber-js)
-
-Copy this repo and make it your own.
-
+Clone this repo and make a new app.
 
 ## Getting Setup
 
@@ -28,7 +21,7 @@ npm install
 To run the development server:
 
 ```sh
-npm start 
+npm start
 ```
 
 To bundle the project:

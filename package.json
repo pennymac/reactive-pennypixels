@@ -36,6 +36,7 @@
     "d3-timer": "0.0.4",
     "formula-if": "^1.0.0",
     "formula-switch": "^1.0.0",
+    "history": "^1.13.0",
     "lodash.range": "^3.0.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",

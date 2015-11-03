@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 import { Router, Route, Link, IndexRoute } from 'react-router'
+import createBrowserHistory from 'history/lib/createBrowserHistory'
 import PixelsApp from './components/PixelsApp'
 
 import Intro from './components/Intro';
@@ -17,11 +18,10 @@ import AnimationDemo from './components/AnimationDemo';
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
 render((
-  <Router>
+  <Router history={createBrowserHistory()}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
       <Route path="buttons" component={Buttons} />
-      <Route path="getting-started" component={GettingStarted} />
       <Route path="forms" component={Forms} />
       <Route path="type" component={Typography} />
       <Route path="navs" component={Navs} />
