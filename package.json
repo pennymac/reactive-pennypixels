@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node devServer.js",
     "lint": "eslint src",
-    "test": "faucet `find test -name '*-test.js'`"
+    "test": "faucet `find test -name '*.js'`"
   },
   "devDependencies": {
     "babel-core": "^5.4.7",
