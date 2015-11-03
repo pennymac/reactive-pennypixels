@@ -4,6 +4,8 @@ var config = require('./webpack.config.prod');
 
 var app = express();
 
+app.use('/static', express.static('dist'));
+
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
