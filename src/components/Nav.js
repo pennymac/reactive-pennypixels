@@ -51,35 +51,35 @@ export default class Nav extends AnimatedComponent {
             </Link>
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
-          <div 
+          <div
             className={ `navbar-collapse collapse ${this.state.height > 0 ? ' in' : ''}` }
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/buttons">Buttons</Link>
+              <Link onClick={this.handleClick} to="/buttons">Buttons</Link>
             </li>
             <li>
-              <Link to="/type">
+              <Link onClick={this.handleClick} to="/type">
               Typography
               </Link>
             </li>
             <li>
-              <Link to="/forms">
+              <Link onClick={this.handleClick} to="/forms">
               Forms
               </Link>
             </li>
             <li>
-              <Link to="/indicators">
+              <Link onClick={this.handleClick} to="/indicators">
                 Indicators
               </Link>
             </li>
             <li>
-              <Link to="/containers">
+              <Link onClick={this.handleClick} to="/containers">
                 Containers
               </Link>
             </li>
             <li>
-              <Link to="/animation">
+              <Link onClick={this.handleClick} to="/animation">
                 Animation
               </Link>
             </li>
