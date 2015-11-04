@@ -14743,7 +14743,7 @@
 	    this.state = {
 	      show: false,
 	      isShowing: false,
-	      height: 0
+	      height: -1
 	    };
 	    this.handleClick = this.handleClick.bind(this);
 	  }

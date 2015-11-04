@@ -12,7 +12,7 @@ export default class Nav extends AnimatedComponent {
   state = {
     show: false,
     isShowing: false,
-    height: 0
+    height: -1
   }
 
   handleClick(e) {
