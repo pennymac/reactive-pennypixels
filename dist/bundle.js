@@ -14811,7 +14811,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/buttons' },
+	                  { onClick: this.handleClick, to: '/buttons' },
 	                  'Buttons'
 	                )
 	              ),
@@ -14820,7 +14820,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/type' },
+	                  { onClick: this.handleClick, to: '/type' },
 	                  'Typography'
 	                )
 	              ),
@@ -14829,7 +14829,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/forms' },
+	                  { onClick: this.handleClick, to: '/forms' },
 	                  'Forms'
 	                )
 	              ),
@@ -14838,7 +14838,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/indicators' },
+	                  { onClick: this.handleClick, to: '/indicators' },
 	                  'Indicators'
 	                )
 	              ),
@@ -14847,7 +14847,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/containers' },
+	                  { onClick: this.handleClick, to: '/containers' },
 	                  'Containers'
 	                )
 	              ),
@@ -14856,7 +14856,7 @@
 	                null,
 	                _react2['default'].createElement(
 	                  _reactRouter.Link,
-	                  { to: '/animation' },
+	                  { onClick: this.handleClick, to: '/animation' },
 	                  'Animation'
 	                )
 	              )
