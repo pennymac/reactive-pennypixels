@@ -18,8 +18,9 @@ export default class Nav extends AnimatedComponent {
   handleClick(e) {
     var min = -1, max = 300, duration = 200;
     this.state.show = !this.state.show;
-    this.state.height = this.state.show ? min : max;
-    this.setAnimate( 'height', this.state.show ? max : min, duration )
+    this.state.height = this.state.show ? max : min;
+    //this.setAnimate( 'height', this.state.show ? max : min, duration )
+    this.setState( { show: this.state.show })
   }
 
   render() {
@@ -50,7 +51,7 @@ export default class Nav extends AnimatedComponent {
             </Link>
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
-          <div style={{ height: this.state.height }}
+          <div 
             className={ `navbar-collapse collapse ${this.state.height > 0 ? ' in' : ''}` }
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
