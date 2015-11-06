@@ -14752,12 +14752,12 @@
 	    key: 'handleClick',
 	    value: function handleClick(e) {
 	      var min = -1,
-	          max = 300,
+	          max = 260,
 	          duration = 200;
 	      this.state.show = !this.state.show;
-	      this.state.height = this.state.show ? max : min;
-	      //this.setAnimate( 'height', this.state.show ? max : min, duration )
-	      this.setState({ show: this.state.show });
+	      //this.state.height = this.state.show ? max : min;
+	      this.setAnimate('height', this.state.show ? max : min, duration);
+	      //this.setState( { show: this.state.show })
 	    }
 	  }, {
 	    key: 'render',
@@ -14800,7 +14800,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            'div',
-	            {
+	            { style: { height: this.state.height },
 	              className: 'navbar-collapse collapse ' + (this.state.height > 0 ? ' in' : ''),
 	              id: 'bs-example-navbar-collapse-1' },
 	            _react2['default'].createElement(
