@@ -8,12 +8,13 @@ import PixelsApp from './components/PixelsApp'
 import Intro from './components/Intro';
 import Buttons from './components/Buttons';
 import Typography from './components/Typography';
-// import Tables from './Tables';
+import Tables from './components/Tables';
 import Forms from './components/Forms';
 import Navs from './components/Navs';
 import Indicators from './components/Indicators';
 import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
+import PageNotFound from './components/PageNotFound';
 
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
@@ -25,9 +26,11 @@ render((
       <Route path="forms" component={Forms} />
       <Route path="type" component={Typography} />
       <Route path="navs" component={Navs} />
+      <Route path="tables" component={Tables} />
       <Route path="indicators" component={Indicators} />
       <Route path="containers" component={Containers} />
       <Route path="animation" component={AnimationDemo} />
+      <Route path="*" component={PageNotFound} />
     </Route>
   </Router>
 ), document.getElementById('root'))
