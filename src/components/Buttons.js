@@ -1,15 +1,13 @@
 import React from "react";
 import {buttonTypes} from '../constants/PennyPixels'
+var ButtonsPage;
 
-export default class Buttons extends React.Component {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this);
-  }
+export default ButtonsPage = React.createClass({
 
-  handleClick(event) {
+  handleClick: function(event) {
     alert('I\'ve got class: ' + event.currentTarget.className);
-  }
+  },
+
   render() {
     return (
       <div className="bs-docs-section">
@@ -126,4 +124,4 @@ export default class Buttons extends React.Component {
 
     );
   }
-}
+});

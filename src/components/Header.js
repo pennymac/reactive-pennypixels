@@ -1,8 +1,8 @@
 import React from 'react';
-
 import Nav from './Nav';
+var Header;
 
-export default class Header extends React.Component {
+export default Header = React.createClass({
   render() {
     return (
       <div>
@@ -16,7 +16,7 @@ export default class Header extends React.Component {
             </div>
           </div>
         </div>
-    </div>
-  );
-}
-}
+      </div>
+    );
+  }
+});

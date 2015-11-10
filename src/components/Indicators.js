@@ -1,6 +1,7 @@
 import React from 'react';
+var IndicatorsPage;
 
-export default class Indicators extends React.Component {
+export default IndicatorsPage = React.createClass({
   render() {
     return (
       <div className="bs-docs-section">
@@ -69,4 +70,4 @@ export default class Indicators extends React.Component {
       </div>
     );
   }
-}
+});

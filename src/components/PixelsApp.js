@@ -5,11 +5,13 @@
 import React from 'react';
 import Header from './Header';
 
+var PixelsApp;
+
 /* Write some great components about what data
 * this application displays and how it needs to be
 * organized.
 */
-export default class PixelsApp extends React.Component {
+export default PixelsApp = React.createClass({
   render() {
     return (
       <div id="main">
@@ -20,4 +22,4 @@ export default class PixelsApp extends React.Component {
       </div>
     )
   }
-}
+});

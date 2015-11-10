@@ -1,6 +1,7 @@
 import React from 'react';
+var TypographyPage;
 
-export default class Typography extends React.Component {
+export default TypographyPage = React.createClass({
   render() {
     return (
       <div className="bs-docs-section">
@@ -67,4 +68,4 @@ export default class Typography extends React.Component {
       </div>
     );
   }
-}
+});

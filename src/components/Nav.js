@@ -1,27 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router'
-import {AnimatedComponent} from 'react-set-animate'
+var Nav;
 
-export default class Nav extends AnimatedComponent {
+export default Nav = React.createClass({
 
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  state = {
-    show: false,
-    isShowing: false,
-    height: -1
-  }
+  getInitialState: function() {
+    return {
+      show: false,
+      isShowing: false,
+    }
+  },
 
   handleClick(e) {
-    var min = -1, max = 260, duration = 200;
-    this.state.show = !this.state.show;
-    //this.state.height = this.state.show ? max : min;
-    this.setAnimate( 'height', this.state.show ? max : min, duration )
-    this.setState( { show: this.state.show })
-  }
+    this.setState( { show: !this.state.show })
+  },
 
   render() {
 
@@ -51,44 +43,44 @@ export default class Nav extends AnimatedComponent {
             </Link>
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
-          <div
-            className={ `navbar-collapse collapse ${this.state.height > 0 ? ' in' : ''}` }
+          <div style={ { display: this.state.show ? 'block' : 'none' }}
+            className={ `navbar-collapse collapse ${this.state.show ? ' ' : ' '}` }
             id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-            <li>
-              <Link onClick={this.handleClick} to="/buttons">Buttons</Link>
-            </li>
-            <li>
-              <Link onClick={this.handleClick} to="/type">
-              Typography
-              </Link>
-            </li>
-            <li>
-              <Link onClick={this.handleClick} to="/forms">
-              Forms
-              </Link>
-            </li>
-            <li>
-              <Link onClick={this.handleClick} to="/indicators">
-                Indicators
-              </Link>
-            </li>
-            <li>
-              <Link onClick={this.handleClick} to="/containers">
-                Containers
-              </Link>
-            </li>
-            <li>
-              <Link onClick={this.handleClick} to="/animation">
-                Animation
-              </Link>
-            </li>
-          </ul>
+              <li>
+                <Link onClick={this.handleClick} to="/buttons">Buttons</Link>
+              </li>
+              <li>
+                <Link onClick={this.handleClick} to="/type">
+                  Typography
+                </Link>
+              </li>
+              <li>
+                <Link onClick={this.handleClick} to="/forms">
+                  Forms
+                </Link>
+              </li>
+              <li>
+                <Link onClick={this.handleClick} to="/indicators">
+                  Indicators
+                </Link>
+              </li>
+              <li>
+                <Link onClick={this.handleClick} to="/containers">
+                  Containers
+                </Link>
+              </li>
+              <li>
+                <Link onClick={this.handleClick} to="/animation">
+                  Animation
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* /.navbar-collapse */}
         </div>
-        {/* /.navbar-collapse */}
-      </div>
-      {/* /.container */}
-    </nav>
-  )
-}
-}
+        {/* /.container */}
+      </nav>
+    )
+  }
+})

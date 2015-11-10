@@ -1,18 +1,18 @@
 import React from 'react';
+var IntroPage;
 
-export default class Intro extends React.Component {
-  constructor() {
-    super();
-    this.state = {
+export default IntroPage = React.createClass({
+  getInitialState: function() {
+    return {
       secondCount: 0
     }
-  }
+  },
 
   componentDidMount() {
     setInterval( function() {
       this.setState( { secondCount: (this.state.secondCount+1) } );
     }.bind(this), 1000);
-  }
+  },
 
   render() {
     return (
@@ -33,4 +33,4 @@ export default class Intro extends React.Component {
       </div>
     );
   }
-}
+});

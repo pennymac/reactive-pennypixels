@@ -1,6 +1,7 @@
 import React from 'react';
+let FormsPage;
 
-export default class Forms extends React.Component {
+export default FormsPage = React.createClass({
   render() {
     return (
       <div className="bs-docs-section">
@@ -138,4 +139,4 @@ export default class Forms extends React.Component {
         </div>
     );
   }
-}
+});

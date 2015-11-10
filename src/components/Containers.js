@@ -1,6 +1,6 @@
 import React from 'react';
-
-export default class Containers extends React.Component {
+let ContainersPage
+export default ContainersPage = React.createClass({
   render() {
     return (
       <div className="bs-docs-section">
@@ -81,7 +81,7 @@ export default class Containers extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4">        
+          <div className="col-lg-4">
             <div className="panel panel-default">
               <div className="panel-body">
                 Basic panel
@@ -171,4 +171,4 @@ export default class Containers extends React.Component {
       </div>
     );
   }
-}
+});
