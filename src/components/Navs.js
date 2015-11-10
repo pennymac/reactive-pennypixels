@@ -1,6 +1,6 @@
 import React from 'react';
-
-export default class Navs extends React.Component {
+var NavsPage;
+export default NavsPage = React.createClass({
   render() {
     return (
       <div className="bs-docs-section">
@@ -161,4 +161,4 @@ export default class Navs extends React.Component {
 
     );
   }
-}
+});

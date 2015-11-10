@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(206);
+	module.exports = __webpack_require__(205);
 
 
 /***/ },
@@ -820,12 +820,12 @@
 	var DOMProperty = __webpack_require__(43);
 	var ReactBrowserEventEmitter = __webpack_require__(69);
 	var ReactCurrentOwner = __webpack_require__(24);
-	var ReactDOMFeatureFlags = __webpack_require__(165);
+	var ReactDOMFeatureFlags = __webpack_require__(164);
 	var ReactElement = __webpack_require__(12);
-	var ReactEmptyComponentRegistry = __webpack_require__(172);
+	var ReactEmptyComponentRegistry = __webpack_require__(171);
 	var ReactInstanceHandles = __webpack_require__(44);
 	var ReactInstanceMap = __webpack_require__(56);
-	var ReactMarkupChecksum = __webpack_require__(175);
+	var ReactMarkupChecksum = __webpack_require__(174);
 	var ReactPerf = __webpack_require__(15);
 	var ReactReconciler = __webpack_require__(34);
 	var ReactUpdateQueue = __webpack_require__(111);
@@ -833,7 +833,7 @@
 	
 	var assign = __webpack_require__(3);
 	var emptyObject = __webpack_require__(58);
-	var containsNode = __webpack_require__(187);
+	var containsNode = __webpack_require__(186);
 	var instantiateReactComponent = __webpack_require__(118);
 	var invariant = __webpack_require__(2);
 	var setInnerHTML = __webpack_require__(76);
@@ -2000,7 +2000,7 @@
 	
 	'use strict';
 	
-	var ReactComponent = __webpack_require__(138);
+	var ReactComponent = __webpack_require__(137);
 	var ReactCurrentOwner = __webpack_require__(21);
 	var ReactElement = __webpack_require__(7);
 	var ReactErrorUtils = __webpack_require__(274);
@@ -3722,7 +3722,7 @@
 	
 	'use strict';
 	
-	var findDOMNode = __webpack_require__(149);
+	var findDOMNode = __webpack_require__(148);
 	
 	var ReactBrowserComponentMixin = {
 	  /**
@@ -3803,14 +3803,14 @@
 	var ReactEmptyComponent = __webpack_require__(92);
 	var ReactInstanceHandles = __webpack_require__(40);
 	var ReactInstanceMap = __webpack_require__(41);
-	var ReactMarkupChecksum = __webpack_require__(142);
+	var ReactMarkupChecksum = __webpack_require__(141);
 	var ReactPerf = __webpack_require__(32);
 	var ReactReconciler = __webpack_require__(42);
 	var ReactUpdateQueue = __webpack_require__(95);
 	var ReactUpdates = __webpack_require__(17);
 	
 	var emptyObject = __webpack_require__(67);
-	var containsNode = __webpack_require__(148);
+	var containsNode = __webpack_require__(147);
 	var getReactRootElementInContainer = __webpack_require__(306);
 	var instantiateReactComponent = __webpack_require__(101);
 	var invariant = __webpack_require__(1);
@@ -6274,9 +6274,9 @@
 	
 	var EventConstants = __webpack_require__(13);
 	var EventPluginHub = __webpack_require__(48);
-	var EventPluginRegistry = __webpack_require__(137);
+	var EventPluginRegistry = __webpack_require__(136);
 	var ReactEventEmitterMixin = __webpack_require__(275);
-	var ViewportMetrics = __webpack_require__(147);
+	var ViewportMetrics = __webpack_require__(146);
 	
 	var assign = __webpack_require__(6);
 	var isEventSupported = __webpack_require__(102);
@@ -6629,7 +6629,7 @@
 	
 	'use strict';
 	
-	var ReactRootIndex = __webpack_require__(146);
+	var ReactRootIndex = __webpack_require__(145);
 	
 	var invariant = __webpack_require__(1);
 	
@@ -7385,7 +7385,7 @@
 	
 	'use strict';
 	
-	var ReactRootIndex = __webpack_require__(180);
+	var ReactRootIndex = __webpack_require__(179);
 	
 	var invariant = __webpack_require__(2);
 	
@@ -8183,7 +8183,7 @@
 	
 	'use strict';
 	
-	var EventPluginRegistry = __webpack_require__(137);
+	var EventPluginRegistry = __webpack_require__(136);
 	var EventPluginUtils = __webpack_require__(85);
 	
 	var accumulateInto = __webpack_require__(96);
@@ -8621,7 +8621,7 @@
 	var ReactCurrentOwner = __webpack_require__(21);
 	var ReactNativeComponent = __webpack_require__(63);
 	
-	var getIteratorFn = __webpack_require__(152);
+	var getIteratorFn = __webpack_require__(151);
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(8);
 	
@@ -9204,12 +9204,12 @@
 	
 	'use strict';
 	
-	var EventPluginRegistry = __webpack_require__(160);
+	var EventPluginRegistry = __webpack_require__(159);
 	var EventPluginUtils = __webpack_require__(326);
-	var ReactErrorUtils = __webpack_require__(173);
+	var ReactErrorUtils = __webpack_require__(172);
 	
-	var accumulateInto = __webpack_require__(182);
-	var forEachAccumulated = __webpack_require__(183);
+	var accumulateInto = __webpack_require__(181);
+	var forEachAccumulated = __webpack_require__(182);
 	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
 	
@@ -9493,8 +9493,8 @@
 	
 	var warning = __webpack_require__(4);
 	
-	var accumulateInto = __webpack_require__(182);
-	var forEachAccumulated = __webpack_require__(183);
+	var accumulateInto = __webpack_require__(181);
+	var forEachAccumulated = __webpack_require__(182);
 	
 	var PropagationPhases = EventConstants.PropagationPhases;
 	var getListener = EventPluginHub.getListener;
@@ -9840,7 +9840,7 @@
 	
 	'use strict';
 	
-	var focusNode = __webpack_require__(150);
+	var focusNode = __webpack_require__(149);
 	
 	var AutoFocusMixin = {
 	  componentDidMount: function() {
@@ -10198,7 +10198,7 @@
 	'use strict';
 	
 	var SyntheticUIEvent = __webpack_require__(51);
-	var ViewportMetrics = __webpack_require__(147);
+	var ViewportMetrics = __webpack_require__(146);
 	
 	var getEventModifierState = __webpack_require__(99);
 	
@@ -10597,10 +10597,10 @@
 	
 	var EventConstants = __webpack_require__(23);
 	var EventPluginHub = __webpack_require__(54);
-	var EventPluginRegistry = __webpack_require__(160);
+	var EventPluginRegistry = __webpack_require__(159);
 	var ReactEventEmitterMixin = __webpack_require__(341);
 	var ReactPerf = __webpack_require__(15);
-	var ViewportMetrics = __webpack_require__(181);
+	var ViewportMetrics = __webpack_require__(180);
 	
 	var assign = __webpack_require__(3);
 	var isEventSupported = __webpack_require__(119);
@@ -10981,7 +10981,7 @@
 	'use strict';
 	
 	var SyntheticUIEvent = __webpack_require__(57);
-	var ViewportMetrics = __webpack_require__(181);
+	var ViewportMetrics = __webpack_require__(180);
 	
 	var getEventModifierState = __webpack_require__(115);
 	
@@ -11741,25 +11741,25 @@
 	
 	var _historyLibActions = __webpack_require__(36);
 	
-	var _historyLibUseQueries = __webpack_require__(217);
+	var _historyLibUseQueries = __webpack_require__(216);
 	
 	var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 	
-	var _computeChangedRoutes2 = __webpack_require__(234);
+	var _computeChangedRoutes2 = __webpack_require__(233);
 	
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 	
-	var _TransitionUtils = __webpack_require__(233);
+	var _TransitionUtils = __webpack_require__(232);
 	
-	var _isActive2 = __webpack_require__(237);
+	var _isActive2 = __webpack_require__(236);
 	
 	var _isActive3 = _interopRequireDefault(_isActive2);
 	
-	var _getComponents = __webpack_require__(235);
+	var _getComponents = __webpack_require__(234);
 	
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 	
-	var _matchRoutes = __webpack_require__(239);
+	var _matchRoutes = __webpack_require__(238);
 	
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 	
@@ -12373,7 +12373,7 @@
 	
 	'use strict';
 	
-	var ReactPropTypes = __webpack_require__(144);
+	var ReactPropTypes = __webpack_require__(143);
 	
 	var invariant = __webpack_require__(1);
 	
@@ -12591,7 +12591,7 @@
 	
 	'use strict';
 	
-	var ReactDOMIDOperations = __webpack_require__(139);
+	var ReactDOMIDOperations = __webpack_require__(138);
 	var ReactMount = __webpack_require__(22);
 	
 	/**
@@ -12786,7 +12786,7 @@
 	
 	'use strict';
 	
-	var CSSPropertyOperations = __webpack_require__(136);
+	var CSSPropertyOperations = __webpack_require__(135);
 	var DOMProperty = __webpack_require__(38);
 	var DOMPropertyOperations = __webpack_require__(47);
 	var ReactBrowserEventEmitter = __webpack_require__(39);
@@ -14744,7 +14744,7 @@
 	
 	'use strict';
 	
-	var ReactPropTypes = __webpack_require__(179);
+	var ReactPropTypes = __webpack_require__(178);
 	var ReactPropTypeLocations = __webpack_require__(71);
 	
 	var invariant = __webpack_require__(2);
@@ -14985,7 +14985,7 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(159);
+	var DOMChildrenOperations = __webpack_require__(158);
 	var DOMPropertyOperations = __webpack_require__(106);
 	var ReactMount = __webpack_require__(11);
 	var ReactPerf = __webpack_require__(15);
@@ -15603,8 +15603,8 @@
 	'use strict';
 	
 	var ReactCompositeComponent = __webpack_require__(332);
-	var ReactEmptyComponent = __webpack_require__(171);
-	var ReactNativeComponent = __webpack_require__(177);
+	var ReactEmptyComponent = __webpack_require__(170);
+	var ReactNativeComponent = __webpack_require__(176);
 	
 	var assign = __webpack_require__(3);
 	var invariant = __webpack_require__(2);
@@ -16531,15 +16531,15 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _deepEqual = __webpack_require__(218);
+	var _deepEqual = __webpack_require__(217);
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
-	var _AsyncUtils = __webpack_require__(210);
+	var _AsyncUtils = __webpack_require__(209);
 	
 	var _Actions = __webpack_require__(36);
 	
-	var _createLocation2 = __webpack_require__(213);
+	var _createLocation2 = __webpack_require__(212);
 	
 	var _createLocation3 = _interopRequireDefault(_createLocation2);
 	
@@ -16547,7 +16547,7 @@
 	
 	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 	
-	var _deprecate = __webpack_require__(215);
+	var _deprecate = __webpack_require__(214);
 	
 	var _deprecate2 = _interopRequireDefault(_deprecate);
 	
@@ -17288,7 +17288,7 @@
 	
 	var _RouteUtils = __webpack_require__(25);
 	
-	var _getRouteParams = __webpack_require__(236);
+	var _getRouteParams = __webpack_require__(235);
 	
 	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 	
@@ -17418,7 +17418,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _Router2 = __webpack_require__(232);
+	var _Router2 = __webpack_require__(231);
 	
 	var _Router3 = _interopRequireDefault(_Router2);
 	
@@ -17430,7 +17430,7 @@
 	
 	exports.Link = _Link3['default'];
 	
-	var _IndexLink2 = __webpack_require__(226);
+	var _IndexLink2 = __webpack_require__(225);
 	
 	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 	
@@ -17438,13 +17438,13 @@
 	
 	/* components (configuration) */
 	
-	var _IndexRedirect2 = __webpack_require__(227);
+	var _IndexRedirect2 = __webpack_require__(226);
 	
 	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 	
 	exports.IndexRedirect = _IndexRedirect3['default'];
 	
-	var _IndexRoute2 = __webpack_require__(228);
+	var _IndexRoute2 = __webpack_require__(227);
 	
 	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 	
@@ -17456,7 +17456,7 @@
 	
 	exports.Redirect = _Redirect3['default'];
 	
-	var _Route2 = __webpack_require__(230);
+	var _Route2 = __webpack_require__(229);
 	
 	var _Route3 = _interopRequireDefault(_Route2);
 	
@@ -17464,19 +17464,19 @@
 	
 	/* mixins */
 	
-	var _History2 = __webpack_require__(225);
+	var _History2 = __webpack_require__(224);
 	
 	var _History3 = _interopRequireDefault(_History2);
 	
 	exports.History = _History3['default'];
 	
-	var _Lifecycle2 = __webpack_require__(229);
+	var _Lifecycle2 = __webpack_require__(228);
 	
 	var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
 	
 	exports.Lifecycle = _Lifecycle3['default'];
 	
-	var _RouteContext2 = __webpack_require__(231);
+	var _RouteContext2 = __webpack_require__(230);
 	
 	var _RouteContext3 = _interopRequireDefault(_RouteContext2);
 	
@@ -17506,7 +17506,7 @@
 	
 	exports.PropTypes = _PropTypes3['default'];
 	
-	var _match2 = __webpack_require__(238);
+	var _match2 = __webpack_require__(237);
 	
 	var _match3 = _interopRequireDefault(_match2);
 	
@@ -17534,11 +17534,11 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var _d3Ease = __webpack_require__(207);
+	var _d3Ease = __webpack_require__(206);
 	
-	var _d3Timer = __webpack_require__(209);
+	var _d3Timer = __webpack_require__(208);
 	
-	var _d3Interpolate = __webpack_require__(208);
+	var _d3Interpolate = __webpack_require__(207);
 	
 	var _Eases = __webpack_require__(83);
 	
@@ -17643,40 +17643,6 @@
 /* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* react-set-animate */
-	
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	var _Animate = __webpack_require__(132);
-	
-	var _Animate2 = _interopRequireDefault(_Animate);
-	
-	var _AnimatedComponent = __webpack_require__(240);
-	
-	var _AnimatedComponent2 = _interopRequireDefault(_AnimatedComponent);
-	
-	var _Eases = __webpack_require__(83);
-	
-	var _Eases2 = _interopRequireDefault(_Eases);
-	
-	exports['default'] = {
-	  Animate: _Animate2['default'],
-	  AnimatedComponent: _AnimatedComponent2['default'],
-	  Eases: _Eases2['default']
-	};
-	module.exports = exports['default'];
-
-
-/***/ },
-/* 134 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
@@ -17691,7 +17657,7 @@
 
 
 /***/ },
-/* 135 */
+/* 134 */
 /***/ function(module, exports) {
 
 	/**
@@ -17820,7 +17786,7 @@
 
 
 /***/ },
-/* 136 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17837,7 +17803,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(135);
+	var CSSProperty = __webpack_require__(134);
 	var ExecutionEnvironment = __webpack_require__(10);
 	
 	var camelizeStyleName = __webpack_require__(298);
@@ -18004,7 +17970,7 @@
 
 
 /***/ },
-/* 137 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18286,7 +18252,7 @@
 
 
 /***/ },
-/* 138 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18442,7 +18408,7 @@
 
 
 /***/ },
-/* 139 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18461,7 +18427,7 @@
 	
 	'use strict';
 	
-	var CSSPropertyOperations = __webpack_require__(136);
+	var CSSPropertyOperations = __webpack_require__(135);
 	var DOMChildrenOperations = __webpack_require__(250);
 	var DOMPropertyOperations = __webpack_require__(47);
 	var ReactMount = __webpack_require__(22);
@@ -18612,7 +18578,7 @@
 
 
 /***/ },
-/* 140 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18733,7 +18699,7 @@
 
 
 /***/ },
-/* 141 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18751,9 +18717,9 @@
 	
 	var ReactDOMSelection = __webpack_require__(270);
 	
-	var containsNode = __webpack_require__(148);
-	var focusNode = __webpack_require__(150);
-	var getActiveElement = __webpack_require__(151);
+	var containsNode = __webpack_require__(147);
+	var focusNode = __webpack_require__(149);
+	var getActiveElement = __webpack_require__(150);
 	
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -18872,7 +18838,7 @@
 
 
 /***/ },
-/* 142 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18924,7 +18890,7 @@
 
 
 /***/ },
-/* 143 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18961,7 +18927,7 @@
 
 
 /***/ },
-/* 144 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19314,7 +19280,7 @@
 
 
 /***/ },
-/* 145 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19374,7 +19340,7 @@
 
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports) {
 
 	/**
@@ -19409,7 +19375,7 @@
 
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports) {
 
 	/**
@@ -19442,7 +19408,7 @@
 
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19490,7 +19456,7 @@
 
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19512,7 +19478,7 @@
 	var ReactMount = __webpack_require__(22);
 	
 	var invariant = __webpack_require__(1);
-	var isNode = __webpack_require__(155);
+	var isNode = __webpack_require__(154);
 	var warning = __webpack_require__(8);
 	
 	/**
@@ -19565,7 +19531,7 @@
 
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports) {
 
 	/**
@@ -19598,7 +19564,7 @@
 
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports) {
 
 	/**
@@ -19631,7 +19597,7 @@
 
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports) {
 
 	/**
@@ -19679,7 +19645,7 @@
 
 
 /***/ },
-/* 153 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19800,7 +19766,7 @@
 
 
 /***/ },
-/* 154 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19841,7 +19807,7 @@
 
 
 /***/ },
-/* 155 */
+/* 154 */
 /***/ function(module, exports) {
 
 	/**
@@ -19872,7 +19838,7 @@
 
 
 /***/ },
-/* 156 */
+/* 155 */
 /***/ function(module, exports) {
 
 	/**
@@ -19919,7 +19885,7 @@
 
 
 /***/ },
-/* 157 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19939,7 +19905,7 @@
 	var ReactFragment = __webpack_require__(62);
 	var ReactInstanceHandles = __webpack_require__(40);
 	
-	var getIteratorFn = __webpack_require__(152);
+	var getIteratorFn = __webpack_require__(151);
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(8);
 	
@@ -20174,7 +20140,7 @@
 
 
 /***/ },
-/* 158 */
+/* 157 */
 /***/ function(module, exports) {
 
 	/**
@@ -20318,7 +20284,7 @@
 	module.exports = CSSProperty;
 
 /***/ },
-/* 159 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20336,7 +20302,7 @@
 	'use strict';
 	
 	var Danger = __webpack_require__(323);
-	var ReactMultiChildUpdateTypes = __webpack_require__(176);
+	var ReactMultiChildUpdateTypes = __webpack_require__(175);
 	var ReactPerf = __webpack_require__(15);
 	
 	var setInnerHTML = __webpack_require__(76);
@@ -20452,7 +20418,7 @@
 	module.exports = DOMChildrenOperations;
 
 /***/ },
-/* 160 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20677,7 +20643,7 @@
 	module.exports = EventPluginRegistry;
 
 /***/ },
-/* 161 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20864,7 +20830,7 @@
 	module.exports = ReactChildren;
 
 /***/ },
-/* 162 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20880,11 +20846,11 @@
 	
 	'use strict';
 	
-	var ReactComponent = __webpack_require__(163);
+	var ReactComponent = __webpack_require__(162);
 	var ReactElement = __webpack_require__(12);
 	var ReactPropTypeLocations = __webpack_require__(71);
 	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactNoopUpdateQueue = __webpack_require__(178);
+	var ReactNoopUpdateQueue = __webpack_require__(177);
 	
 	var assign = __webpack_require__(3);
 	var emptyObject = __webpack_require__(58);
@@ -21640,7 +21606,7 @@
 	module.exports = ReactClass;
 
 /***/ },
-/* 163 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21656,7 +21622,7 @@
 	
 	'use strict';
 	
-	var ReactNoopUpdateQueue = __webpack_require__(178);
+	var ReactNoopUpdateQueue = __webpack_require__(177);
 	
 	var canDefineProperty = __webpack_require__(74);
 	var emptyObject = __webpack_require__(58);
@@ -21767,7 +21733,7 @@
 	module.exports = ReactComponent;
 
 /***/ },
-/* 164 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21786,8 +21752,8 @@
 	'use strict';
 	
 	var ReactCurrentOwner = __webpack_require__(24);
-	var ReactDOMTextComponent = __webpack_require__(167);
-	var ReactDefaultInjection = __webpack_require__(169);
+	var ReactDOMTextComponent = __webpack_require__(166);
+	var ReactDefaultInjection = __webpack_require__(168);
 	var ReactInstanceHandles = __webpack_require__(44);
 	var ReactMount = __webpack_require__(11);
 	var ReactPerf = __webpack_require__(15);
@@ -21864,7 +21830,7 @@
 	module.exports = React;
 
 /***/ },
-/* 165 */
+/* 164 */
 /***/ function(module, exports) {
 
 	/**
@@ -21887,7 +21853,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 166 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22080,7 +22046,7 @@
 	module.exports = ReactDOMSelect;
 
 /***/ },
-/* 167 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22097,7 +22063,7 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(159);
+	var DOMChildrenOperations = __webpack_require__(158);
 	var DOMPropertyOperations = __webpack_require__(106);
 	var ReactComponentBrowserEnvironment = __webpack_require__(108);
 	var ReactMount = __webpack_require__(11);
@@ -22212,7 +22178,7 @@
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 168 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22284,7 +22250,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 169 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22309,9 +22275,9 @@
 	var HTMLDOMPropertyConfig = __webpack_require__(328);
 	var ReactBrowserComponentMixin = __webpack_require__(330);
 	var ReactComponentBrowserEnvironment = __webpack_require__(108);
-	var ReactDefaultBatchingStrategy = __webpack_require__(168);
+	var ReactDefaultBatchingStrategy = __webpack_require__(167);
 	var ReactDOMComponent = __webpack_require__(334);
-	var ReactDOMTextComponent = __webpack_require__(167);
+	var ReactDOMTextComponent = __webpack_require__(166);
 	var ReactEventListener = __webpack_require__(342);
 	var ReactInjection = __webpack_require__(343);
 	var ReactInstanceHandles = __webpack_require__(44);
@@ -22386,7 +22352,7 @@
 	};
 
 /***/ },
-/* 170 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22672,7 +22638,7 @@
 	module.exports = ReactElementValidator;
 
 /***/ },
-/* 171 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22689,7 +22655,7 @@
 	'use strict';
 	
 	var ReactElement = __webpack_require__(12);
-	var ReactEmptyComponentRegistry = __webpack_require__(172);
+	var ReactEmptyComponentRegistry = __webpack_require__(171);
 	var ReactReconciler = __webpack_require__(34);
 	
 	var assign = __webpack_require__(3);
@@ -22728,7 +22694,7 @@
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 172 */
+/* 171 */
 /***/ function(module, exports) {
 
 	/**
@@ -22781,7 +22747,7 @@
 	module.exports = ReactEmptyComponentRegistry;
 
 /***/ },
-/* 173 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22862,7 +22828,7 @@
 	module.exports = ReactErrorUtils;
 
 /***/ },
-/* 174 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22880,9 +22846,9 @@
 	
 	var ReactDOMSelection = __webpack_require__(338);
 	
-	var containsNode = __webpack_require__(187);
-	var focusNode = __webpack_require__(188);
-	var getActiveElement = __webpack_require__(189);
+	var containsNode = __webpack_require__(186);
+	var focusNode = __webpack_require__(187);
+	var getActiveElement = __webpack_require__(188);
 	
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -22991,7 +22957,7 @@
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23041,7 +23007,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23078,7 +23044,7 @@
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23177,7 +23143,7 @@
 	module.exports = ReactNativeComponent;
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23300,7 +23266,7 @@
 	module.exports = ReactNoopUpdateQueue;
 
 /***/ },
-/* 179 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23661,7 +23627,7 @@
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports) {
 
 	/**
@@ -23695,7 +23661,7 @@
 	module.exports = ReactRootIndex;
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports) {
 
 	/**
@@ -23727,7 +23693,7 @@
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23791,7 +23757,7 @@
 	module.exports = accumulateInto;
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports) {
 
 	/**
@@ -23825,7 +23791,7 @@
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23863,7 +23829,7 @@
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports) {
 
 	/**
@@ -23908,7 +23874,7 @@
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23997,7 +23963,7 @@
 	module.exports = EventListener;
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24057,7 +24023,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports) {
 
 	/**
@@ -24088,7 +24054,7 @@
 	module.exports = focusNode;
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports) {
 
 	/**
@@ -24126,7 +24092,7 @@
 	module.exports = getActiveElement;
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24226,7 +24192,7 @@
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports) {
 
 	/**
@@ -24281,7 +24247,7 @@
 	module.exports = shallowEqual;
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24304,7 +24270,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSetAnimate = __webpack_require__(133);
+	var _reactSetAnimate = __webpack_require__(240);
 	
 	var Demo = (function (_AnimatedComponent) {
 	  _inherits(Demo, _AnimatedComponent);
@@ -24413,7 +24379,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24422,370 +24388,748 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _constantsPennyPixels = __webpack_require__(205);
+	var _constantsPennyPixels = __webpack_require__(204);
 	
-	var Buttons = (function (_React$Component) {
-	  _inherits(Buttons, _React$Component);
+	var ButtonsPage;
 	
-	  function Buttons() {
-	    _classCallCheck(this, Buttons);
+	exports['default'] = ButtonsPage = _react2['default'].createClass({
+	  displayName: 'ButtonsPage',
 	
-	    _get(Object.getPrototypeOf(Buttons.prototype), 'constructor', this).call(this);
-	    this.handleClick = this.handleClick.bind(this);
-	  }
+	  handleClick: function handleClick(event) {
+	    alert('I\'ve got class: ' + event.currentTarget.className);
+	  },
 	
-	  _createClass(Buttons, [{
-	    key: 'handleClick',
-	    value: function handleClick(event) {
-	      alert('I\'ve got class: ' + event.currentTarget.className);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
+	  render: function render() {
+	    var _this = this;
 	
-	      return _react2['default'].createElement(
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'bs-docs-section' },
+	      _react2['default'].createElement(
 	        'div',
-	        { className: 'bs-docs-section' },
+	        { className: 'page-header' },
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'page-header' },
+	          { className: 'row' },
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'row' },
+	            { className: 'col-lg-12' },
+	            _react2['default'].createElement(
+	              'h2',
+	              { id: 'buttons' },
+	              'Buttons'
+	            )
+	          )
+	        )
+	      ),
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'row' },
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'col-lg-6' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example' },
+	            _react2['default'].createElement(
+	              'p',
+	              null,
+	              _constantsPennyPixels.buttonTypes.slice(2, 7).map(function (n) {
+	                return _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-' + n.toLowerCase(), onClick: _this.handleClick },
+	                  n
+	                );
+	              })
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example' },
+	            _react2['default'].createElement(
+	              'p',
+	              null,
+	              _constantsPennyPixels.buttonTypes.map(function (n) {
+	                return _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-' + n.toLowerCase() + ' disabled', onClick: _this.handleClick },
+	                  n
+	                );
+	              })
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example', style: { marginBottom: 15 } },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'col-lg-12' },
+	              { className: 'btn-toolbar', style: { margin: 0 } },
+	              _constantsPennyPixels.buttonTypes.slice(0, 2).map(function (n) {
+	                return _react2['default'].createElement(
+	                  'div',
+	                  { className: 'btn-group' },
+	                  _react2['default'].createElement(
+	                    'button',
+	                    { type: 'button', className: 'btn btn-' + n.toLowerCase() },
+	                    n
+	                  ),
+	                  _react2['default'].createElement(
+	                    'button',
+	                    { type: 'button', className: 'btn btn-' + n.toLowerCase() + ' dropdown-toggle', 'data-toggle': 'dropdown' },
+	                    _react2['default'].createElement('span', { className: 'caret' })
+	                  ),
+	                  _react2['default'].createElement(
+	                    'ul',
+	                    { className: 'dropdown-menu' },
+	                    _react2['default'].createElement(
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#' },
+	                        'Action'
+	                      )
+	                    ),
+	                    _react2['default'].createElement(
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#' },
+	                        'Another action'
+	                      )
+	                    ),
+	                    _react2['default'].createElement(
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#' },
+	                        'Something else here'
+	                      )
+	                    ),
+	                    _react2['default'].createElement('li', { className: 'divider' }),
+	                    _react2['default'].createElement(
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#' },
+	                        'Separated link'
+	                      )
+	                    )
+	                  )
+	                );
+	              })
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example' },
+	            _react2['default'].createElement(
+	              'p',
+	              null,
 	              _react2['default'].createElement(
-	                'h2',
-	                { id: 'buttons' },
-	                'Buttons'
+	                'button',
+	                { type: 'button', className: 'btn btn-primary btn-lg', onClick: this.handleClick },
+	                'Large button'
+	              ),
+	              _react2['default'].createElement(
+	                'button',
+	                { type: 'button', className: 'btn btn-primary', onClick: this.handleClick },
+	                'Default button'
+	              ),
+	              _react2['default'].createElement('br', null),
+	              _react2['default'].createElement('br', null),
+	              _react2['default'].createElement(
+	                'button',
+	                { type: 'button', className: 'btn btn-primary btn-sm', onClick: this.handleClick },
+	                'Small button'
+	              ),
+	              _react2['default'].createElement(
+	                'button',
+	                { type: 'button', className: 'btn btn-primary btn-xs', onClick: this.handleClick },
+	                'Mini button'
 	              )
 	            )
 	          )
 	        ),
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'row' },
+	          { className: 'col-lg-6' },
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'col-lg-6' },
+	            { className: 'bs-example' },
 	            _react2['default'].createElement(
-	              'div',
-	              { className: 'bs-example' },
+	              'p',
+	              null,
 	              _react2['default'].createElement(
-	                'p',
-	                null,
-	                _constantsPennyPixels.buttonTypes.slice(2, 7).map(function (n) {
-	                  return _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-' + n.toLowerCase(), onClick: _this.handleClick },
-	                    n
-	                  );
-	                })
+	                'button',
+	                { type: 'button', className: 'btn btn-default btn-lg btn-block', onClick: this.handleClick },
+	                'Block level button'
 	              )
-	            ),
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example', style: { marginBottom: 15 } },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'bs-example' },
+	              { className: 'btn-group btn-group-justified' },
 	              _react2['default'].createElement(
-	                'p',
-	                null,
-	                _constantsPennyPixels.buttonTypes.map(function (n) {
-	                  return _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-' + n.toLowerCase() + ' disabled', onClick: _this.handleClick },
-	                    n
-	                  );
-	                })
+	                'a',
+	                { href: '#', className: 'btn btn-default', onClick: this.handleClick },
+	                'Left'
+	              ),
+	              _react2['default'].createElement(
+	                'a',
+	                { href: '#', className: 'btn btn-default', onClick: this.handleClick },
+	                'Right'
+	              ),
+	              _react2['default'].createElement(
+	                'a',
+	                { href: '#', className: 'btn btn-default', onClick: this.handleClick },
+	                'Middle'
 	              )
-	            ),
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'bs-example', style: { marginBottom: 15 } },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'bs-example', style: { marginBottom: 15 } },
+	              { className: 'btn-toolbar' },
 	              _react2['default'].createElement(
 	                'div',
-	                { className: 'btn-toolbar', style: { margin: 0 } },
-	                _constantsPennyPixels.buttonTypes.slice(0, 2).map(function (n) {
-	                  return _react2['default'].createElement(
-	                    'div',
-	                    { className: 'btn-group' },
+	                { className: 'btn-group' },
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '1'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '2'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '3'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '4'
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                'div',
+	                { className: 'btn-group' },
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '5'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '6'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '7'
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                'div',
+	                { className: 'btn-group' },
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '8'
+	                ),
+	                _react2['default'].createElement(
+	                  'button',
+	                  { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
+	                  '9'
+	                ),
+	                _react2['default'].createElement(
+	                  'div',
+	                  { className: 'btn-group' },
+	                  _react2['default'].createElement(
+	                    'button',
+	                    { type: 'button',
+	                      className: 'btn btn-default dropdown-toggle',
+	                      'data-toggle': 'dropdown' },
+	                    'Dropdown',
+	                    _react2['default'].createElement('span', { className: 'caret' })
+	                  ),
+	                  _react2['default'].createElement(
+	                    'ul',
+	                    { className: 'dropdown-menu' },
 	                    _react2['default'].createElement(
-	                      'button',
-	                      { type: 'button', className: 'btn btn-' + n.toLowerCase() },
-	                      n
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#', onClick: this.handleClick },
+	                        'Dropdown link'
+	                      )
 	                    ),
 	                    _react2['default'].createElement(
-	                      'button',
-	                      { type: 'button', className: 'btn btn-' + n.toLowerCase() + ' dropdown-toggle', 'data-toggle': 'dropdown' },
-	                      _react2['default'].createElement('span', { className: 'caret' })
+	                      'li',
+	                      null,
+	                      _react2['default'].createElement(
+	                        'a',
+	                        { href: '#', onClick: this.handleClick },
+	                        'Dropdown link'
+	                      )
 	                    ),
 	                    _react2['default'].createElement(
-	                      'ul',
-	                      { className: 'dropdown-menu' },
+	                      'li',
+	                      null,
 	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#' },
-	                          'Action'
-	                        )
-	                      ),
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#' },
-	                          'Another action'
-	                        )
-	                      ),
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#' },
-	                          'Something else here'
-	                        )
-	                      ),
-	                      _react2['default'].createElement('li', { className: 'divider' }),
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#' },
-	                          'Separated link'
-	                        )
+	                        'a',
+	                        { href: '#', onClick: this.handleClick },
+	                        'Dropdown link'
 	                      )
 	                    )
-	                  );
-	                })
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'bs-example' },
-	              _react2['default'].createElement(
-	                'p',
-	                null,
-	                _react2['default'].createElement(
-	                  'button',
-	                  { type: 'button', className: 'btn btn-primary btn-lg', onClick: this.handleClick },
-	                  'Large button'
-	                ),
-	                _react2['default'].createElement(
-	                  'button',
-	                  { type: 'button', className: 'btn btn-primary', onClick: this.handleClick },
-	                  'Default button'
-	                ),
-	                _react2['default'].createElement('br', null),
-	                _react2['default'].createElement('br', null),
-	                _react2['default'].createElement(
-	                  'button',
-	                  { type: 'button', className: 'btn btn-primary btn-sm', onClick: this.handleClick },
-	                  'Small button'
-	                ),
-	                _react2['default'].createElement(
-	                  'button',
-	                  { type: 'button', className: 'btn btn-primary btn-xs', onClick: this.handleClick },
-	                  'Mini button'
+	                  )
 	                )
 	              )
 	            )
 	          ),
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'col-lg-6' },
+	            { className: 'bs-example' },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'bs-example' },
-	              _react2['default'].createElement(
-	                'p',
-	                null,
-	                _react2['default'].createElement(
+	              { className: 'btn-group-vertical' },
+	              [1, 2, 3, 4].map(function (n) {
+	                return _react2['default'].createElement(
 	                  'button',
-	                  { type: 'button', className: 'btn btn-default btn-lg btn-block', onClick: this.handleClick },
-	                  'Block level button'
+	                  { type: 'button',
+	                    className: 'btn btn-default', onClick: _this.handleClick },
+	                  'Button # ',
+	                  n
+	                );
+	              })
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	module.exports = exports['default'];
+	/* /btn-toolbar */
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	
+	var _react = __webpack_require__(5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var ContainersPage = undefined;
+	exports["default"] = ContainersPage = _react2["default"].createClass({
+	  displayName: "ContainersPage",
+	
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "page-header" },
+	            _react2["default"].createElement(
+	              "h2",
+	              { id: "containers" },
+	              "Containers"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "jumbotron" },
+	              _react2["default"].createElement(
+	                "h1",
+	                null,
+	                "Jumbotron"
+	              ),
+	              _react2["default"].createElement(
+	                "p",
+	                null,
+	                "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+	              ),
+	              _react2["default"].createElement(
+	                "p",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { className: "btn btn-primary btn-lg" },
+	                  "Learn more"
 	                )
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'bs-example', style: { marginBottom: 15 } },
-	              _react2['default'].createElement(
-	                'div',
-	                { className: 'btn-group btn-group-justified' },
-	                _react2['default'].createElement(
-	                  'a',
-	                  { href: '#', className: 'btn btn-default', onClick: this.handleClick },
-	                  'Left'
-	                ),
-	                _react2['default'].createElement(
-	                  'a',
-	                  { href: '#', className: 'btn btn-default', onClick: this.handleClick },
-	                  'Right'
-	                ),
-	                _react2['default'].createElement(
-	                  'a',
-	                  { href: '#', className: 'btn btn-default', onClick: this.handleClick },
-	                  'Middle'
-	                )
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'bs-example', style: { marginBottom: 15 } },
-	              _react2['default'].createElement(
-	                'div',
-	                { className: 'btn-toolbar' },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'btn-group' },
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '1'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '2'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '3'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '4'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'btn-group' },
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '5'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '6'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '7'
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'btn-group' },
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '8'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button', className: 'btn btn-default', onClick: this.handleClick },
-	                    '9'
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'btn-group' },
-	                    _react2['default'].createElement(
-	                      'button',
-	                      { type: 'button',
-	                        className: 'btn btn-default dropdown-toggle',
-	                        'data-toggle': 'dropdown' },
-	                      'Dropdown',
-	                      _react2['default'].createElement('span', { className: 'caret' })
-	                    ),
-	                    _react2['default'].createElement(
-	                      'ul',
-	                      { className: 'dropdown-menu' },
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#', onClick: this.handleClick },
-	                          'Dropdown link'
-	                        )
-	                      ),
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#', onClick: this.handleClick },
-	                          'Dropdown link'
-	                        )
-	                      ),
-	                      _react2['default'].createElement(
-	                        'li',
-	                        null,
-	                        _react2['default'].createElement(
-	                          'a',
-	                          { href: '#', onClick: this.handleClick },
-	                          'Dropdown link'
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'bs-example' },
-	              _react2['default'].createElement(
-	                'div',
-	                { className: 'btn-group-vertical' },
-	                [1, 2, 3, 4].map(function (n) {
-	                  return _react2['default'].createElement(
-	                    'button',
-	                    { type: 'button',
-	                      className: 'btn btn-default', onClick: _this.handleClick },
-	                    'Button # ',
-	                    n
-	                  );
-	                })
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Buttons;
-	})(_react2['default'].Component);
-	
-	exports['default'] = Buttons;
-	module.exports = exports['default'];
-	/* /btn-toolbar */
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "List groups"
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "list-group" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "list-group-item" },
+	                _react2["default"].createElement(
+	                  "span",
+	                  { className: "badge" },
+	                  "14"
+	                ),
+	                "Cras justo odio"
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "list-group-item" },
+	                _react2["default"].createElement(
+	                  "span",
+	                  { className: "badge" },
+	                  "2"
+	                ),
+	                "Dapibus ac facilisis in"
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "list-group-item" },
+	                _react2["default"].createElement(
+	                  "span",
+	                  { className: "badge" },
+	                  "1"
+	                ),
+	                "Morbi leo risus"
+	              )
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "list-group" },
+	              _react2["default"].createElement(
+	                "a",
+	                { href: "#", className: "list-group-item active" },
+	                "Cras justo odio"
+	              ),
+	              _react2["default"].createElement(
+	                "a",
+	                { href: "#", className: "list-group-item" },
+	                "Dapibus ac facilisis in"
+	              ),
+	              _react2["default"].createElement(
+	                "a",
+	                { href: "#", className: "list-group-item" },
+	                "Morbi leo risus"
+	              )
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "list-group" },
+	              _react2["default"].createElement(
+	                "a",
+	                { href: "#", className: "list-group-item" },
+	                _react2["default"].createElement(
+	                  "h4",
+	                  { className: "list-group-item-heading" },
+	                  "List group item heading"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  { className: "list-group-item-text" },
+	                  "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "a",
+	                { href: "#", className: "list-group-item" },
+	                _react2["default"].createElement(
+	                  "h4",
+	                  { className: "list-group-item-heading" },
+	                  "List group item heading"
+	                ),
+	                _react2["default"].createElement(
+	                  "p",
+	                  { className: "list-group-item-text" },
+	                  "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."
+	                )
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Panels"
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-default" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Basic panel"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-default" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              "Panel heading"
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-default" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-footer" },
+	              "Panel footer"
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-primary" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              _react2["default"].createElement(
+	                "h3",
+	                { className: "panel-title" },
+	                "Panel primary"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-success" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              _react2["default"].createElement(
+	                "h3",
+	                { className: "panel-title" },
+	                "Panel success"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-warning" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              _react2["default"].createElement(
+	                "h3",
+	                { className: "panel-title" },
+	                "Panel warning"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-danger" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              _react2["default"].createElement(
+	                "h3",
+	                { className: "panel-title" },
+	                "Panel danger"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "panel panel-info" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-heading" },
+	              _react2["default"].createElement(
+	                "h3",
+	                { className: "panel-title" },
+	                "Panel info"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "panel-body" },
+	              "Panel content"
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Wells"
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "well" },
+	            "Look, I'm in a well!"
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "well well-sm" },
+	            "Look, I'm in a small well!"
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "well well-lg" },
+	            "Look, I'm in a large well!"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	module.exports = exports["default"];
 
 /***/ },
 /* 194 */
@@ -24797,804 +25141,366 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var Containers = (function (_React$Component) {
-	  _inherits(Containers, _React$Component);
+	var FormsPage = undefined;
 	
-	  function Containers() {
-	    _classCallCheck(this, Containers);
+	exports["default"] = FormsPage = _react2["default"].createClass({
+	  displayName: "FormsPage",
 	
-	    _get(Object.getPrototypeOf(Containers.prototype), "constructor", this).apply(this, arguments);
-	  }
-	
-	  _createClass(Containers, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
 	        "div",
-	        { className: "bs-docs-section" },
+	        { className: "row" },
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-12" },
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "page-header" },
-	              _react2["default"].createElement(
-	                "h2",
-	                { id: "containers" },
-	                "Containers"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "jumbotron" },
-	                _react2["default"].createElement(
-	                  "h1",
-	                  null,
-	                  "Jumbotron"
-	                ),
-	                _react2["default"].createElement(
-	                  "p",
-	                  null,
-	                  "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
-	                ),
-	                _react2["default"].createElement(
-	                  "p",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { className: "btn btn-primary btn-lg" },
-	                    "Learn more"
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
+	            { className: "page-header" },
 	            _react2["default"].createElement(
 	              "h2",
-	              null,
-	              "List groups"
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "ul",
-	                { className: "list-group" },
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "list-group-item" },
-	                  _react2["default"].createElement(
-	                    "span",
-	                    { className: "badge" },
-	                    "14"
-	                  ),
-	                  "Cras justo odio"
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "list-group-item" },
-	                  _react2["default"].createElement(
-	                    "span",
-	                    { className: "badge" },
-	                    "2"
-	                  ),
-	                  "Dapibus ac facilisis in"
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "list-group-item" },
-	                  _react2["default"].createElement(
-	                    "span",
-	                    { className: "badge" },
-	                    "1"
-	                  ),
-	                  "Morbi leo risus"
-	                )
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "list-group" },
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#", className: "list-group-item active" },
-	                  "Cras justo odio"
-	                ),
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#", className: "list-group-item" },
-	                  "Dapibus ac facilisis in"
-	                ),
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#", className: "list-group-item" },
-	                  "Morbi leo risus"
-	                )
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "list-group" },
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#", className: "list-group-item" },
-	                  _react2["default"].createElement(
-	                    "h4",
-	                    { className: "list-group-item-heading" },
-	                    "List group item heading"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "p",
-	                    { className: "list-group-item-text" },
-	                    "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#", className: "list-group-item" },
-	                  _react2["default"].createElement(
-	                    "h4",
-	                    { className: "list-group-item-heading" },
-	                    "List group item heading"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "p",
-	                    { className: "list-group-item-text" },
-	                    "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "h2",
-	              null,
-	              "Panels"
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-default" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Basic panel"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-default" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                "Panel heading"
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-default" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-footer" },
-	                "Panel footer"
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-primary" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                _react2["default"].createElement(
-	                  "h3",
-	                  { className: "panel-title" },
-	                  "Panel primary"
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-success" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                _react2["default"].createElement(
-	                  "h3",
-	                  { className: "panel-title" },
-	                  "Panel success"
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-warning" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                _react2["default"].createElement(
-	                  "h3",
-	                  { className: "panel-title" },
-	                  "Panel warning"
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-danger" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                _react2["default"].createElement(
-	                  "h3",
-	                  { className: "panel-title" },
-	                  "Panel danger"
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "panel panel-info" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-heading" },
-	                _react2["default"].createElement(
-	                  "h3",
-	                  { className: "panel-title" },
-	                  "Panel info"
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "panel-body" },
-	                "Panel content"
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "h2",
-	              null,
-	              "Wells"
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "well" },
-	              "Look, I'm in a well!"
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "well well-sm" },
-	              "Look, I'm in a small well!"
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "well well-lg" },
-	              "Look, I'm in a large well!"
+	              { id: "forms" },
+	              "Forms"
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Containers;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Containers;
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-6" },
+	          _react2["default"].createElement(
+	            "form",
+	            { className: "bs-example form-horizontal" },
+	            _react2["default"].createElement(
+	              "fieldset",
+	              null,
+	              _react2["default"].createElement(
+	                "legend",
+	                null,
+	                "Legend"
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "label",
+	                  { htmlFor: "inputEmail", className: "col-lg-2 control-label" },
+	                  "Email"
+	                ),
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10" },
+	                  _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputEmail", placeholder: "Email" })
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "label",
+	                  { htmlFor: "inputPassword", className: "col-lg-2 control-label" },
+	                  "Password"
+	                ),
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10" },
+	                  _react2["default"].createElement("input", { type: "password", className: "form-control", id: "inputPassword", placeholder: "Password" }),
+	                  _react2["default"].createElement(
+	                    "div",
+	                    { className: "checkbox" },
+	                    _react2["default"].createElement(
+	                      "label",
+	                      null,
+	                      _react2["default"].createElement("input", { type: "checkbox" }),
+	                      " Checkbox"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "label",
+	                  { htmlFor: "textArea", className: "col-lg-2 control-label" },
+	                  "Textarea"
+	                ),
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10" },
+	                  _react2["default"].createElement("textarea", { className: "form-control", rows: 3, id: "textArea" }),
+	                  _react2["default"].createElement(
+	                    "span",
+	                    { className: "help-block" },
+	                    "A longer block of help text that breaks onto a new line and may extend beyond one line."
+	                  )
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "label",
+	                  { className: "col-lg-2 control-label" },
+	                  "Radios"
+	                ),
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10" },
+	                  _react2["default"].createElement(
+	                    "div",
+	                    { className: "radio" },
+	                    _react2["default"].createElement(
+	                      "label",
+	                      null,
+	                      _react2["default"].createElement("input", { type: "radio", name: "optionsRadios", id: "optionsRadios1", defaultValue: "option1", defaultChecked: true }),
+	                      "Option one is this"
+	                    )
+	                  ),
+	                  _react2["default"].createElement(
+	                    "div",
+	                    { className: "radio" },
+	                    _react2["default"].createElement(
+	                      "label",
+	                      null,
+	                      _react2["default"].createElement("input", { type: "radio", name: "optionsRadios", id: "optionsRadios2", defaultValue: "option2" }),
+	                      "Option two can be something else"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "label",
+	                  { htmlFor: "select", className: "col-lg-2 control-label" },
+	                  "Selects"
+	                ),
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10" },
+	                  _react2["default"].createElement(
+	                    "select",
+	                    { className: "form-control", id: "select" },
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "1"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "2"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "3"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "4"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "5"
+	                    )
+	                  ),
+	                  _react2["default"].createElement("br", null),
+	                  _react2["default"].createElement(
+	                    "select",
+	                    { multiple: true, className: "form-control" },
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "1"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "2"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "3"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "4"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "option",
+	                      null,
+	                      "5"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "form-group" },
+	                _react2["default"].createElement(
+	                  "div",
+	                  { className: "col-lg-10 col-lg-offset-2" },
+	                  _react2["default"].createElement(
+	                    "div",
+	                    { className: "pull-right" },
+	                    _react2["default"].createElement(
+	                      "button",
+	                      { className: "btn btn-link" },
+	                      "Cancel"
+	                    ),
+	                    _react2["default"].createElement(
+	                      "button",
+	                      { type: "submit", className: "btn btn-primary" },
+	                      "Submit"
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4 col-lg-offset-1" },
+	          _react2["default"].createElement(
+	            "form",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "focusedInput" },
+	                "Focused input"
+	              ),
+	              _react2["default"].createElement("input", { className: "form-control", id: "focusedInput", type: "text", defaultValue: "This is focused..." })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "disabledInput" },
+	                "Disabled input"
+	              ),
+	              _react2["default"].createElement("input", { className: "form-control", id: "disabledInput", type: "text", placeholder: "Disabled input here...", disabled: true })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group has-warning" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputWarning" },
+	                "Input warning"
+	              ),
+	              _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputWarning" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group has-error" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputError" },
+	                "Input error"
+	              ),
+	              _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputError" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group has-success" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputSuccess" },
+	                "Input success"
+	              ),
+	              _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputSuccess" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputLarge" },
+	                "Large input"
+	              ),
+	              _react2["default"].createElement("input", { className: "form-control input-lg", type: "text", id: "inputLarge" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputDefault" },
+	                "Default input"
+	              ),
+	              _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputDefault" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label", htmlFor: "inputSmall" },
+	                "Small input"
+	              ),
+	              _react2["default"].createElement("input", { className: "form-control input-sm", type: "text", id: "inputSmall" })
+	            ),
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "form-group" },
+	              _react2["default"].createElement(
+	                "label",
+	                { className: "control-label" },
+	                "Input addons"
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "input-group" },
+	                _react2["default"].createElement(
+	                  "span",
+	                  { className: "input-group-addon" },
+	                  "$"
+	                ),
+	                _react2["default"].createElement("input", { type: "text", className: "form-control" }),
+	                _react2["default"].createElement(
+	                  "span",
+	                  { className: "input-group-btn" },
+	                  _react2["default"].createElement(
+	                    "button",
+	                    { className: "btn btn-default", type: "button" },
+	                    "Button"
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
 	module.exports = exports["default"];
 
 /***/ },
 /* 195 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var _react = __webpack_require__(5);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var Forms = (function (_React$Component) {
-	  _inherits(Forms, _React$Component);
-	
-	  function Forms() {
-	    _classCallCheck(this, Forms);
-	
-	    _get(Object.getPrototypeOf(Forms.prototype), "constructor", this).apply(this, arguments);
-	  }
-	
-	  _createClass(Forms, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
-	        "div",
-	        { className: "bs-docs-section" },
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "page-header" },
-	              _react2["default"].createElement(
-	                "h2",
-	                { id: "forms" },
-	                "Forms"
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-6" },
-	            _react2["default"].createElement(
-	              "form",
-	              { className: "bs-example form-horizontal" },
-	              _react2["default"].createElement(
-	                "fieldset",
-	                null,
-	                _react2["default"].createElement(
-	                  "legend",
-	                  null,
-	                  "Legend"
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "label",
-	                    { htmlFor: "inputEmail", className: "col-lg-2 control-label" },
-	                    "Email"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10" },
-	                    _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputEmail", placeholder: "Email" })
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "label",
-	                    { htmlFor: "inputPassword", className: "col-lg-2 control-label" },
-	                    "Password"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10" },
-	                    _react2["default"].createElement("input", { type: "password", className: "form-control", id: "inputPassword", placeholder: "Password" }),
-	                    _react2["default"].createElement(
-	                      "div",
-	                      { className: "checkbox" },
-	                      _react2["default"].createElement(
-	                        "label",
-	                        null,
-	                        _react2["default"].createElement("input", { type: "checkbox" }),
-	                        " Checkbox"
-	                      )
-	                    )
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "label",
-	                    { htmlFor: "textArea", className: "col-lg-2 control-label" },
-	                    "Textarea"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10" },
-	                    _react2["default"].createElement("textarea", { className: "form-control", rows: 3, id: "textArea" }),
-	                    _react2["default"].createElement(
-	                      "span",
-	                      { className: "help-block" },
-	                      "A longer block of help text that breaks onto a new line and may extend beyond one line."
-	                    )
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "label",
-	                    { className: "col-lg-2 control-label" },
-	                    "Radios"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10" },
-	                    _react2["default"].createElement(
-	                      "div",
-	                      { className: "radio" },
-	                      _react2["default"].createElement(
-	                        "label",
-	                        null,
-	                        _react2["default"].createElement("input", { type: "radio", name: "optionsRadios", id: "optionsRadios1", defaultValue: "option1", defaultChecked: true }),
-	                        "Option one is this"
-	                      )
-	                    ),
-	                    _react2["default"].createElement(
-	                      "div",
-	                      { className: "radio" },
-	                      _react2["default"].createElement(
-	                        "label",
-	                        null,
-	                        _react2["default"].createElement("input", { type: "radio", name: "optionsRadios", id: "optionsRadios2", defaultValue: "option2" }),
-	                        "Option two can be something else"
-	                      )
-	                    )
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "label",
-	                    { htmlFor: "select", className: "col-lg-2 control-label" },
-	                    "Selects"
-	                  ),
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10" },
-	                    _react2["default"].createElement(
-	                      "select",
-	                      { className: "form-control", id: "select" },
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "1"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "2"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "3"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "4"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "5"
-	                      )
-	                    ),
-	                    _react2["default"].createElement("br", null),
-	                    _react2["default"].createElement(
-	                      "select",
-	                      { multiple: true, className: "form-control" },
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "1"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "2"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "3"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "4"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "option",
-	                        null,
-	                        "5"
-	                      )
-	                    )
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "form-group" },
-	                  _react2["default"].createElement(
-	                    "div",
-	                    { className: "col-lg-10 col-lg-offset-2" },
-	                    _react2["default"].createElement(
-	                      "div",
-	                      { className: "pull-right" },
-	                      _react2["default"].createElement(
-	                        "button",
-	                        { className: "btn btn-link" },
-	                        "Cancel"
-	                      ),
-	                      _react2["default"].createElement(
-	                        "button",
-	                        { type: "submit", className: "btn btn-primary" },
-	                        "Submit"
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4 col-lg-offset-1" },
-	            _react2["default"].createElement(
-	              "form",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "focusedInput" },
-	                  "Focused input"
-	                ),
-	                _react2["default"].createElement("input", { className: "form-control", id: "focusedInput", type: "text", defaultValue: "This is focused..." })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "disabledInput" },
-	                  "Disabled input"
-	                ),
-	                _react2["default"].createElement("input", { className: "form-control", id: "disabledInput", type: "text", placeholder: "Disabled input here...", disabled: true })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group has-warning" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputWarning" },
-	                  "Input warning"
-	                ),
-	                _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputWarning" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group has-error" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputError" },
-	                  "Input error"
-	                ),
-	                _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputError" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group has-success" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputSuccess" },
-	                  "Input success"
-	                ),
-	                _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputSuccess" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputLarge" },
-	                  "Large input"
-	                ),
-	                _react2["default"].createElement("input", { className: "form-control input-lg", type: "text", id: "inputLarge" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputDefault" },
-	                  "Default input"
-	                ),
-	                _react2["default"].createElement("input", { type: "text", className: "form-control", id: "inputDefault" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label", htmlFor: "inputSmall" },
-	                  "Small input"
-	                ),
-	                _react2["default"].createElement("input", { className: "form-control input-sm", type: "text", id: "inputSmall" })
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "form-group" },
-	                _react2["default"].createElement(
-	                  "label",
-	                  { className: "control-label" },
-	                  "Input addons"
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "input-group" },
-	                  _react2["default"].createElement(
-	                    "span",
-	                    { className: "input-group-addon" },
-	                    "$"
-	                  ),
-	                  _react2["default"].createElement("input", { type: "text", className: "form-control" }),
-	                  _react2["default"].createElement(
-	                    "span",
-	                    { className: "input-group-btn" },
-	                    _react2["default"].createElement(
-	                      "button",
-	                      { className: "btn btn-default", type: "button" },
-	                      "Button"
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Forms;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Forms;
-	module.exports = exports["default"];
-
-/***/ },
-/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25603,70 +25509,321 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Nav = __webpack_require__(199);
+	var _Nav = __webpack_require__(198);
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
 	
-	var Header = (function (_React$Component) {
-	  _inherits(Header, _React$Component);
+	var Header;
 	
-	  function Header() {
-	    _classCallCheck(this, Header);
+	exports['default'] = Header = _react2['default'].createClass({
+	  displayName: 'Header',
 	
-	    _get(Object.getPrototypeOf(Header.prototype), 'constructor', this).apply(this, arguments);
-	  }
-	
-	  _createClass(Header, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(_Nav2['default'], null),
+	      _react2['default'].createElement(
 	        'div',
-	        null,
-	        _react2['default'].createElement(_Nav2['default'], null),
+	        { className: 'page-heading' },
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'page-heading' },
+	          { className: 'container' },
 	          _react2['default'].createElement(
 	            'div',
-	            { className: 'container' },
+	            { className: 'row' },
 	            _react2['default'].createElement(
 	              'div',
-	              { className: 'row' },
+	              { className: 'col-md-12' },
 	              _react2['default'].createElement(
-	                'div',
-	                { className: 'col-md-12' },
-	                _react2['default'].createElement(
-	                  'p',
-	                  { className: 'lead' },
-	                  'Reactive PennyPixels v0.1.0'
+	                'p',
+	                { className: 'lead' },
+	                'Reactive PennyPixels v0.1.0'
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	module.exports = exports['default'];
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	
+	var _react = __webpack_require__(5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var IndicatorsPage;
+	
+	exports["default"] = IndicatorsPage = _react2["default"].createClass({
+	  displayName: "IndicatorsPage",
+	
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "page-header" },
+	            _react2["default"].createElement(
+	              "h2",
+	              { id: "indicators" },
+	              "Indicators"
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Alerts"
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "div",
+	              { className: "alert alert-dismissable alert-warning" },
+	              _react2["default"].createElement(
+	                "button",
+	                { type: "button", className: "close", "data-dismiss": "alert" },
+	                "×"
+	              ),
+	              _react2["default"].createElement(
+	                "h4",
+	                null,
+	                "Warning!"
+	              ),
+	              _react2["default"].createElement(
+	                "p",
+	                null,
+	                "Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, ",
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#", className: "alert-link" },
+	                  "vel scelerisque nisl consectetur et"
+	                ),
+	                "."
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "alert alert-dismissable alert-danger" },
+	            _react2["default"].createElement(
+	              "button",
+	              { type: "button", className: "close", "data-dismiss": "alert" },
+	              "×"
+	            ),
+	            _react2["default"].createElement(
+	              "strong",
+	              null,
+	              "Warning!"
+	            ),
+	            " You are about to delete the entire database. ",
+	            _react2["default"].createElement(
+	              "a",
+	              { href: "#", className: "alert-link" },
+	              "Are you sure"
+	            ),
+	            "?"
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "alert alert-dismissable alert-success" },
+	            _react2["default"].createElement(
+	              "button",
+	              { type: "button", className: "close", "data-dismiss": "alert" },
+	              "×"
+	            ),
+	            _react2["default"].createElement(
+	              "strong",
+	              null,
+	              "Well done!"
+	            ),
+	            " You successfully read ",
+	            _react2["default"].createElement(
+	              "a",
+	              { href: "#", className: "alert-link" },
+	              "this important alert message"
+	            ),
+	            "."
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "alert alert-dismissable alert-info" },
+	            _react2["default"].createElement(
+	              "button",
+	              { type: "button", className: "close", "data-dismiss": "alert" },
+	              "×"
+	            ),
+	            _react2["default"].createElement(
+	              "strong",
+	              null,
+	              "Heads up!"
+	            ),
+	            " This ",
+	            _react2["default"].createElement(
+	              "a",
+	              { href: "#", className: "alert-link" },
+	              "alert needs your attention"
+	            ),
+	            ", but it's not super important."
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Labels"
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example", style: { marginBottom: 40 } },
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-default" },
+	              "Default"
+	            ),
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-primary" },
+	              "Primary"
+	            ),
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-success" },
+	              "Success"
+	            ),
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-warning" },
+	              "Warning"
+	            ),
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-danger" },
+	              "Danger"
+	            ),
+	            _react2["default"].createElement(
+	              "span",
+	              { className: "label label-info" },
+	              "Info"
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Badges"
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "nav nav-pills" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Home ",
+	                  _react2["default"].createElement(
+	                    "span",
+	                    { className: "badge" },
+	                    "42"
+	                  )
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Profile ",
+	                  _react2["default"].createElement("span", { className: "badge" })
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Messages ",
+	                  _react2["default"].createElement(
+	                    "span",
+	                    { className: "badge" },
+	                    "3"
+	                  )
 	                )
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Header;
-	})(_react2['default'].Component);
-	
-	exports['default'] = Header;
-	module.exports = exports['default'];
+	      )
+	    );
+	  }
+	});
+	module.exports = exports["default"];
 
 /***/ },
 /* 197 */
@@ -25678,384 +25835,78 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var Indicators = (function (_React$Component) {
-	  _inherits(Indicators, _React$Component);
+	var IntroPage;
 	
-	  function Indicators() {
-	    _classCallCheck(this, Indicators);
+	exports["default"] = IntroPage = _react2["default"].createClass({
+	  displayName: "IntroPage",
 	
-	    _get(Object.getPrototypeOf(Indicators.prototype), "constructor", this).apply(this, arguments);
-	  }
+	  getInitialState: function getInitialState() {
+	    return {
+	      secondCount: 0
+	    };
+	  },
 	
-	  _createClass(Indicators, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
+	  componentDidMount: function componentDidMount() {
+	    setInterval((function () {
+	      this.setState({ secondCount: this.state.secondCount + 1 });
+	    }).bind(this), 1000);
+	  },
+	
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
 	        "div",
-	        { className: "bs-docs-section" },
+	        { className: "row" },
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-12" },
 	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "page-header" },
-	              _react2["default"].createElement(
-	                "h2",
-	                { id: "indicators" },
-	                "Indicators"
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
+	            "h1",
+	            null,
+	            "React Starter Template for PennyMac"
+	          ),
 	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
+	            "p",
+	            { className: "lead" },
+	            "Build responsive and reactive web applications with ",
+	            ' ',
 	            _react2["default"].createElement(
-	              "h2",
-	              null,
-	              "Alerts"
+	              "a",
+	              { href: "http://pennypixels.pennymacusa.com/" },
+	              "PennyPixels"
 	            ),
+	            ' ',
+	            " and ",
 	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "alert alert-dismissable alert-warning" },
-	                _react2["default"].createElement(
-	                  "button",
-	                  { type: "button", className: "close", "data-dismiss": "alert" },
-	                  "×"
-	                ),
-	                _react2["default"].createElement(
-	                  "h4",
-	                  null,
-	                  "Warning!"
-	                ),
-	                _react2["default"].createElement(
-	                  "p",
-	                  null,
-	                  "Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, ",
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#", className: "alert-link" },
-	                    "vel scelerisque nisl consectetur et"
-	                  ),
-	                  "."
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "alert alert-dismissable alert-danger" },
-	              _react2["default"].createElement(
-	                "button",
-	                { type: "button", className: "close", "data-dismiss": "alert" },
-	                "×"
-	              ),
-	              _react2["default"].createElement(
-	                "strong",
-	                null,
-	                "Warning!"
-	              ),
-	              " You are about to delete the entire database. ",
-	              _react2["default"].createElement(
-	                "a",
-	                { href: "#", className: "alert-link" },
-	                "Are you sure"
-	              ),
-	              "?"
+	              "a",
+	              { href: "http://facebook.github.io/react/" },
+	              "React"
 	            )
 	          ),
 	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "alert alert-dismissable alert-success" },
-	              _react2["default"].createElement(
-	                "button",
-	                { type: "button", className: "close", "data-dismiss": "alert" },
-	                "×"
-	              ),
-	              _react2["default"].createElement(
-	                "strong",
-	                null,
-	                "Well done!"
-	              ),
-	              " You successfully read ",
-	              _react2["default"].createElement(
-	                "a",
-	                { href: "#", className: "alert-link" },
-	                "this important alert message"
-	              ),
-	              "."
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "alert alert-dismissable alert-info" },
-	              _react2["default"].createElement(
-	                "button",
-	                { type: "button", className: "close", "data-dismiss": "alert" },
-	                "×"
-	              ),
-	              _react2["default"].createElement(
-	                "strong",
-	                null,
-	                "Heads up!"
-	              ),
-	              " This ",
-	              _react2["default"].createElement(
-	                "a",
-	                { href: "#", className: "alert-link" },
-	                "alert needs your attention"
-	              ),
-	              ", but it's not super important."
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "h2",
-	              null,
-	              "Labels"
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example", style: { marginBottom: 40 } },
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-default" },
-	                "Default"
-	              ),
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-primary" },
-	                "Primary"
-	              ),
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-success" },
-	                "Success"
-	              ),
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-warning" },
-	                "Warning"
-	              ),
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-danger" },
-	                "Danger"
-	              ),
-	              _react2["default"].createElement(
-	                "span",
-	                { className: "label label-info" },
-	                "Info"
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "h2",
-	              null,
-	              "Badges"
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "ul",
-	                { className: "nav nav-pills" },
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Home ",
-	                    _react2["default"].createElement(
-	                      "span",
-	                      { className: "badge" },
-	                      "42"
-	                    )
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Profile ",
-	                    _react2["default"].createElement("span", { className: "badge" })
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Messages ",
-	                    _react2["default"].createElement(
-	                      "span",
-	                      { className: "badge" },
-	                      "3"
-	                    )
-	                  )
-	                )
-	              )
-	            )
+	            "p",
+	            null,
+	            "The page has been loaded for ",
+	            this.state.secondCount,
+	            " seconds."
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Indicators;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Indicators;
+	      )
+	    );
+	  }
+	});
 	module.exports = exports["default"];
 
 /***/ },
 /* 198 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var _react = __webpack_require__(5);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var Intro = (function (_React$Component) {
-	  _inherits(Intro, _React$Component);
-	
-	  function Intro() {
-	    _classCallCheck(this, Intro);
-	
-	    _get(Object.getPrototypeOf(Intro.prototype), "constructor", this).call(this);
-	    this.state = {
-	      secondCount: 0
-	    };
-	  }
-	
-	  _createClass(Intro, [{
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      setInterval((function () {
-	        this.setState({ secondCount: this.state.secondCount + 1 });
-	      }).bind(this), 1000);
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
-	        "div",
-	        { className: "bs-docs-section" },
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "h1",
-	              null,
-	              "React Starter Template for PennyMac"
-	            ),
-	            _react2["default"].createElement(
-	              "p",
-	              { className: "lead" },
-	              "Build responsive and reactive web applications with ",
-	              ' ',
-	              _react2["default"].createElement(
-	                "a",
-	                { href: "http://pennypixels.pennymacusa.com/" },
-	                "PennyPixels"
-	              ),
-	              ' ',
-	              " and ",
-	              _react2["default"].createElement(
-	                "a",
-	                { href: "http://facebook.github.io/react/" },
-	                "React"
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "p",
-	              null,
-	              "The page has been loaded for ",
-	              this.state.secondCount,
-	              " seconds."
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Intro;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Intro;
-	module.exports = exports["default"];
-
-/***/ },
-/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26064,15 +25915,7 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
@@ -26080,151 +25923,132 @@
 	
 	var _reactRouter = __webpack_require__(131);
 	
-	var _reactSetAnimate = __webpack_require__(133);
+	var Nav;
 	
-	var Nav = (function (_AnimatedComponent) {
-	  _inherits(Nav, _AnimatedComponent);
+	exports['default'] = Nav = _react2['default'].createClass({
+	  displayName: 'Nav',
 	
-	  function Nav(props) {
-	    _classCallCheck(this, Nav);
-	
-	    _get(Object.getPrototypeOf(Nav.prototype), 'constructor', this).call(this, props);
-	    this.state = {
+	  getInitialState: function getInitialState() {
+	    return {
 	      show: false,
-	      isShowing: false,
-	      height: -1
+	      isShowing: false
 	    };
-	    this.handleClick = this.handleClick.bind(this);
-	  }
+	  },
 	
-	  _createClass(Nav, [{
-	    key: 'handleClick',
-	    value: function handleClick(e) {
-	      var min = -1,
-	          max = 260,
-	          duration = 200;
-	      this.state.show = !this.state.show;
-	      //this.state.height = this.state.show ? max : min;
-	      this.setAnimate('height', this.state.show ? max : min, duration);
-	      this.setState({ show: this.state.show });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
+	  handleClick: function handleClick(e) {
+	    this.setState({ show: !this.state.show });
+	  },
 	
-	      return _react2['default'].createElement(
-	        'nav',
-	        { className: 'navbar navbar-default navbar-static-top' },
+	  render: function render() {
+	
+	    return _react2['default'].createElement(
+	      'nav',
+	      { className: 'navbar navbar-default navbar-static-top' },
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'container' },
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'container' },
+	          { className: 'navbar-header' },
 	          _react2['default'].createElement(
-	            'div',
-	            { className: 'navbar-header' },
+	            'button',
+	            {
+	              onClick: this.handleClick,
+	              type: 'button',
+	              className: 'navbar-toggle collapsed',
+	              'data-toggle': 'collapse',
+	              'data-target': '#bs-example-navbar-collapse-1',
+	              'aria-expanded': 'false' },
 	            _react2['default'].createElement(
-	              'button',
-	              {
-	                onClick: this.handleClick,
-	                type: 'button',
-	                className: 'navbar-toggle collapsed',
-	                'data-toggle': 'collapse',
-	                'data-target': '#bs-example-navbar-collapse-1',
-	                'aria-expanded': 'false' },
-	              _react2['default'].createElement(
-	                'span',
-	                { className: 'sr-only' },
-	                'Toggle navigation'
-	              ),
-	              _react2['default'].createElement('span', { className: 'icon-bar' }),
-	              _react2['default'].createElement('span', { className: 'icon-bar' }),
-	              _react2['default'].createElement('span', { className: 'icon-bar' })
+	              'span',
+	              { className: 'sr-only' },
+	              'Toggle navigation'
 	            ),
-	            _react2['default'].createElement(
-	              _reactRouter.Link,
-	              { className: 'navbar-brand', to: '/' },
-	              _react2['default'].createElement('img', {
-	                src: 'http://pennypixels.pennymacusa.com/img/logo.svg',
-	                width: '100px' })
-	            )
+	            _react2['default'].createElement('span', { className: 'icon-bar' }),
+	            _react2['default'].createElement('span', { className: 'icon-bar' }),
+	            _react2['default'].createElement('span', { className: 'icon-bar' })
 	          ),
 	          _react2['default'].createElement(
-	            'div',
-	            {
-	              className: 'navbar-collapse collapse ' + (this.state.height > 0 ? ' in' : ''),
-	              id: 'bs-example-navbar-collapse-1' },
+	            _reactRouter.Link,
+	            { className: 'navbar-brand', to: '/' },
+	            _react2['default'].createElement('img', {
+	              src: 'http://pennypixels.pennymacusa.com/img/logo.svg',
+	              width: '100px' })
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          { style: { display: this.state.show ? 'block' : 'none' },
+	            className: 'navbar-collapse collapse ' + (this.state.show ? ' ' : ' '),
+	            id: 'bs-example-navbar-collapse-1' },
+	          _react2['default'].createElement(
+	            'ul',
+	            { className: 'nav navbar-nav navbar-right' },
 	            _react2['default'].createElement(
-	              'ul',
-	              { className: 'nav navbar-nav navbar-right' },
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/buttons' },
-	                  'Buttons'
-	                )
-	              ),
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/buttons' },
+	                'Buttons'
+	              )
+	            ),
+	            _react2['default'].createElement(
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/type' },
-	                  'Typography'
-	                )
-	              ),
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/type' },
+	                'Typography'
+	              )
+	            ),
+	            _react2['default'].createElement(
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/forms' },
-	                  'Forms'
-	                )
-	              ),
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/forms' },
+	                'Forms'
+	              )
+	            ),
+	            _react2['default'].createElement(
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/indicators' },
-	                  'Indicators'
-	                )
-	              ),
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/indicators' },
+	                'Indicators'
+	              )
+	            ),
+	            _react2['default'].createElement(
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/containers' },
-	                  'Containers'
-	                )
-	              ),
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/containers' },
+	                'Containers'
+	              )
+	            ),
+	            _react2['default'].createElement(
+	              'li',
+	              null,
 	              _react2['default'].createElement(
-	                'li',
-	                null,
-	                _react2['default'].createElement(
-	                  _reactRouter.Link,
-	                  { onClick: this.handleClick, to: '/animation' },
-	                  'Animation'
-	                )
+	                _reactRouter.Link,
+	                { onClick: this.handleClick, to: '/animation' },
+	                'Animation'
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Nav;
-	})(_reactSetAnimate.AnimatedComponent);
-	
-	exports['default'] = Nav;
+	      )
+	    );
+	  }
+	});
 	module.exports = exports['default'];
 	/* Brand and toggle get grouped for better mobile display */ /* Collect the nav links, forms, and other content for toggling */ /* /.navbar-collapse */ /* /.container */
 
 /***/ },
-/* 200 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26233,186 +26057,256 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var Navs = (function (_React$Component) {
-	  _inherits(Navs, _React$Component);
+	var NavsPage;
+	exports["default"] = NavsPage = _react2["default"].createClass({
+	  displayName: "NavsPage",
 	
-	  function Navs() {
-	    _classCallCheck(this, Navs);
-	
-	    _get(Object.getPrototypeOf(Navs.prototype), "constructor", this).apply(this, arguments);
-	  }
-	
-	  _createClass(Navs, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
 	        "div",
-	        { className: "bs-docs-section" },
+	        { className: "row" },
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-12" },
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-12" },
+	            { className: "page-header" },
+	            _react2["default"].createElement(
+	              "h2",
+	              { id: "navs" },
+	              "Navs"
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            { id: "nav-tabs" },
+	            "Tabs"
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "nav nav-tabs", style: { marginBottom: 15 } },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: true },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#home", "data-toggle": "tab" },
+	                  "Home"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#profile", "data-toggle": "tab" },
+	                  "Profile"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "disabled" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  null,
+	                  "Disabled"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "dropdown" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { className: "dropdown-toggle", "data-toggle": "dropdown", href: "#" },
+	                  "Dropdown ",
+	                  _react2["default"].createElement("span", { className: "caret" })
+	                ),
+	                _react2["default"].createElement(
+	                  "ul",
+	                  { className: "dropdown-menu" },
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#dropdown1", "data-toggle": "tab" },
+	                      "Action"
+	                    )
+	                  ),
+	                  _react2["default"].createElement("li", { className: "divider" }),
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#dropdown2", "data-toggle": "tab" },
+	                      "Another action"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
 	            _react2["default"].createElement(
 	              "div",
-	              { className: "page-header" },
+	              { id: "myTabContent", className: "tab-content" },
 	              _react2["default"].createElement(
-	                "h2",
-	                { id: "navs" },
-	                "Navs"
+	                "div",
+	                { className: "tab-pane fade", id: "home" },
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui."
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "tab-pane fade active in", id: "profile" },
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit."
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "tab-pane fade", id: "dropdown1" },
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork."
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "div",
+	                { className: "tab-pane fade", id: "dropdown2" },
+	                _react2["default"].createElement(
+	                  "p",
+	                  null,
+	                  "Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater."
+	                )
 	              )
 	            )
 	          )
 	        ),
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-4" },
 	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "h2",
-	              { id: "nav-tabs" },
-	              "Tabs"
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "ul",
-	                { className: "nav nav-tabs", style: { marginBottom: 15 } },
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: true },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#home", "data-toggle": "tab" },
-	                    "Home"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#profile", "data-toggle": "tab" },
-	                    "Profile"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "disabled" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    null,
-	                    "Disabled"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "dropdown" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { className: "dropdown-toggle", "data-toggle": "dropdown", href: "#" },
-	                    "Dropdown ",
-	                    _react2["default"].createElement("span", { className: "caret" })
-	                  ),
-	                  _react2["default"].createElement(
-	                    "ul",
-	                    { className: "dropdown-menu" },
-	                    _react2["default"].createElement(
-	                      "li",
-	                      null,
-	                      _react2["default"].createElement(
-	                        "a",
-	                        { href: "#dropdown1", "data-toggle": "tab" },
-	                        "Action"
-	                      )
-	                    ),
-	                    _react2["default"].createElement("li", { className: "divider" }),
-	                    _react2["default"].createElement(
-	                      "li",
-	                      null,
-	                      _react2["default"].createElement(
-	                        "a",
-	                        { href: "#dropdown2", "data-toggle": "tab" },
-	                        "Another action"
-	                      )
-	                    )
-	                  )
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { id: "myTabContent", className: "tab-content" },
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "tab-pane fade", id: "home" },
-	                  _react2["default"].createElement(
-	                    "p",
-	                    null,
-	                    "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui."
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "tab-pane fade active in", id: "profile" },
-	                  _react2["default"].createElement(
-	                    "p",
-	                    null,
-	                    "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit."
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "tab-pane fade", id: "dropdown1" },
-	                  _react2["default"].createElement(
-	                    "p",
-	                    null,
-	                    "Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork."
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "div",
-	                  { className: "tab-pane fade", id: "dropdown2" },
-	                  _react2["default"].createElement(
-	                    "p",
-	                    null,
-	                    "Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater."
-	                  )
-	                )
-	              )
-	            )
+	            "h2",
+	            { id: "nav-pills" },
+	            "Pills"
 	          ),
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-4" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
-	              "h2",
-	              { id: "nav-pills" },
-	              "Pills"
+	              "ul",
+	              { className: "nav nav-pills" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Home"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Profile"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "disabled" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Disabled"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "dropdown" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { className: "dropdown-toggle", "data-toggle": "dropdown", href: "#" },
+	                  "Dropdown ",
+	                  _react2["default"].createElement("span", { className: "caret" })
+	                ),
+	                _react2["default"].createElement(
+	                  "ul",
+	                  { className: "dropdown-menu" },
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#" },
+	                      "Action"
+	                    )
+	                  ),
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#" },
+	                      "Another action"
+	                    )
+	                  ),
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#" },
+	                      "Something else here"
+	                    )
+	                  ),
+	                  _react2["default"].createElement("li", { className: "divider" }),
+	                  _react2["default"].createElement(
+	                    "li",
+	                    null,
+	                    _react2["default"].createElement(
+	                      "a",
+	                      { href: "#" },
+	                      "Separated link"
+	                    )
+	                  )
+	                )
+	              )
 	            ),
 	            _react2["default"].createElement(
 	              "div",
 	              { className: "bs-example" },
 	              _react2["default"].createElement(
 	                "ul",
-	                { className: "nav nav-pills" },
+	                { className: "nav nav-pills nav-stacked", style: { maxWidth: 300 } },
 	                _react2["default"].createElement(
 	                  "li",
 	                  { className: "active" },
@@ -26491,158 +26385,272 @@
 	                    )
 	                  )
 	                )
-	              ),
-	              _react2["default"].createElement(
-	                "div",
-	                { className: "bs-example" },
-	                _react2["default"].createElement(
-	                  "ul",
-	                  { className: "nav nav-pills nav-stacked", style: { maxWidth: 300 } },
-	                  _react2["default"].createElement(
-	                    "li",
-	                    { className: "active" },
-	                    _react2["default"].createElement(
-	                      "a",
-	                      { href: "#" },
-	                      "Home"
-	                    )
-	                  ),
-	                  _react2["default"].createElement(
-	                    "li",
-	                    null,
-	                    _react2["default"].createElement(
-	                      "a",
-	                      { href: "#" },
-	                      "Profile"
-	                    )
-	                  ),
-	                  _react2["default"].createElement(
-	                    "li",
-	                    { className: "disabled" },
-	                    _react2["default"].createElement(
-	                      "a",
-	                      { href: "#" },
-	                      "Disabled"
-	                    )
-	                  ),
-	                  _react2["default"].createElement(
-	                    "li",
-	                    { className: "dropdown" },
-	                    _react2["default"].createElement(
-	                      "a",
-	                      { className: "dropdown-toggle", "data-toggle": "dropdown", href: "#" },
-	                      "Dropdown ",
-	                      _react2["default"].createElement("span", { className: "caret" })
-	                    ),
-	                    _react2["default"].createElement(
-	                      "ul",
-	                      { className: "dropdown-menu" },
-	                      _react2["default"].createElement(
-	                        "li",
-	                        null,
-	                        _react2["default"].createElement(
-	                          "a",
-	                          { href: "#" },
-	                          "Action"
-	                        )
-	                      ),
-	                      _react2["default"].createElement(
-	                        "li",
-	                        null,
-	                        _react2["default"].createElement(
-	                          "a",
-	                          { href: "#" },
-	                          "Another action"
-	                        )
-	                      ),
-	                      _react2["default"].createElement(
-	                        "li",
-	                        null,
-	                        _react2["default"].createElement(
-	                          "a",
-	                          { href: "#" },
-	                          "Something else here"
-	                        )
-	                      ),
-	                      _react2["default"].createElement("li", { className: "divider" }),
-	                      _react2["default"].createElement(
-	                        "li",
-	                        null,
-	                        _react2["default"].createElement(
-	                          "a",
-	                          { href: "#" },
-	                          "Separated link"
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
 	              )
 	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            { id: "nav-breadcrumbs" },
+	            "Breadcrumbs"
 	          ),
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-4" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
-	              "h2",
-	              { id: "nav-breadcrumbs" },
-	              "Breadcrumbs"
+	              "ul",
+	              { className: "breadcrumb" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                "Home"
+	              )
 	            ),
 	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
+	              "ul",
+	              { className: "breadcrumb" },
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "breadcrumb" },
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
+	                  "a",
+	                  { href: "#" },
 	                  "Home"
 	                )
 	              ),
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "breadcrumb" },
+	                "li",
+	                { className: "active" },
+	                "Library"
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "breadcrumb", style: { marginBottom: 5 } },
+	              _react2["default"].createElement(
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Home"
-	                  )
-	                ),
+	                  "a",
+	                  { href: "#" },
+	                  "Home"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
+	                  "a",
+	                  { href: "#" },
 	                  "Library"
 	                )
 	              ),
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "breadcrumb", style: { marginBottom: 5 } },
+	                "li",
+	                { className: "active" },
+	                "Data"
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            { id: "pagination" },
+	            "Pagination"
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "pagination" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "disabled" },
 	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Home"
-	                  )
-	                ),
+	                  "a",
+	                  { href: "#" },
+	                  "«"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
 	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Library"
-	                  )
-	                ),
+	                  "a",
+	                  { href: "#" },
+	                  "1"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  "Data"
+	                  "a",
+	                  { href: "#" },
+	                  "2"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "3"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "4"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "5"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "»"
+	                )
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "pagination pagination-lg" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "disabled" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "«"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "1"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "2"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "3"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "»"
+	                )
+	              )
+	            ),
+	            _react2["default"].createElement(
+	              "ul",
+	              { className: "pagination pagination-sm" },
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "disabled" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "«"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                { className: "active" },
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "1"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "2"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "3"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "4"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "5"
+	                )
+	              ),
+	              _react2["default"].createElement(
+	                "li",
+	                null,
+	                _react2["default"].createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "»"
 	                )
 	              )
 	            )
@@ -26650,278 +26658,74 @@
 	        ),
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            { id: "pager" },
+	            "Pager"
+	          ),
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-4" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
-	              "h2",
-	              { id: "pagination" },
-	              "Pagination"
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
+	              "ul",
+	              { className: "pager" },
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "pagination" },
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "disabled" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "«"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "1"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "2"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "3"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "4"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "5"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "»"
-	                  )
+	                  "a",
+	                  { href: "#" },
+	                  "Previous"
 	                )
 	              ),
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "pagination pagination-lg" },
+	                "li",
+	                null,
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "disabled" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "«"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "1"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "2"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "3"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "»"
-	                  )
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "ul",
-	                { className: "pagination pagination-sm" },
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "disabled" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "«"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "active" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "1"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "2"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "3"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "4"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "5"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "»"
-	                  )
+	                  "a",
+	                  { href: "#" },
+	                  "Next"
 	                )
 	              )
 	            )
 	          ),
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-4" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
-	              "h2",
-	              { id: "pager" },
-	              "Pager"
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
+	              "ul",
+	              { className: "pager" },
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "pager" },
+	                "li",
+	                { className: "previous disabled" },
 	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Previous"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  null,
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Next"
-	                  )
+	                  "a",
+	                  { href: "#" },
+	                  "← Older"
 	                )
-	              )
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
+	              ),
 	              _react2["default"].createElement(
-	                "ul",
-	                { className: "pager" },
+	                "li",
+	                { className: "next" },
 	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "previous disabled" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "← Older"
-	                  )
-	                ),
-	                _react2["default"].createElement(
-	                  "li",
-	                  { className: "next" },
-	                  _react2["default"].createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Newer →"
-	                  )
+	                  "a",
+	                  { href: "#" },
+	                  "Newer →"
 	                )
 	              )
 	            )
-	          ),
-	          _react2["default"].createElement("div", { className: "col-lg-4" })
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Navs;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Navs;
+	          )
+	        ),
+	        _react2["default"].createElement("div", { className: "col-lg-4" })
+	      )
+	    );
+	  }
+	});
 	module.exports = exports["default"];
 
 /***/ },
-/* 201 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26948,7 +26752,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 202 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26961,62 +26765,42 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(196);
+	var _Header = __webpack_require__(195);
 	
 	var _Header2 = _interopRequireDefault(_Header);
+	
+	var PixelsApp;
 	
 	/* Write some great components about what data
 	* this application displays and how it needs to be
 	* organized.
 	*/
+	exports['default'] = PixelsApp = _react2['default'].createClass({
+	  displayName: 'PixelsApp',
 	
-	var PixelsApp = (function (_React$Component) {
-	  _inherits(PixelsApp, _React$Component);
-	
-	  function PixelsApp() {
-	    _classCallCheck(this, PixelsApp);
-	
-	    _get(Object.getPrototypeOf(PixelsApp.prototype), 'constructor', this).apply(this, arguments);
-	  }
-	
-	  _createClass(PixelsApp, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { id: 'main' },
+	      _react2['default'].createElement(_Header2['default'], null),
+	      _react2['default'].createElement(
 	        'div',
-	        { id: 'main' },
-	        _react2['default'].createElement(_Header2['default'], null),
-	        _react2['default'].createElement(
-	          'div',
-	          { className: 'container' },
-	          this.props.children
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return PixelsApp;
-	})(_react2['default'].Component);
-	
-	exports['default'] = PixelsApp;
+	        { className: 'container' },
+	        this.props.children
+	      )
+	    );
+	  }
+	});
 	module.exports = exports['default'];
 
 /***/ },
-/* 203 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27166,7 +26950,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 204 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27175,261 +26959,242 @@
 	  value: true
 	});
 	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _react = __webpack_require__(5);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var Typography = (function (_React$Component) {
-	  _inherits(Typography, _React$Component);
+	var TypographyPage;
 	
-	  function Typography() {
-	    _classCallCheck(this, Typography);
+	exports["default"] = TypographyPage = _react2["default"].createClass({
+	  displayName: "TypographyPage",
 	
-	    _get(Object.getPrototypeOf(Typography.prototype), "constructor", this).apply(this, arguments);
-	  }
-	
-	  _createClass(Typography, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2["default"].createElement(
+	  render: function render() {
+	    return _react2["default"].createElement(
+	      "div",
+	      { className: "bs-docs-section" },
+	      _react2["default"].createElement(
 	        "div",
-	        { className: "bs-docs-section" },
+	        { className: "row" },
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-12" },
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-12" },
+	            { className: "page-header" },
 	            _react2["default"].createElement(
-	              "div",
-	              { className: "page-header" },
-	              _react2["default"].createElement(
-	                "h2",
-	                { id: "type" },
-	                "Typography"
-	              )
+	              "h2",
+	              { id: "type" },
+	              "Typography"
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example bs-example-type" },
+	            [1, 2, 3, 4, 5, 6].map(function (n) {
+	              return _react2["default"].createElement('h' + n, null, 'Heading ' + n);
+	            })
+	          ),
+	          _react2["default"].createElement(
+	            "div",
+	            { className: "bs-example" },
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "lead" },
+	              "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
 	            )
 	          )
 	        ),
 	        _react2["default"].createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "col-lg-4" },
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example bs-example-type" },
-	              [1, 2, 3, 4, 5, 6].map(function (n) {
-	                return _react2["default"].createElement('h' + n, null, 'Heading ' + n);
-	              })
-	            ),
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "lead" },
-	                "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
-	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "h2",
-	                null,
-	                "Example body text"
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "Nullam quis risus eget ",
-	                _react2["default"].createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "urna mollis ornare"
-	                ),
-	                " vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                _react2["default"].createElement(
-	                  "small",
-	                  null,
-	                  "This line of text is meant to be treated as fine print."
-	                )
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "The following snippet of text is ",
-	                _react2["default"].createElement(
-	                  "strong",
-	                  null,
-	                  "rendered as bold text"
-	                ),
-	                "."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "The following snippet of text is ",
-	                _react2["default"].createElement(
-	                  "em",
-	                  null,
-	                  "rendered as italicized text"
-	                ),
-	                "."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "An abbreviation of the word attribute is ",
-	                _react2["default"].createElement(
-	                  "abbr",
-	                  { title: true, "data-original-title": "attribute" },
-	                  "attr"
-	                ),
-	                "."
-	              )
-	            )
-	          ),
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-4" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
 	              "h2",
 	              null,
-	              "Emphasis classes"
+	              "Example body text"
 	            ),
 	            _react2["default"].createElement(
-	              "div",
-	              { className: "bs-example" },
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-muted" },
-	                "Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-primary" },
-	                "Nullam id dolor id nibh ultricies vehicula ut id elit."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-warning" },
-	                "Etiam porta sem malesuada magna mollis euismod."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-danger" },
-	                "Donec ullamcorper nulla non metus auctor fringilla."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-success" },
-	                "Duis mollis, est non commodo luctus, nisi erat porttitor ligula."
-	              ),
-	              _react2["default"].createElement(
-	                "p",
-	                { className: "text-info" },
-	                "Maecenas sed diam eget risus varius blandit sit amet non magna."
-	              )
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-12" },
-	            _react2["default"].createElement(
-	              "h2",
-	              { id: "type-blockquotes" },
-	              "Blockquotes"
-	            )
-	          )
-	        ),
-	        _react2["default"].createElement(
-	          "div",
-	          { className: "row" },
-	          _react2["default"].createElement(
-	            "div",
-	            { className: "col-lg-6" },
-	            _react2["default"].createElement(
-	              "blockquote",
+	              "p",
 	              null,
+	              "Nullam quis risus eget ",
 	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+	                "a",
+	                { href: "#" },
+	                "urna mollis ornare"
 	              ),
+	              " vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
 	              _react2["default"].createElement(
 	                "small",
 	                null,
-	                "Someone famous in ",
-	                _react2["default"].createElement(
-	                  "cite",
-	                  { title: "Source Title" },
-	                  "Source Title"
-	                )
+	                "This line of text is meant to be treated as fine print."
 	              )
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "The following snippet of text is ",
+	              _react2["default"].createElement(
+	                "strong",
+	                null,
+	                "rendered as bold text"
+	              ),
+	              "."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "The following snippet of text is ",
+	              _react2["default"].createElement(
+	                "em",
+	                null,
+	                "rendered as italicized text"
+	              ),
+	              "."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "An abbreviation of the word attribute is ",
+	              _react2["default"].createElement(
+	                "abbr",
+	                { title: true, "data-original-title": "attribute" },
+	                "attr"
+	              ),
+	              "."
 	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-4" },
+	          _react2["default"].createElement(
+	            "h2",
+	            null,
+	            "Emphasis classes"
 	          ),
 	          _react2["default"].createElement(
 	            "div",
-	            { className: "col-lg-6" },
+	            { className: "bs-example" },
 	            _react2["default"].createElement(
-	              "blockquote",
-	              { className: "pull-right" },
+	              "p",
+	              { className: "text-muted" },
+	              "Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "text-primary" },
+	              "Nullam id dolor id nibh ultricies vehicula ut id elit."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "text-warning" },
+	              "Etiam porta sem malesuada magna mollis euismod."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "text-danger" },
+	              "Donec ullamcorper nulla non metus auctor fringilla."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "text-success" },
+	              "Duis mollis, est non commodo luctus, nisi erat porttitor ligula."
+	            ),
+	            _react2["default"].createElement(
+	              "p",
+	              { className: "text-info" },
+	              "Maecenas sed diam eget risus varius blandit sit amet non magna."
+	            )
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-12" },
+	          _react2["default"].createElement(
+	            "h2",
+	            { id: "type-blockquotes" },
+	            "Blockquotes"
+	          )
+	        )
+	      ),
+	      _react2["default"].createElement(
+	        "div",
+	        { className: "row" },
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-6" },
+	          _react2["default"].createElement(
+	            "blockquote",
+	            null,
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+	            ),
+	            _react2["default"].createElement(
+	              "small",
+	              null,
+	              "Someone famous in ",
 	              _react2["default"].createElement(
-	                "p",
-	                null,
-	                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
-	              ),
+	                "cite",
+	                { title: "Source Title" },
+	                "Source Title"
+	              )
+	            )
+	          )
+	        ),
+	        _react2["default"].createElement(
+	          "div",
+	          { className: "col-lg-6" },
+	          _react2["default"].createElement(
+	            "blockquote",
+	            { className: "pull-right" },
+	            _react2["default"].createElement(
+	              "p",
+	              null,
+	              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+	            ),
+	            _react2["default"].createElement(
+	              "small",
+	              null,
+	              "Someone famous in ",
 	              _react2["default"].createElement(
-	                "small",
-	                null,
-	                "Someone famous in ",
-	                _react2["default"].createElement(
-	                  "cite",
-	                  { title: "Source Title" },
-	                  "Source Title"
-	                )
+	                "cite",
+	                { title: "Source Title" },
+	                "Source Title"
 	              )
 	            )
 	          )
 	        )
-	      );
-	    }
-	  }]);
-	
-	  return Typography;
-	})(_react2["default"].Component);
-	
-	exports["default"] = Typography;
+	      )
+	    );
+	  }
+	});
 	module.exports = exports["default"];
 	/* Headings */ /* Blockquotes */
 
 /***/ },
-/* 205 */
+/* 204 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27464,7 +27229,7 @@
 	exports.alertColors = alertColors;
 
 /***/ },
-/* 206 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27475,55 +27240,55 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(224);
+	var _reactDom = __webpack_require__(223);
 	
 	var _reactRouter = __webpack_require__(131);
 	
-	var _historyLibCreateBrowserHistory = __webpack_require__(211);
+	var _historyLibCreateBrowserHistory = __webpack_require__(210);
 	
 	var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 	
-	var _componentsPixelsApp = __webpack_require__(202);
+	var _componentsPixelsApp = __webpack_require__(201);
 	
 	var _componentsPixelsApp2 = _interopRequireDefault(_componentsPixelsApp);
 	
-	var _componentsIntro = __webpack_require__(198);
+	var _componentsIntro = __webpack_require__(197);
 	
 	var _componentsIntro2 = _interopRequireDefault(_componentsIntro);
 	
-	var _componentsButtons = __webpack_require__(193);
+	var _componentsButtons = __webpack_require__(192);
 	
 	var _componentsButtons2 = _interopRequireDefault(_componentsButtons);
 	
-	var _componentsTypography = __webpack_require__(204);
+	var _componentsTypography = __webpack_require__(203);
 	
 	var _componentsTypography2 = _interopRequireDefault(_componentsTypography);
 	
-	var _componentsTables = __webpack_require__(203);
+	var _componentsTables = __webpack_require__(202);
 	
 	var _componentsTables2 = _interopRequireDefault(_componentsTables);
 	
-	var _componentsForms = __webpack_require__(195);
+	var _componentsForms = __webpack_require__(194);
 	
 	var _componentsForms2 = _interopRequireDefault(_componentsForms);
 	
-	var _componentsNavs = __webpack_require__(200);
+	var _componentsNavs = __webpack_require__(199);
 	
 	var _componentsNavs2 = _interopRequireDefault(_componentsNavs);
 	
-	var _componentsIndicators = __webpack_require__(197);
+	var _componentsIndicators = __webpack_require__(196);
 	
 	var _componentsIndicators2 = _interopRequireDefault(_componentsIndicators);
 	
-	var _componentsContainers = __webpack_require__(194);
+	var _componentsContainers = __webpack_require__(193);
 	
 	var _componentsContainers2 = _interopRequireDefault(_componentsContainers);
 	
-	var _componentsAnimationDemo = __webpack_require__(192);
+	var _componentsAnimationDemo = __webpack_require__(191);
 	
 	var _componentsAnimationDemo2 = _interopRequireDefault(_componentsAnimationDemo);
 	
-	var _componentsPageNotFound = __webpack_require__(201);
+	var _componentsPageNotFound = __webpack_require__(200);
 	
 	var _componentsPageNotFound2 = _interopRequireDefault(_componentsPageNotFound);
 	
@@ -27549,7 +27314,7 @@
 	), document.getElementById('root'));
 
 /***/ },
-/* 207 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function (global, factory) {
@@ -27774,7 +27539,7 @@
 	}));
 
 /***/ },
-/* 208 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function (global, factory) {
@@ -28468,7 +28233,7 @@
 	}));
 
 /***/ },
-/* 209 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function (global, factory) {
@@ -28569,7 +28334,7 @@
 	}));
 
 /***/ },
-/* 210 */
+/* 209 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28600,7 +28365,7 @@
 	}
 
 /***/ },
-/* 211 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28777,7 +28542,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 212 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29006,7 +28771,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 213 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29047,7 +28812,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 214 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29194,7 +28959,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 215 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29218,7 +28983,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 216 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29338,7 +29103,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 217 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29351,7 +29116,7 @@
 	
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 	
-	var _qs = __webpack_require__(221);
+	var _qs = __webpack_require__(220);
 	
 	var _qs2 = _interopRequireDefault(_qs);
 	
@@ -29458,12 +29223,12 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 218 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(220);
-	var isArguments = __webpack_require__(219);
+	var objectKeys = __webpack_require__(219);
+	var isArguments = __webpack_require__(218);
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -29558,7 +29323,7 @@
 
 
 /***/ },
-/* 219 */
+/* 218 */
 /***/ function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -29584,7 +29349,7 @@
 
 
 /***/ },
-/* 220 */
+/* 219 */
 /***/ function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -29599,13 +29364,13 @@
 
 
 /***/ },
-/* 221 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Load modules
 	
-	var Stringify = __webpack_require__(223);
-	var Parse = __webpack_require__(222);
+	var Stringify = __webpack_require__(222);
+	var Parse = __webpack_require__(221);
 	
 	
 	// Declare internals
@@ -29620,7 +29385,7 @@
 
 
 /***/ },
-/* 222 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Load modules
@@ -29812,7 +29577,7 @@
 
 
 /***/ },
-/* 223 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Load modules
@@ -29939,16 +29704,16 @@
 
 
 /***/ },
-/* 224 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(164);
+	module.exports = __webpack_require__(163);
 
 
 /***/ },
-/* 225 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29976,7 +29741,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 226 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30023,7 +29788,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30107,7 +29872,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30190,7 +29955,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 229 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30259,7 +30024,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 230 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30340,7 +30105,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 231 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30383,7 +30148,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 232 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30410,7 +30175,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _historyLibCreateHashHistory = __webpack_require__(212);
+	var _historyLibCreateHashHistory = __webpack_require__(211);
 	
 	var _historyLibCreateHashHistory2 = _interopRequireDefault(_historyLibCreateHashHistory);
 	
@@ -30559,7 +30324,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 233 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30636,7 +30401,7 @@
 	}
 
 /***/ },
-/* 234 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30697,7 +30462,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 235 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30735,7 +30500,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 236 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30764,7 +30529,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30892,7 +30657,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30907,11 +30672,11 @@
 	
 	var _invariant2 = _interopRequireDefault(_invariant);
 	
-	var _historyLibCreateMemoryHistory = __webpack_require__(214);
+	var _historyLibCreateMemoryHistory = __webpack_require__(213);
 	
 	var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
 	
-	var _historyLibUseBasename = __webpack_require__(216);
+	var _historyLibUseBasename = __webpack_require__(215);
 	
 	var _historyLibUseBasename2 = _interopRequireDefault(_historyLibUseBasename);
 	
@@ -30960,7 +30725,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31153,7 +30918,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31200,6 +30965,40 @@
 
 
 /***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* react-set-animate */
+	
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	var _Animate = __webpack_require__(132);
+	
+	var _Animate2 = _interopRequireDefault(_Animate);
+	
+	var _AnimatedComponent = __webpack_require__(239);
+	
+	var _AnimatedComponent2 = _interopRequireDefault(_AnimatedComponent);
+	
+	var _Eases = __webpack_require__(83);
+	
+	var _Eases2 = _interopRequireDefault(_Eases);
+	
+	exports['default'] = {
+	  Animate: _Animate2['default'],
+	  AnimatedComponent: _AnimatedComponent2['default'],
+	  Eases: _Eases2['default']
+	};
+	module.exports = exports['default'];
+
+
+/***/ },
 /* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -31226,7 +31025,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactPartialTable = __webpack_require__(134);
+	var _reactPartialTable = __webpack_require__(133);
 	
 	var BootstrapTable = (function (_Component) {
 	  _inherits(BootstrapTable, _Component);
@@ -31529,7 +31328,7 @@
 	  value: true
 	});
 	
-	var _reactPartialTable = __webpack_require__(134);
+	var _reactPartialTable = __webpack_require__(133);
 	
 	exports['default'] = {
 	  Table: __webpack_require__(241),
@@ -32394,7 +32193,7 @@
 	var SyntheticEvent = __webpack_require__(33);
 	
 	var isEventSupported = __webpack_require__(102);
-	var isTextInputElement = __webpack_require__(156);
+	var isTextInputElement = __webpack_require__(155);
 	var keyOf = __webpack_require__(28);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -32803,7 +32602,7 @@
 	'use strict';
 	
 	var Danger = __webpack_require__(251);
-	var ReactMultiChildUpdateTypes = __webpack_require__(143);
+	var ReactMultiChildUpdateTypes = __webpack_require__(142);
 	
 	var setTextContent = __webpack_require__(315);
 	var invariant = __webpack_require__(1);
@@ -32948,7 +32747,7 @@
 	
 	var createNodesFromMarkup = __webpack_require__(301);
 	var emptyFunction = __webpack_require__(27);
-	var getMarkupWrap = __webpack_require__(153);
+	var getMarkupWrap = __webpack_require__(152);
 	var invariant = __webpack_require__(1);
 	
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
@@ -33413,7 +33212,7 @@
 	var PooledClass = __webpack_require__(19);
 	
 	var assign = __webpack_require__(6);
-	var getTextContentAccessor = __webpack_require__(154);
+	var getTextContentAccessor = __webpack_require__(153);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -33785,24 +33584,24 @@
 	
 	var EventPluginUtils = __webpack_require__(85);
 	var ReactChildren = __webpack_require__(260);
-	var ReactComponent = __webpack_require__(138);
+	var ReactComponent = __webpack_require__(137);
 	var ReactClass = __webpack_require__(14);
 	var ReactContext = __webpack_require__(90);
 	var ReactCurrentOwner = __webpack_require__(21);
 	var ReactElement = __webpack_require__(7);
 	var ReactElementValidator = __webpack_require__(50);
 	var ReactDOM = __webpack_require__(262);
-	var ReactDOMTextComponent = __webpack_require__(140);
+	var ReactDOMTextComponent = __webpack_require__(139);
 	var ReactDefaultInjection = __webpack_require__(273);
 	var ReactInstanceHandles = __webpack_require__(40);
 	var ReactMount = __webpack_require__(22);
 	var ReactPerf = __webpack_require__(32);
-	var ReactPropTypes = __webpack_require__(144);
+	var ReactPropTypes = __webpack_require__(143);
 	var ReactReconciler = __webpack_require__(42);
 	var ReactServerRendering = __webpack_require__(282);
 	
 	var assign = __webpack_require__(6);
-	var findDOMNode = __webpack_require__(149);
+	var findDOMNode = __webpack_require__(148);
 	var onlyChild = __webpack_require__(313);
 	
 	ReactDefaultInjection.inject();
@@ -34069,7 +33868,7 @@
 	var PooledClass = __webpack_require__(19);
 	var ReactFragment = __webpack_require__(62);
 	
-	var traverseAllChildren = __webpack_require__(157);
+	var traverseAllChildren = __webpack_require__(156);
 	var warning = __webpack_require__(8);
 	
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -35955,7 +35754,7 @@
 	var ExecutionEnvironment = __webpack_require__(10);
 	
 	var getNodeForCharacterOffset = __webpack_require__(305);
-	var getTextContentAccessor = __webpack_require__(154);
+	var getTextContentAccessor = __webpack_require__(153);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -36405,13 +36204,13 @@
 	var ReactDOMButton = __webpack_require__(263);
 	var ReactDOMForm = __webpack_require__(264);
 	var ReactDOMImg = __webpack_require__(266);
-	var ReactDOMIDOperations = __webpack_require__(139);
+	var ReactDOMIDOperations = __webpack_require__(138);
 	var ReactDOMIframe = __webpack_require__(265);
 	var ReactDOMInput = __webpack_require__(267);
 	var ReactDOMOption = __webpack_require__(268);
 	var ReactDOMSelect = __webpack_require__(269);
 	var ReactDOMTextarea = __webpack_require__(271);
-	var ReactDOMTextComponent = __webpack_require__(140);
+	var ReactDOMTextComponent = __webpack_require__(139);
 	var ReactElement = __webpack_require__(7);
 	var ReactEventListener = __webpack_require__(276);
 	var ReactInjection = __webpack_require__(277);
@@ -36835,7 +36634,7 @@
 	var ReactNativeComponent = __webpack_require__(63);
 	var ReactDOMComponent = __webpack_require__(91);
 	var ReactPerf = __webpack_require__(32);
-	var ReactRootIndex = __webpack_require__(146);
+	var ReactRootIndex = __webpack_require__(145);
 	var ReactUpdates = __webpack_require__(17);
 	
 	var ReactInjection = {
@@ -36874,7 +36673,7 @@
 	'use strict';
 	
 	var ReactComponentEnvironment = __webpack_require__(89);
-	var ReactMultiChildUpdateTypes = __webpack_require__(143);
+	var ReactMultiChildUpdateTypes = __webpack_require__(142);
 	
 	var ReactReconciler = __webpack_require__(42);
 	var ReactChildReconciler = __webpack_require__(259);
@@ -37424,8 +37223,8 @@
 	var CallbackQueue = __webpack_require__(84);
 	var PooledClass = __webpack_require__(19);
 	var ReactBrowserEventEmitter = __webpack_require__(39);
-	var ReactInputSelection = __webpack_require__(141);
-	var ReactPutListenerQueue = __webpack_require__(145);
+	var ReactInputSelection = __webpack_require__(140);
+	var ReactPutListenerQueue = __webpack_require__(144);
 	var Transaction = __webpack_require__(66);
 	
 	var assign = __webpack_require__(6);
@@ -37677,7 +37476,7 @@
 	
 	var ReactElement = __webpack_require__(7);
 	var ReactInstanceHandles = __webpack_require__(40);
-	var ReactMarkupChecksum = __webpack_require__(142);
+	var ReactMarkupChecksum = __webpack_require__(141);
 	var ReactServerRenderingTransaction =
 	  __webpack_require__(283);
 	
@@ -37762,7 +37561,7 @@
 	
 	var PooledClass = __webpack_require__(19);
 	var CallbackQueue = __webpack_require__(84);
-	var ReactPutListenerQueue = __webpack_require__(145);
+	var ReactPutListenerQueue = __webpack_require__(144);
 	var Transaction = __webpack_require__(66);
 	
 	var assign = __webpack_require__(6);
@@ -37976,11 +37775,11 @@
 	
 	var EventConstants = __webpack_require__(13);
 	var EventPropagators = __webpack_require__(49);
-	var ReactInputSelection = __webpack_require__(141);
+	var ReactInputSelection = __webpack_require__(140);
 	var SyntheticEvent = __webpack_require__(33);
 	
-	var getActiveElement = __webpack_require__(151);
-	var isTextInputElement = __webpack_require__(156);
+	var getActiveElement = __webpack_require__(150);
+	var isTextInputElement = __webpack_require__(155);
 	var keyOf = __webpack_require__(28);
 	var shallowEqual = __webpack_require__(316);
 	
@@ -39358,7 +39157,7 @@
 	var ExecutionEnvironment = __webpack_require__(10);
 	
 	var createArrayFromMixed = __webpack_require__(299);
-	var getMarkupWrap = __webpack_require__(153);
+	var getMarkupWrap = __webpack_require__(152);
 	var invariant = __webpack_require__(1);
 	
 	/**
@@ -39447,7 +39246,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(135);
+	var CSSProperty = __webpack_require__(134);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 	
@@ -39508,7 +39307,7 @@
 	
 	'use strict';
 	
-	var traverseAllChildren = __webpack_require__(157);
+	var traverseAllChildren = __webpack_require__(156);
 	var warning = __webpack_require__(8);
 	
 	/**
@@ -39920,7 +39719,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(155);
+	var isNode = __webpack_require__(154);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -40290,7 +40089,7 @@
 	var ReactMount = __webpack_require__(11);
 	
 	var findDOMNode = __webpack_require__(113);
-	var focusNode = __webpack_require__(188);
+	var focusNode = __webpack_require__(187);
 	
 	var Mixin = {
 	  componentDidMount: function () {
@@ -40738,7 +40537,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(158);
+	var CSSProperty = __webpack_require__(157);
 	var ExecutionEnvironment = __webpack_require__(9);
 	var ReactPerf = __webpack_require__(15);
 	
@@ -40926,7 +40725,7 @@
 	
 	var getEventTarget = __webpack_require__(116);
 	var isEventSupported = __webpack_require__(119);
-	var isTextInputElement = __webpack_require__(185);
+	var isTextInputElement = __webpack_require__(184);
 	var keyOf = __webpack_require__(30);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -41276,7 +41075,7 @@
 	
 	var createNodesFromMarkup = __webpack_require__(376);
 	var emptyFunction = __webpack_require__(18);
-	var getMarkupWrap = __webpack_require__(190);
+	var getMarkupWrap = __webpack_require__(189);
 	var invariant = __webpack_require__(2);
 	
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
@@ -41583,7 +41382,7 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(23);
-	var ReactErrorUtils = __webpack_require__(173);
+	var ReactErrorUtils = __webpack_require__(172);
 	
 	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(4);
@@ -41793,7 +41592,7 @@
 	var PooledClass = __webpack_require__(29);
 	
 	var assign = __webpack_require__(3);
-	var getTextContentAccessor = __webpack_require__(184);
+	var getTextContentAccessor = __webpack_require__(183);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -42123,7 +41922,7 @@
 	
 	'use strict';
 	
-	var ReactDOM = __webpack_require__(164);
+	var ReactDOM = __webpack_require__(163);
 	var ReactDOMServer = __webpack_require__(339);
 	var ReactIsomorphic = __webpack_require__(344);
 	
@@ -43102,7 +42901,7 @@
 	var ReactDOMButton = __webpack_require__(333);
 	var ReactDOMInput = __webpack_require__(336);
 	var ReactDOMOption = __webpack_require__(337);
-	var ReactDOMSelect = __webpack_require__(166);
+	var ReactDOMSelect = __webpack_require__(165);
 	var ReactDOMTextarea = __webpack_require__(340);
 	var ReactMount = __webpack_require__(11);
 	var ReactMultiChild = __webpack_require__(345);
@@ -43117,7 +42916,7 @@
 	var keyOf = __webpack_require__(30);
 	var setInnerHTML = __webpack_require__(76);
 	var setTextContent = __webpack_require__(120);
-	var shallowEqual = __webpack_require__(191);
+	var shallowEqual = __webpack_require__(190);
 	var validateDOMNesting = __webpack_require__(123);
 	var warning = __webpack_require__(4);
 	
@@ -44052,7 +43851,7 @@
 	'use strict';
 	
 	var ReactElement = __webpack_require__(12);
-	var ReactElementValidator = __webpack_require__(170);
+	var ReactElementValidator = __webpack_require__(169);
 	
 	var mapObject = __webpack_require__(382);
 	
@@ -44390,8 +44189,8 @@
 	
 	'use strict';
 	
-	var ReactChildren = __webpack_require__(161);
-	var ReactDOMSelect = __webpack_require__(166);
+	var ReactChildren = __webpack_require__(160);
+	var ReactDOMSelect = __webpack_require__(165);
 	
 	var assign = __webpack_require__(3);
 	var warning = __webpack_require__(4);
@@ -44484,7 +44283,7 @@
 	var ExecutionEnvironment = __webpack_require__(9);
 	
 	var getNodeForCharacterOffset = __webpack_require__(369);
-	var getTextContentAccessor = __webpack_require__(184);
+	var getTextContentAccessor = __webpack_require__(183);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -44698,7 +44497,7 @@
 	
 	'use strict';
 	
-	var ReactDefaultInjection = __webpack_require__(169);
+	var ReactDefaultInjection = __webpack_require__(168);
 	var ReactServerRendering = __webpack_require__(350);
 	var ReactVersion = __webpack_require__(112);
 	
@@ -44891,7 +44690,7 @@
 	
 	'use strict';
 	
-	var EventListener = __webpack_require__(186);
+	var EventListener = __webpack_require__(185);
 	var ExecutionEnvironment = __webpack_require__(9);
 	var PooledClass = __webpack_require__(29);
 	var ReactInstanceHandles = __webpack_require__(44);
@@ -45109,12 +44908,12 @@
 	var DOMProperty = __webpack_require__(43);
 	var EventPluginHub = __webpack_require__(54);
 	var ReactComponentEnvironment = __webpack_require__(109);
-	var ReactClass = __webpack_require__(162);
-	var ReactEmptyComponent = __webpack_require__(171);
+	var ReactClass = __webpack_require__(161);
+	var ReactEmptyComponent = __webpack_require__(170);
 	var ReactBrowserEventEmitter = __webpack_require__(69);
-	var ReactNativeComponent = __webpack_require__(177);
+	var ReactNativeComponent = __webpack_require__(176);
 	var ReactPerf = __webpack_require__(15);
-	var ReactRootIndex = __webpack_require__(180);
+	var ReactRootIndex = __webpack_require__(179);
 	var ReactUpdates = __webpack_require__(16);
 	
 	var ReactInjection = {
@@ -45149,13 +44948,13 @@
 	
 	'use strict';
 	
-	var ReactChildren = __webpack_require__(161);
-	var ReactComponent = __webpack_require__(163);
-	var ReactClass = __webpack_require__(162);
+	var ReactChildren = __webpack_require__(160);
+	var ReactComponent = __webpack_require__(162);
+	var ReactClass = __webpack_require__(161);
 	var ReactDOMFactories = __webpack_require__(335);
 	var ReactElement = __webpack_require__(12);
-	var ReactElementValidator = __webpack_require__(170);
-	var ReactPropTypes = __webpack_require__(179);
+	var ReactElementValidator = __webpack_require__(169);
+	var ReactPropTypes = __webpack_require__(178);
 	var ReactVersion = __webpack_require__(112);
 	
 	var assign = __webpack_require__(3);
@@ -45230,7 +45029,7 @@
 	'use strict';
 	
 	var ReactComponentEnvironment = __webpack_require__(109);
-	var ReactMultiChildUpdateTypes = __webpack_require__(176);
+	var ReactMultiChildUpdateTypes = __webpack_require__(175);
 	
 	var ReactCurrentOwner = __webpack_require__(24);
 	var ReactReconciler = __webpack_require__(34);
@@ -45829,8 +45628,8 @@
 	var CallbackQueue = __webpack_require__(105);
 	var PooledClass = __webpack_require__(29);
 	var ReactBrowserEventEmitter = __webpack_require__(69);
-	var ReactDOMFeatureFlags = __webpack_require__(165);
-	var ReactInputSelection = __webpack_require__(174);
+	var ReactDOMFeatureFlags = __webpack_require__(164);
+	var ReactInputSelection = __webpack_require__(173);
 	var Transaction = __webpack_require__(73);
 	
 	var assign = __webpack_require__(3);
@@ -46092,10 +45891,10 @@
 	 */
 	'use strict';
 	
-	var ReactDefaultBatchingStrategy = __webpack_require__(168);
+	var ReactDefaultBatchingStrategy = __webpack_require__(167);
 	var ReactElement = __webpack_require__(12);
 	var ReactInstanceHandles = __webpack_require__(44);
-	var ReactMarkupChecksum = __webpack_require__(175);
+	var ReactMarkupChecksum = __webpack_require__(174);
 	var ReactServerBatchingStrategy = __webpack_require__(349);
 	var ReactServerRenderingTransaction = __webpack_require__(351);
 	var ReactUpdates = __webpack_require__(16);
@@ -46407,13 +46206,13 @@
 	var EventConstants = __webpack_require__(23);
 	var EventPropagators = __webpack_require__(55);
 	var ExecutionEnvironment = __webpack_require__(9);
-	var ReactInputSelection = __webpack_require__(174);
+	var ReactInputSelection = __webpack_require__(173);
 	var SyntheticEvent = __webpack_require__(35);
 	
-	var getActiveElement = __webpack_require__(189);
-	var isTextInputElement = __webpack_require__(185);
+	var getActiveElement = __webpack_require__(188);
+	var isTextInputElement = __webpack_require__(184);
 	var keyOf = __webpack_require__(30);
-	var shallowEqual = __webpack_require__(191);
+	var shallowEqual = __webpack_require__(190);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -46645,7 +46444,7 @@
 	'use strict';
 	
 	var EventConstants = __webpack_require__(23);
-	var EventListener = __webpack_require__(186);
+	var EventListener = __webpack_require__(185);
 	var EventPropagators = __webpack_require__(55);
 	var ReactMount = __webpack_require__(11);
 	var SyntheticClipboardEvent = __webpack_require__(356);
@@ -47698,7 +47497,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(158);
+	var CSSProperty = __webpack_require__(157);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 	
@@ -48317,7 +48116,7 @@
 	var ExecutionEnvironment = __webpack_require__(9);
 	
 	var createArrayFromMixed = __webpack_require__(375);
-	var getMarkupWrap = __webpack_require__(190);
+	var getMarkupWrap = __webpack_require__(189);
 	var invariant = __webpack_require__(2);
 	
 	/**
