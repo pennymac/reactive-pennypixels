@@ -16,10 +16,14 @@ import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
 import PageNotFound from './components/PageNotFound';
 
+
+function handleUpdate(){
+  window.prerenderReady = true;
+}
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
 render((
-  <Router history={createBrowserHistory()}>
+  <Router history={createBrowserHistory()} onUpdate={handleUpdate}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
       <Route path="buttons" component={Buttons} />
