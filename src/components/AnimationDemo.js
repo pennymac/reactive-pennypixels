@@ -30,7 +30,7 @@ export default class Demo extends AnimatedComponent {
       opacity: this.state.alpha,
       left: this.state.x,
       height: this.state.y + 200,
-      width: 100 + (100 * (1 / (this.state.x+1))),
+      width: 200,
       cursor: 'pointer'
     }
   }
@@ -57,7 +57,7 @@ export default class Demo extends AnimatedComponent {
           </div>
         </div>
         <div style={this.getAnimatedStyle()} onClick={this.handleClick.bind(this)}>
-          {this.state.enableClick ? '\nClick here' : 'Animated movement'}
+          {this.state.enableClick ? '\nClick here\nto move' : 'Animated movement'}
         </div>
       </div>
     )
