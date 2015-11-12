@@ -37,6 +37,7 @@
     "d3-timer": "0.0.4",
     "express": "^4.13.3",
     "flux": "^2.1.1",
+    "fluxury": "^0.1.0",
     "formula-if": "^1.0.0",
     "formula-switch": "^1.0.0",
     "history": "^1.13.0",
