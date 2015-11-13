@@ -11,7 +11,7 @@ export default Header = React.createClass({
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <p className="lead">Reactive PennyPixels v0.1.0</p>
+                <p className="lead">PennyPixels + React</p>
               </div>
             </div>
           </div>
