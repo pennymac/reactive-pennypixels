@@ -16,8 +16,11 @@ export default TypographyPage = React.createClass({
         <div className="row">
           <div className="col-lg-4">
             <div className="bs-example bs-example-type">
-              { [1,2,3,4,5,6].map((n) =>
-                React.createElement('h' + n, null, 'Heading ' + n ))}
+              {
+                [1,2,3,4,5,6].map(
+                  n => <h key={n}>Heading {n}</h>
+                )
+              }
             </div>
             <div className="bs-example">
               <p className="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
@@ -45,7 +48,6 @@ export default TypographyPage = React.createClass({
             </div>
           </div>
         </div>
-        {/* Blockquotes */}
         <div className="row">
           <div className="col-lg-12">
             <h2 id="type-blockquotes">Blockquotes</h2>

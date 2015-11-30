@@ -22,23 +22,23 @@ export default ButtonsPage = React.createClass({
           <div className="col-lg-6">
             <div className="bs-example">
               <p>
-                { buttonTypes.slice(2,7).map( (n) => {
-                    return <button type="button" className={'btn btn-' + n.toLowerCase() } onClick={ this.handleClick }>{n}</button>
+                { buttonTypes.slice(2,7).map( (n, i) => {
+                    return <button key={i} type="button" className={'btn btn-' + n.toLowerCase() } onClick={ this.handleClick }>{n}</button>
                 }) }
               </p>
             </div>
             <div className="bs-example">
               <p>
-                { buttonTypes.map( (n) => {
-                    return <button type="button" className={'btn btn-' + n.toLowerCase() + ' disabled'} onClick={ this.handleClick }>{n}</button>
+                { buttonTypes.map( (n, i) => {
+                    return <button key={i} type="button" className={'btn btn-' + n.toLowerCase() + ' disabled'} onClick={ this.handleClick }>{n}</button>
                 }) }
               </p>
             </div>
             <div className="bs-example" style={{marginBottom: 15}}>
               <div className="btn-toolbar" style={{margin: 0}}>
-                { buttonTypes.slice(0,2).map( (n) => {
+                { buttonTypes.slice(0,2).map( (n, i) => {
                   return (
-                    <div className="btn-group">
+                    <div key={i} className="btn-group">
                       <button type="button" className={ 'btn btn-' + n.toLowerCase() }>{ n }</button>
                       <button type="button" className={'btn btn-' + n.toLowerCase() + ' dropdown-toggle'} data-toggle="dropdown"><span className="caret" /></button>
                       <ul className="dropdown-menu">
@@ -110,8 +110,8 @@ export default ButtonsPage = React.createClass({
             </div>
             <div className="bs-example">
               <div className="btn-group-vertical">
-                { [1,2,3,4].map( (n) =>
-                  <button type="button"
+                { [1,2,3,4].map( (n, i) =>
+                  <button key={i} type="button"
                     className="btn btn-default" onClick={ this.handleClick }>
                     Button # {n}
                   </button>

@@ -16,6 +16,7 @@ import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
 import PageNotFound from './components/PageNotFound';
 
+require('../scss/app.scss')
 
 function handleUpdate(){
   window.prerenderReady = true;
