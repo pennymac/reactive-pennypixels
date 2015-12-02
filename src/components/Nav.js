@@ -23,7 +23,7 @@ export default Nav = React.createClass({
           <img src="http://pennypixels.pennymacusa.com/img/logo.svg"
             width="100px" />
         </a>
-        <ul className="nav navbar-nav">
+        <ul className="nav navbar-nav pull-right">
           <li className="nav-item">
             <Link className="nav-link" onClick={this.handleClick} to="/buttons">Buttons</Link>
           </li>
@@ -53,15 +53,6 @@ export default Nav = React.createClass({
             </Link>
           </li>
         </ul>
-        <form className="form-inline navbar-form pull-right">
-          <input
-            className="form-control"
-            type="text"
-            placeholder="Search" />
-          <button
-            className="btn btn-success-outline"
-            type="submit">Search</button>
-        </form>
       </nav>
 
     )
