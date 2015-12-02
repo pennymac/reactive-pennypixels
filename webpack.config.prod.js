@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   devtool: 'source-map',
@@ -25,13 +26,20 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    })
+    }),
+    new ExtractTextPlugin('app.css')
   ],
   module: {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
-    }]
+    }, {
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract(
+        "style",
+        "css!sass")
+      }
+    ]
   }
 };
