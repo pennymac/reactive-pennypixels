@@ -16,18 +16,22 @@ export default IntroPage = React.createClass({
 
   render() {
     return (
-      <div className="bs-docs-section">
+      <div>
+        <div className="row" style={{ minHeight: 10 }}>
+
+        </div>
         <div className="row">
           <div className="col-lg-12">
-            <h1>PennyPixels + React</h1>
+            <hr />
             <p className="lead">
-              Build responsive and reactive web applications with { ' ' }
+              Super cool PennyMac single page application { ' ' }
               <a href="http://pennypixels.pennymacusa.com/">PennyPixels</a>
               { ' ' } and <a href="http://facebook.github.io/react/">React</a>
             </p>
             <p>
-              The page has been loaded for {this.state.secondCount} seconds.
+              The site has been loaded for { this.state.secondCount } seconds.
             </p>
+            <hr />
           </div>
         </div>
       </div>

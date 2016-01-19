@@ -1,14 +1,14 @@
 import React from 'react';
-var IndicatorsPage;
+var DashboardPage;
 
-export default IndicatorsPage = React.createClass({
+export default DashboardPage = React.createClass({
   render() {
     return (
-      <div className="bs-docs-section">
+      <div>
         <div className="row">
           <div className="col-lg-12">
             <div className="page-header">
-              <h2 id="indicators">Indicators</h2>
+              <h2 id="Dashboard">Dashboard</h2>
             </div>
           </div>
         </div>

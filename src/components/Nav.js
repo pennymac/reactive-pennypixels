@@ -1,14 +1,28 @@
 import React from 'react';
-import {Link} from 'react-router'
-var Nav;
+import {Link} from 'react-router';
+import UserStore from '../stores/User'
 
-export default Nav = React.createClass({
+const Nav = React.createClass({
 
   getInitialState: function() {
     return {
       show: false,
       isShowing: false,
     }
+  },
+
+  componentDidMount() {
+    this.token = UserStore.addListener(this.handleUserChange)
+  },
+
+  componentWillUnmount() {
+    this.token.remove()
+  },
+
+  handleUserChange() {
+    this.setState({
+      user: UserStore.getState()
+    })
   },
 
   handleClick(e) {
@@ -19,42 +33,44 @@ export default Nav = React.createClass({
 
     return (
       <nav className="navbar navbar-light bg-faded">
-        <a className="navbar-brand" href="#">
+        <div className="container">
+        <Link className="navbar-brand" to="/">
           <img src="http://pennypixels.pennymacusa.com/img/logo.svg"
             width="100px" />
-        </a>
-        <ul className="nav navbar-nav pull-right">
+        </Link>
+          { !UserStore.isLoggedIn() ?
+          (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/buttons">Buttons</Link>
+            <a className="nav-link" href="/dashboard">
+              Sign in to Dashboard
+            </a>
           </li>
+          </ul>)
+          :
+          (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/type">
-              Typography
+            <Link className="nav-link" to="/dashboard">
+              Dashboard
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/forms">
-              Forms
+            <Link className="nav-link" to="/profile">
+              Profile
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/indicators">
-              Indicators
-            </Link>
+            <a className="nav-link" href="/logout">
+              Logout
+            </a>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/containers">
-              Containers
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" onClick={this.handleClick} to="/animation">
-              Animation
-            </Link>
-          </li>
-        </ul>
+          </ul>)
+          }
+
+        </div>
       </nav>
 
     )
   }
 })
+
+export default Nav;

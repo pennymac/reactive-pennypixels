@@ -8,10 +8,10 @@ export default Header = React.createClass({
       <div>
         <Nav />
         <div className="page-heading">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <p className="lead">PennyPixels + React</p>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="container">
+                <p className="lead">Awesome PennyMac App</p>
               </div>
             </div>
           </div>
