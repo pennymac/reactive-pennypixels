@@ -11,7 +11,7 @@ export default Header = React.createClass({
           <div className="row">
             <div className="col-md-12">
               <div className="container">
-                <p className="lead">Awesome PennyMac App</p>
+                <p className="lead">Customer Support Sample App</p>
               </div>
             </div>
           </div>

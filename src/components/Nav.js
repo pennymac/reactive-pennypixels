@@ -41,8 +41,13 @@ const Nav = React.createClass({
           { !UserStore.isLoggedIn() ?
           (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
+            <a className="nav-link" href="/register">
+              Register
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link" href="/dashboard">
-              Sign in to Dashboard
+              Sign in
             </a>
           </li>
           </ul>)
@@ -54,8 +59,13 @@ const Nav = React.createClass({
             </Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to="/customer_support">
+              Customer Support
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/profile">
-              Profile
+              Your Profile
             </Link>
           </li>
           <li className="nav-item">

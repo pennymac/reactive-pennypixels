@@ -9,9 +9,13 @@ export function getCookie(cname) {
     return "";
 }
 
+let baseURL = 'http://secure.pennymacusa-dev.com'
+// let baseURL = 'http://secure2.pennymacusa-dev.com'
+// let baseURL = 'http://localhost:8000'
+
 export function getProfile(){
 
-  return fetch( 'http://secure2.pennymacusa-dev.com/oauth/v1/profile',
+  return fetch( baseURL + '/oauth/v1/profile',
     { mode: 'cors',
       headers: { 'Authorization': 'Bearer ' + getCookie('PNMAC-Token') }
     })

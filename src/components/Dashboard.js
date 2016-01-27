@@ -1,73 +1,48 @@
 import React from 'react';
-var DashboardPage;
+var YAML = require('js-yaml')
+var Highlight = require('react-highlight');
 
-export default DashboardPage = React.createClass({
+const DashboardPage = React.createClass({
+  getInitialState() {
+    return {
+      user: undefined
+    }
+  },
+
+  handleClick() {
+    let uri = `/profile/${this.refs.username.value}`
+    console.log(uri)
+    fetch(uri, { credentials: 'include' })
+    .then(n => n.json()).then(user => {
+      console.log(user)
+      this.setState({ user: user })
+    })
+  },
+
+  handleClickDeactivate() {
+    let uri = `/profile/${this.state.user.username}/turn/${this.state.user.is_active ? 'off' : 'on' }`
+    console.log(uri)
+    fetch(uri, { credentials: 'include' })
+    .then(n => n.json()).then(user => {
+      console.log(user)
+      this.setState({ user: Object.assign({}, this.state.user, { is_active: user.is_active }) })
+    })
+  },
   render() {
+    let UserProfile = (
+      <Highlight className='YAML'>
+        {YAML.dump(this.state.user, null, 4)}
+      </Highlight>
+    )
+
     return (
       <div>
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="page-header">
-              <h2 id="Dashboard">Dashboard</h2>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-12">
-            <h2>Alerts</h2>
-            <div className="bs-example">
-              <div className="alert alert-dismissable alert-warning">
-                <button type="button" className="close" data-dismiss="alert">×</button>
-                <h4>Warning!</h4>
-                <p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" className="alert-link">vel scelerisque nisl consectetur et</a>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="alert alert-dismissable alert-danger">
-              <button type="button" className="close" data-dismiss="alert">×</button>
-              <strong>Warning!</strong> You are about to delete the entire database. <a href="#" className="alert-link">Are you sure</a>?
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="alert alert-dismissable alert-success">
-              <button type="button" className="close" data-dismiss="alert">×</button>
-              <strong>Well done!</strong> You successfully read <a href="#" className="alert-link">this important alert message</a>.
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="alert alert-dismissable alert-info">
-              <button type="button" className="close" data-dismiss="alert">×</button>
-              <strong>Heads up!</strong> This <a href="#" className="alert-link">alert needs your attention</a>, but it's not super important.
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-4">
-            <h2>Labels</h2>
-            <div className="bs-example" style={{marginBottom: 40}}>
-              <span className="label label-default">Default</span>
-              <span className="label label-primary">Primary</span>
-              <span className="label label-success">Success</span>
-              <span className="label label-warning">Warning</span>
-              <span className="label label-danger">Danger</span>
-              <span className="label label-info">Info</span>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <h2>Badges</h2>
-            <div className="bs-example">
-              <ul className="nav nav-pills">
-                <li className="active"><a href="#">Home <span className="badge">42</span></a></li>
-                <li><a href="#">Profile <span className="badge" /></a></li>
-                <li><a href="#">Messages <span className="badge">3</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1>
+        Placeholder for your application.
+        </h1>
       </div>
     );
   }
 });
+
+export default DashboardPage

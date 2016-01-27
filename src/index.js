@@ -9,6 +9,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import PixelsApp from './components/PixelsApp'
 
 import Intro from './components/Intro';
+import CustomerSupportPage from './components/CustomerSupport';
 import DashboardPage from './components/Dashboard';
 import ProfilePage from './components/Profile';
 import PageNotFound from './components/PageNotFound';
@@ -23,6 +24,7 @@ render((
   <Router history={createBrowserHistory()} onUpdate={handleUpdate}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
+      <Route path="/customer_support" component={CustomerSupportPage} />
       <Route path="/dashboard" component={DashboardPage} />
       <Route path="/profile" component={ProfilePage} />
       <Route path="*" component={PageNotFound} />

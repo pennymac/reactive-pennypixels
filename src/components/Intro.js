@@ -8,12 +8,6 @@ export default IntroPage = React.createClass({
     }
   },
 
-  componentDidMount() {
-    setInterval( function() {
-      this.setState( { secondCount: (this.state.secondCount+1) } );
-    }.bind(this), 1000);
-  },
-
   render() {
     return (
       <div>
@@ -24,12 +18,7 @@ export default IntroPage = React.createClass({
           <div className="col-lg-12">
             <hr />
             <p className="lead">
-              Super cool PennyMac single page application { ' ' }
-              <a href="http://pennypixels.pennymacusa.com/">PennyPixels</a>
-              { ' ' } and <a href="http://facebook.github.io/react/">React</a>
-            </p>
-            <p>
-              The site has been loaded for { this.state.secondCount } seconds.
+              Welcome to the customer support sample application for PennyMac identity service.
             </p>
             <hr />
           </div>

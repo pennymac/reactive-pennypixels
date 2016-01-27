@@ -67,7 +67,7 @@ const ProfilePage = React.createClass({
           </div>
           <div col="col-md-6">
             <b>Has TCPA?: </b>
-            <span>{this.state.user.tcpa_flag ? 'Yes' : 'No' }</span>
+            <span>{this.state.user.phone_tcpa ? 'Yes' : 'No' }</span>
           </div>
         </div>
 

@@ -1,0 +1,69 @@
+import React from 'react';
+var YAML = require('js-yaml')
+var Highlight = require('react-highlight');
+
+const CustomerSupportPage = React.createClass({
+  getInitialState() {
+    return {
+      user: undefined
+    }
+  },
+
+  handleClick() {
+    let uri = `/profile/${this.refs.username.value}`
+    console.log(uri)
+    fetch(uri, { credentials: 'include' })
+    .then(n => n.json()).then(user => {
+      console.log(user)
+      this.setState({ user: user })
+    })
+  },
+
+  handleClickDeactivate() {
+    let uri = `/profile/${this.state.user.username}/turn/${this.state.user.is_active ? 'off' : 'on' }`
+    console.log(uri)
+    fetch(uri, { credentials: 'include' })
+    .then(n => n.json()).then(user => {
+      console.log(user)
+      this.setState({ user: Object.assign({}, this.state.user, { is_active: user.is_active }) })
+    })
+  },
+  render() {
+    let UserProfile = (
+      <Highlight className='YAML'>
+        {YAML.dump(this.state.user, null, 4)}
+      </Highlight>
+    )
+
+    return (
+      <div>
+        <hr />
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="form-group">
+              <label className="control-label">Customer user name:</label>
+              <div className="input-group">
+                <input ref="username" type="text" className="form-control" />
+                <span className="input-group-btn">
+                  <button onClick={this.handleClick} className="btn btn-default" type="button">Lookup</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p></p>
+        <div className="row">
+          <div className="col-lg-12">
+            { this.state.user ? UserProfile : "Please enter a username."}
+          </div>
+        </div>
+        <p></p>
+        <button className="btn btn-primary" onClick={this.handleClickDeactivate} disabled={typeof this.state.user === 'undefined'}>
+          { this.state.user && this.state.user.is_active ? 'Deactivate' : 'Activate' }
+        </button>
+      </div>
+    );
+  }
+});
+
+export default CustomerSupportPage
