@@ -35,10 +35,10 @@ const Nav = React.createClass({
       <nav className="navbar navbar-light bg-faded">
         <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="http://pennypixels.pennymacusa.com/img/logo.svg"
+          <img src="https://pennypixels.pennymacusa.com/img/logo.svg"
             width="100px" />
         </Link>
-          { !UserStore.isLoggedIn() ?
+          { (!UserStore.isLoggedIn()) ?
           (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
             <a className="nav-link" href="/register">
@@ -70,7 +70,7 @@ const Nav = React.createClass({
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/logout">
-              Logout
+              Sign out
             </a>
           </li>
           </ul>)
