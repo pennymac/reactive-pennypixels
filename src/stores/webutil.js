@@ -9,18 +9,26 @@ export function getCookie(cname) {
     return "";
 }
 
-let baseURL = 'http://secure.pennymacusa-dev.com'
-// let baseURL = 'http://secure2.pennymacusa-dev.com'
-// let baseURL = 'http://localhost:8000'
+let baseURL = 'not loaded'
 
 export function getProfile(){
 
   return fetch( baseURL + '/oauth/v1/profile',
     { mode: 'cors',
-      headers: { 'Authorization': 'Bearer ' + getCookie('PNMAC-Token') }
+      headers: { 'Authorization': 'Bearer ' + getCookie('oauth2-grant-token') }
     })
     .then(n => n.json())
 }
 
+export function getIdentityServerUrl() {
+  return fetch('/identity_server')
+  .then( n => n.text() )
+  .then( n => {
+    baseURL = n;
+    return Promise.resolve(true)
+  })
+}
+
 window.getCookie = getCookie
 window.getProfile = getProfile
+window.getIdentityServerUrl = getIdentityServerUrl
