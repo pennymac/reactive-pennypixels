@@ -9,6 +9,13 @@ const DashboardPage = React.createClass({
     }
   },
 
+  componentDidMount() {
+    loadProfile()
+    .then(profile => {
+      this.setState({ loaded: true })
+    })
+  },
+
   handleClick() {
     let uri = `/profile/${this.refs.username.value}`
     console.log(uri)

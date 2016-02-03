@@ -11,12 +11,18 @@ export function getCookie(cname) {
 
 let baseURL = 'not loaded'
 
-export function getProfile(){
+// export function getProfile(){
+//
+//   return fetch( baseURL + '/oauth/v1/profile',
+//     { mode: 'cors',
+//       headers: { 'Authorization': 'Bearer ' + getCookie('oauth2-grant-token') }
+//     })
+//     .then(n => n.json())
+// }
 
-  return fetch( baseURL + '/oauth/v1/profile',
-    { mode: 'cors',
-      headers: { 'Authorization': 'Bearer ' + getCookie('oauth2-grant-token') }
-    })
+export function getProfile(){
+  return fetch( '/profile.json',
+    { credentials: 'include' })
     .then(n => n.json())
 }
 

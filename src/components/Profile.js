@@ -9,6 +9,12 @@ const ProfilePage = React.createClass({
     }
   },
   componentDidMount() {
+    loadProfile()
+    .then(profile => {
+      console.log('app got profile', profile)
+      this.setState({ loaded: true })
+    })
+
     this.token = UserStore.addListener(this.handleUserChange)
   },
   componentWillUnmount() {
@@ -37,7 +43,7 @@ const ProfilePage = React.createClass({
         <div className="row">
           <div col="col-md-6">
             <b>Username: </b>
-            <span>{ this.state.user.user_name }</span>
+            <span>{ this.state.user.username }</span>
             &nbsp;&nbsp;
             <a href="/profile/username">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="/profile/password">Edit Password</a>
@@ -61,13 +67,13 @@ const ProfilePage = React.createClass({
         <div className="row">
           <div col="col-md-6">
             <b>Phone: </b>
-            <span>{ this.state.user.phone_number }</span>
+            <span>{ this.state.user.mobile_phone }</span>
             &nbsp;&nbsp;
             <a href="/profile/phone">Edit</a>
           </div>
           <div col="col-md-6">
             <b>Has TCPA?: </b>
-            <span>{this.state.user.phone_tcpa ? 'Yes' : 'No' }</span>
+            <span>{this.state.user.tcpa_flag ? 'Yes' : 'No' }</span>
           </div>
         </div>
 

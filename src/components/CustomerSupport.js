@@ -9,6 +9,12 @@ const CustomerSupportPage = React.createClass({
     }
   },
 
+  handleKeyUp(event) {
+    if (event.keyCode === 13) {
+      this.handleClick()
+    }
+  },
+
   handleClick() {
     let uri = `/profile/${this.refs.username.value}`
     console.log(uri)
@@ -43,7 +49,7 @@ const CustomerSupportPage = React.createClass({
             <div className="form-group">
               <label className="control-label">Customer user name:</label>
               <div className="input-group">
-                <input ref="username" type="text" className="form-control" />
+                <input ref="username" type="text" className="form-control" onKeyUp={this.handleKeyUp} />
                 <span className="input-group-btn">
                   <button onClick={this.handleClick} className="btn btn-default" type="button">Lookup</button>
                 </span>
