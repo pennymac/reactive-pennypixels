@@ -55,12 +55,12 @@ const Nav = React.createClass({
           (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard">
-              Dashboard
+              Consumer Complaints
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/customer_support">
-              Customer Support
+            <Link className="nav-link" to="/customer_lookup">
+              Customer Lookup
             </Link>
           </li>
           <li className="nav-item">

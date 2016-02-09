@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 
 // preload stores
 import UserStore from './stores/User'
+import SettingStore from './stores/Setting'
 
 import { Router, Route, Link, IndexRoute } from 'react-router'
 import createBrowserHistory from 'history/lib/createBrowserHistory'
@@ -24,8 +25,8 @@ render((
   <Router history={createBrowserHistory()} onUpdate={handleUpdate}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
-      <Route path="/customer_support" component={CustomerSupportPage} />
       <Route path="/dashboard" component={DashboardPage} />
+      <Route path="/customer_lookup" component={CustomerSupportPage} />
       <Route path="/profile" component={ProfilePage} />
       <Route path="*" component={PageNotFound} />
     </Route>

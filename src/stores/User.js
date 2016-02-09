@@ -11,5 +11,4 @@ const UserStore = createStore(
   }
 )
 
-window.UserStore = UserStore
 export default UserStore

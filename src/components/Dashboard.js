@@ -1,6 +1,7 @@
 import React from 'react';
-var YAML = require('js-yaml')
-var Highlight = require('react-highlight');
+import YAML from 'js-yaml'
+import Highlight from 'react-highlight'
+import {setHeader, loadProfile} from '../stores/ActionCreator'
 
 const DashboardPage = React.createClass({
   getInitialState() {
@@ -10,6 +11,7 @@ const DashboardPage = React.createClass({
   },
 
   componentDidMount() {
+    setHeader('Sample App :: CFPB Complaints')
     loadProfile()
     .then(profile => {
       this.setState({ loaded: true })
@@ -44,9 +46,7 @@ const DashboardPage = React.createClass({
 
     return (
       <div>
-        <h1>
-        Placeholder for your application.
-        </h1>
+        <iframe style={{ width: '100%', height: 550 }} src="https://pennymac.github.io/CFPBConsumerComplaints/"></iframe>
       </div>
     );
   }

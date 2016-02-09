@@ -3,7 +3,6 @@
 */
 import React from 'react';
 import Header from './Header';
-import {loadProfile} from '../stores/ActionCreator'
 
 /* Write some great components about what data
 * this application displays and how it needs to be

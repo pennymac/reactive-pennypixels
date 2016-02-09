@@ -1,5 +1,6 @@
 import React from 'react';
 import UserStore from '../stores/User'
+import {setHeader, loadProfile} from '../stores/ActionCreator'
 
 const ProfilePage = React.createClass({
   getInitialState() {
@@ -9,13 +10,16 @@ const ProfilePage = React.createClass({
     }
   },
   componentDidMount() {
+    setHeader('Sample App :: Profile')
+
+    this.token = UserStore.addListener(this.handleUserChange)
+
     loadProfile()
     .then(profile => {
       console.log('app got profile', profile)
       this.setState({ loaded: true })
     })
 
-    this.token = UserStore.addListener(this.handleUserChange)
   },
   componentWillUnmount() {
     this.token.remove()

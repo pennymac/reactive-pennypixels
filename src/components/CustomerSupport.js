@@ -1,4 +1,6 @@
 import React from 'react';
+import {setHeader} from '../stores/ActionCreator'
+
 var YAML = require('js-yaml')
 var Highlight = require('react-highlight');
 
@@ -7,6 +9,10 @@ const CustomerSupportPage = React.createClass({
     return {
       user: undefined
     }
+  },
+
+  componentDidMount(){
+    setHeader('Sample App :: Customer Lookup')
   },
 
   handleKeyUp(event) {

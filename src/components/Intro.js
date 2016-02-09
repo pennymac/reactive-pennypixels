@@ -1,4 +1,6 @@
 import React from 'react';
+import {setHeader} from '../stores/ActionCreator'
+
 var IntroPage;
 
 export default IntroPage = React.createClass({
@@ -6,6 +8,10 @@ export default IntroPage = React.createClass({
     return {
       secondCount: 0
     }
+  },
+
+  componentDidMount() {
+    setHeader('Sample App :: Welcome')
   },
 
   render() {
@@ -18,7 +24,7 @@ export default IntroPage = React.createClass({
           <div className="col-lg-12">
             <hr />
             <p className="lead">
-              Welcome to the customer support sample application for PennyMac identity service.
+              Welcome to the sample application for PennyMac identity service.
             </p>
             <hr />
           </div>

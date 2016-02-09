@@ -34,7 +34,3 @@ export function getIdentityServerUrl() {
     return Promise.resolve(true)
   })
 }
-
-window.getCookie = getCookie
-window.getProfile = getProfile
-window.getIdentityServerUrl = getIdentityServerUrl

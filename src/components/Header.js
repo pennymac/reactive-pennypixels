@@ -1,8 +1,25 @@
 import React from 'react';
 import Nav from './Nav';
-var Header;
+import SettingStore from '../stores/Setting'
 
-export default Header = React.createClass({
+const Header = React.createClass({
+  getInitialState: function() {
+    return {
+      text: SettingStore.getState().headerText
+    }
+  },
+
+  componentDidMount() {
+    this.token = SettingStore.addListener(this.handleSettingChange)
+  },
+
+  componentWillUnmount() {
+    this.token.remove()
+  },
+
+  handleSettingChange() {
+    this.setState({ text: SettingStore.getState().headerText })
+  },
   render() {
     return (
       <div>
@@ -11,7 +28,9 @@ export default Header = React.createClass({
           <div className="row">
             <div className="col-md-12">
               <div className="container">
-                <p className="lead">Customer Support Sample App</p>
+                <p className="lead">
+                  {this.state.text}
+                </p>
               </div>
             </div>
           </div>
@@ -20,3 +39,5 @@ export default Header = React.createClass({
     );
   }
 });
+
+export default Header;
