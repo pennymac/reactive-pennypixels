@@ -40,6 +40,15 @@ const CustomerSupportPage = React.createClass({
       this.setState({ user: Object.assign({}, this.state.user, { is_active: user.is_active }) })
     })
   },
+  handleClickResetMFA() {
+    let uri = `/profile/reset_mfa_option/${this.state.user.username}`
+    console.log(uri)
+    fetch(uri, { credentials: 'include' })
+    .then(n => n.json()).then(user => {
+      console.log(user)
+      this.setState({ user: Object.assign({}, this.state.user, { current_mfa_type: 'email' }) })
+    })
+  },
   render() {
     let UserProfile = (
       <Highlight className='YAML'>
@@ -72,6 +81,9 @@ const CustomerSupportPage = React.createClass({
         <p></p>
         <button className="btn btn-primary" onClick={this.handleClickDeactivate} disabled={typeof this.state.user === 'undefined'}>
           { this.state.user && this.state.user.is_active ? 'Deactivate' : 'Activate' }
+        </button>{' '}
+        <button className="btn btn-primary" onClick={this.handleClickResetMFA} disabled={typeof this.state.user === 'undefined'}>
+          Reset MFA to email
         </button>
       </div>
     );
