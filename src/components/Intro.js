@@ -11,7 +11,7 @@ export default IntroPage = React.createClass({
   },
 
   componentDidMount() {
-    setHeader('Sample App :: Welcome')
+    setHeader('Sample App')
   },
 
   render() {
