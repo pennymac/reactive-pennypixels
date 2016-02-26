@@ -2,7 +2,6 @@ import {dispatch} from 'fluxury'
 import {getProfile} from './webutil'
 
 export function setHeader(text) {
-  console.log('test')
   dispatch('set', { headerText: text })
 }
 

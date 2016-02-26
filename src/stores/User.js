@@ -4,10 +4,10 @@ const UserStore = createStore(
   'UserStore',
   undefined,
   {
-    setProfile: (state, action) => action.data
+    setProfile: (state, data) => data
   },
   {
-    isLoggedIn: (state, action) => typeof state !== 'undefined'
+    isLoggedIn: (state) => typeof state !== 'undefined'
   }
 )
 

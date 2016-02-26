@@ -6,9 +6,9 @@ const SettingStore = createStore(
     headerText: 'Identity Server Sample App'
   },
   {
-    set: (state, action) => {
+    set: (state, data) => {
       console.log('set', action)
-      return Object.assign({}, state, action.data)
+      return Object.assign({}, state, data)
     }
   },
   {
