@@ -12,7 +12,7 @@ export default Header = React.createClass({
             <div className="row">
               <div className="col-md-12">
                 <p className="lead">PennyPixels + React</p>
-              </div>
+            </div>
             </div>
           </div>
         </div>

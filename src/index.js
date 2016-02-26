@@ -8,7 +8,6 @@ import PixelsApp from './components/PixelsApp'
 import Intro from './components/Intro';
 import Buttons from './components/Buttons';
 import Typography from './components/Typography';
-import Tables from './components/Tables';
 import Forms from './components/Forms';
 import Navs from './components/Navs';
 import Indicators from './components/Indicators';
@@ -30,7 +29,6 @@ render((
       <Route path="forms" component={Forms} />
       <Route path="type" component={Typography} />
       <Route path="navs" component={Navs} />
-      <Route path="tables" component={Tables} />
       <Route path="indicators" component={Indicators} />
       <Route path="containers" component={Containers} />
       <Route path="animation" component={AnimationDemo} />

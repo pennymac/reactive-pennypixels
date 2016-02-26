@@ -19,7 +19,6 @@ export default IntroPage = React.createClass({
       <div className="bs-docs-section">
         <div className="row">
           <div className="col-lg-12">
-            <h1>PennyPixels + React</h1>
             <p className="lead">
               Build responsive and reactive web applications with { ' ' }
               <a href="http://pennypixels.pennymacusa.com/">PennyPixels</a>
