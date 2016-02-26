@@ -25,8 +25,7 @@ render((
   <Router history={createBrowserHistory()} onUpdate={handleUpdate}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
-      <Route path="/dashboard" component={DashboardPage} />
-      <Route path="/customer_lookup" component={CustomerSupportPage} />
+      <Route path="/dashboard" component={CustomerSupportPage} />
       <Route path="/profile" component={ProfilePage} />
       <Route path="*" component={PageNotFound} />
     </Route>

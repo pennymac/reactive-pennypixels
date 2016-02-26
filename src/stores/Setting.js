@@ -3,7 +3,7 @@ import {createStore} from 'fluxury'
 const SettingStore = createStore(
   'SettingStore',
   {
-    headerText: 'Identity Sample App'
+    headerText: 'Identity Server Sample App'
   },
   {
     set: (state, action) => {

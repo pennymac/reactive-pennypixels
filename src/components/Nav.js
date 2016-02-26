@@ -59,11 +59,6 @@ const Nav = React.createClass({
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/customer_lookup">
-              Customer Lookup
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link className="nav-link" to="/profile">
               Your Profile
             </Link>

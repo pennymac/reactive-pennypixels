@@ -11,9 +11,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/'
   },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
-  },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
@@ -32,7 +29,6 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
-    }
-    ]
+    }]
   }
 };
