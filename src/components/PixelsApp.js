@@ -3,12 +3,20 @@
 */
 import React from 'react';
 import Header from './Header';
+import {loadProfile} from '../stores/ActionCreator'
 
 /* Write some great components about what data
 * this application displays and how it needs to be
 * organized.
 */
 const PixelsApp = React.createClass({
+  componentDidMount() {
+    loadProfile()
+    .then(profile => {
+      console.log('app got profile', profile)
+      this.setState({ loaded: true })
+    })
+  },
   render() {
     return (
       <div id="main">
