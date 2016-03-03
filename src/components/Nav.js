@@ -55,7 +55,7 @@ const Nav = React.createClass({
           (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard">
-              Consumer Complaints
+              Dashboard
             </Link>
           </li>
           <li className="nav-item">

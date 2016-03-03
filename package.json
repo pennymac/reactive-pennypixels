@@ -49,6 +49,7 @@
     "prerender-node": "^2.1.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-fluxury": "0.0.8",
     "react-highlight": "^0.6.1",
     "react-router": "^1.0.0-rc3",
     "react-set-animate": "0.0.15",

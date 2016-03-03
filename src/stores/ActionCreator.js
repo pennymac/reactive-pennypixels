@@ -5,9 +5,10 @@ export function setHeader(text) {
   dispatch('setHeaderText', text)
 }
 
+window.setHeader = setHeader
+
 // Helper methods
 export function loadProfile(){
-  console.log('foo')
   return getProfile()
   .then(profile => {
     dispatch('setProfile', profile)

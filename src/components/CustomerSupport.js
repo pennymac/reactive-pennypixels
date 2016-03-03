@@ -1,5 +1,5 @@
 import React from 'react';
-import {setHeader} from '../stores/ActionCreator'
+import {setHeader, loadProfile} from '../stores/ActionCreator'
 
 var YAML = require('js-yaml')
 var Highlight = require('react-highlight');
@@ -12,7 +12,11 @@ const CustomerSupportPage = React.createClass({
   },
 
   componentDidMount(){
-    setHeader('Sample App :: Customer Lookup')
+    setHeader('Account Lookup')
+    loadProfile()
+    .then(profile => {
+      this.setState({ user: profile })
+    })
   },
 
   handleKeyUp(event) {
@@ -50,6 +54,15 @@ const CustomerSupportPage = React.createClass({
     })
   },
   render() {
+
+    if (typeof this.state.user === 'undefined') {
+      return (
+        <div>
+          Loading...
+        </div>
+      )
+    }
+
     let UserProfile = (
       <Highlight className='YAML'>
         {YAML.dump(this.state.user, null, 4)}

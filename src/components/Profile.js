@@ -10,7 +10,7 @@ const ProfilePage = React.createClass({
     }
   },
   componentDidMount() {
-    setHeader('Sample App :: Profile')
+    setHeader('Profile')
 
     this.token = UserStore.addListener(this.handleUserChange)
 
@@ -71,7 +71,7 @@ const ProfilePage = React.createClass({
         <div className="row">
           <div col="col-md-6">
             <b>Phone: </b>
-            <span>{ this.state.user.phone_number }</span>
+            <span>{ this.state.user.mobile_phone }</span>
             &nbsp;&nbsp;
             <a href="/profile/phone">Edit</a>
           </div>

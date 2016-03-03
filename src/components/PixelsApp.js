@@ -10,13 +10,6 @@ import {loadProfile} from '../stores/ActionCreator'
 * organized.
 */
 const PixelsApp = React.createClass({
-  componentDidMount() {
-    loadProfile()
-    .then(profile => {
-      console.log('app got profile', profile)
-      this.setState({ loaded: true })
-    })
-  },
   render() {
     return (
       <div id="main">

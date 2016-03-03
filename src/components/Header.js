@@ -1,25 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Nav from './Nav';
 import SettingStore from '../stores/Setting'
+import {connectStoreMixin} from 'react-fluxury'
 
 const Header = React.createClass({
-  getInitialState: function() {
-    return {
-      text: SettingStore.getState().headerText
-    }
-  },
 
-  componentDidMount() {
-    this.token = SettingStore.addListener(this.handleSettingChange)
-  },
+  mixins: [connectStoreMixin(SettingStore, state => ({
+    text: state.headerText
+  }))],
 
-  componentWillUnmount() {
-    this.token.remove()
-  },
-
-  handleSettingChange() {
-    this.setState({ text: SettingStore.getState().headerText })
-  },
   render() {
     return (
       <div>
