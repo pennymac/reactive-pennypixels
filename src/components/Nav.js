@@ -46,7 +46,7 @@ const Nav = React.createClass({
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/dashboard">
+            <a className="nav-link" href="/profile">
               Sign in
             </a>
           </li>
@@ -55,7 +55,7 @@ const Nav = React.createClass({
           (<ul className="nav navbar-nav pull-right">
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard">
-              Dashboard
+              Customer Service
             </Link>
           </li>
           <li className="nav-item">

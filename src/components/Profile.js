@@ -10,7 +10,7 @@ const ProfilePage = React.createClass({
     }
   },
   componentDidMount() {
-    setHeader('Profile')
+    setHeader('Sample App Profile')
 
     this.token = UserStore.addListener(this.handleUserChange)
 
@@ -47,7 +47,7 @@ const ProfilePage = React.createClass({
         <div className="row">
           <div col="col-md-6">
             <b>Username: </b>
-            <span>{ this.state.user.user_name }</span>
+            <span>{ this.state.user.username }</span>
             &nbsp;&nbsp;
             <a href="/profile/username">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="/profile/password">Edit Password</a>

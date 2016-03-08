@@ -12,11 +12,7 @@ const CustomerSupportPage = React.createClass({
   },
 
   componentDidMount(){
-    setHeader('Account Lookup')
-    loadProfile()
-    .then(profile => {
-      this.setState({ user: profile })
-    })
+    setHeader('Customer Service Sample Dashboard')
   },
 
   handleKeyUp(event) {
@@ -54,14 +50,6 @@ const CustomerSupportPage = React.createClass({
     })
   },
   render() {
-
-    if (typeof this.state.user === 'undefined') {
-      return (
-        <div>
-          Loading...
-        </div>
-      )
-    }
 
     let UserProfile = (
       <Highlight className='YAML'>
