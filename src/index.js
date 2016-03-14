@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 import { Router, Route, Link, IndexRoute } from 'react-router'
-import createBrowserHistory from 'history/lib/createBrowserHistory'
+import { browserHistory } from 'react-router'
 import PixelsApp from './components/PixelsApp'
 
 import Intro from './components/Intro';
@@ -15,14 +15,10 @@ import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
 import PageNotFound from './components/PageNotFound';
 
-
-function handleUpdate(){
-  window.prerenderReady = true;
-}
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
 render((
-  <Router history={createBrowserHistory()} onUpdate={handleUpdate}>
+  <Router history={browserHistory}>
     <Route path="/" component={PixelsApp}>
       <IndexRoute component={Intro} />
       <Route path="buttons" component={Buttons} />
