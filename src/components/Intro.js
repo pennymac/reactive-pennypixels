@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
+// demo how to connect using react-redux binding
+
 function IntroPage({ number }) {
   return (
     <div className="bs-docs-section">

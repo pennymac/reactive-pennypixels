@@ -1,8 +1,16 @@
 import React from 'react';
+import {connectStoreMixin} from 'react-fluxury'
 import Nav from './Nav';
+import countStore from '../stores/countStore';
+
 var Header;
 
+// Shows how to bind using react-fluxury binding
+
 export default Header = React.createClass({
+  mixins: [connectStoreMixin(countStore, state => ({
+   number: state
+ }))],
   render() {
     return (
       <div>
@@ -11,8 +19,13 @@ export default Header = React.createClass({
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <p className="lead">PennyPixels + React</p>
-            </div>
+                <p className="lead">
+                  PennyPixels + React
+                  <span style={{ float: 'right', fontSize: '0.5em', marginTop: 15 }}>
+                    Timer: {this.state.number}s
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
