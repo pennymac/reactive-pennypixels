@@ -13,10 +13,16 @@ export default class Demo extends AnimatedComponent {
     }
   }
 
+
+
   componentDidMount() {
     this.setAnimate('x', 0, 3000)
     .then( () => this.setState({ enableClick: true }))
 
+  }
+
+  componentWillUnmount() {
+    this.stopAnimate()
   }
 
   getAnimatedStyle() {
@@ -65,8 +71,8 @@ export default class Demo extends AnimatedComponent {
 }
 
 Demo.propTypes = {
-  height: React.PropTypes.isNumber,
-  width: React.PropTypes.isNumber
+  height: React.PropTypes.number,
+  width: React.PropTypes.number
 }
 
 Demo.defaultProps = {
