@@ -10,7 +10,7 @@ var Header;
 export default Header = React.createClass({
   mixins: [connectStoreMixin(countStore, state => ({
    number: state
- }))],
+  }))],
   render() {
     return (
       <div>
