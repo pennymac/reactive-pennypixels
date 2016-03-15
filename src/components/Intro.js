@@ -8,9 +8,9 @@ function IntroPage({ number }) {
     <div className="bs-docs-section">
       <div className="row">
         <div className="col-lg-12">
-          <h1>
+          <h2>
             The single page application loaded for {number} seconds.
-          </h1>
+          </h2>
         </div>
       </div>
     </div>

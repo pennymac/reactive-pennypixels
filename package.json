@@ -34,20 +34,19 @@
     "tape": "^4.2.2"
   },
   "dependencies": {
-    "fluxury": "^1.0.0",
-    "fluxury-redux": "^1.0.2",
+    "fluxury": "^1.0.3",
+    "fluxury-redux": "^1.2.2",
     "history": "^1.13.0",
     "keymirror": "^0.1.1",
     "lodash.range": "^3.0.1",
     "prerender-node": "^2.1.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-fluxury": "0.1.4",
+    "react-fluxury": "0.1.7",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.0",
     "react-set-animate": "0.0.15",
     "react-static-container": "^1.0.0",
-    "redux": "^3.3.1",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1"
   }

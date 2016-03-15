@@ -16,9 +16,10 @@ import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
 import PageNotFound from './components/PageNotFound';
 
-import configureStore from './stores/configureStore'
+import stores from './stores';
+import {configureStore} from './stores/configureStore';
 
-let store = configureStore()
+let store = configureStore(stores)
 
 setInterval(function() {
   store.dispatch({ type: 'increment' })

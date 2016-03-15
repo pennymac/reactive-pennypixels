@@ -1,11 +1,11 @@
 import React from 'react';
 import {connectStoreMixin} from 'react-fluxury'
 import Nav from './Nav';
-import countStore from '../stores/countStore';
+import countStore from '../stores/CounterStore';
 
 var Header;
 
-// Shows how to bind using react-fluxury binding
+// Shows how to bind using react-fluxury mixin
 
 export default Header = React.createClass({
   mixins: [connectStoreMixin(countStore, state => ({

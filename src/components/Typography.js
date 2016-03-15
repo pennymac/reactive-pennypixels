@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-fluxury'
-import CountStore from '../stores/CountStore'
+import CountStore from '../stores/CounterStore'
 
 function TypographyPage({number}) {
   return (

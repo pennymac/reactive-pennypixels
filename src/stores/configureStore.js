@@ -2,12 +2,13 @@ import { applyMiddleware, createStore } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 import {createReducer} from 'fluxury-redux';
-import CountStore from './CountStore';
-import TodosStore from './TodosStore';
 
-let rootReducer = createReducer(CountStore, TodosStore);
+import stores from './index';
 
-export default function configureStore(initialState) {
+export function configureStore() {
+
+  let rootReducer = createReducer(...stores);
+
   const logger = createLogger({
     collapsed: true,
     predicate: () =>
@@ -16,12 +17,13 @@ export default function configureStore(initialState) {
 
   const middleware = applyMiddleware(thunkMiddleware, logger);
   const createStore2 = middleware(createStore)
-  const store = (window.devToolsExtension ? window.devToolsExtension()(createStore2) : createStore2)(rootReducer, initialState);
+  const store = (window.devToolsExtension ? window.devToolsExtension()(createStore2) : createStore2)(rootReducer, []);
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
-    module.hot.accept('./CountStore', () => {
-      const nextRootReducer = createReducer(CountStore, TodosStore);
+    module.hot.accept('./index', () => {
+      var stores = require('../index').default;
+      const nextRootReducer = createReducer(...stores);
       store.replaceReducer(nextRootReducer);
     });
   }
