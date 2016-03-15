@@ -20,14 +20,9 @@ import configureStore from './stores/configureStore'
 
 let store = configureStore()
 
-// dev only
-window.store = store
-
 setInterval(function() {
   store.dispatch({ type: 'increment' })
 }, 1000)
-
-console.log(store)
 
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
