@@ -20,18 +20,19 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.1.1",
+    "bell-on-bundler-error-plugin": "^1.0.8",
     "cross-env": "^1.0.7",
     "eslint": "^1.10.3",
     "eslint-plugin-babel": "^3.0.0",
     "eslint-plugin-react": "^3.11.3",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
+    "faucet": "0.0.1",
     "rimraf": "^2.4.3",
+    "tape": "^4.2.2",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.9.1",
-    "faucet": "0.0.1",
-    "tape": "^4.2.2"
+    "webpack-hot-middleware": "^2.9.1"
   },
   "dependencies": {
     "fluxury": "^1.0.3",

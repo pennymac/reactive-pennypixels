@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var BellOnBundlerErrorPlugin = require('bell-on-bundler-error-plugin')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -15,7 +16,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new BellOnBundlerErrorPlugin()
   ],
   module: {
     loaders: [{
