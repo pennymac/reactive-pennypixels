@@ -16,11 +16,20 @@ import Containers from './components/Containers';
 import AnimationDemo from './components/AnimationDemo';
 import PageNotFound from './components/PageNotFound';
 
-import stores from './stores';
-import {configureStore} from './stores/configureStore';
+import CounterStore from './stores/CounterStore'
+import TodosStore from './stores/TodosStore'
 
-let store = configureStore(stores)
+let stores = {
+  count: CounterStore,
+  todos: TodosStore
+}
 
+import {createStore} from 'fluxury-redux';
+
+let store = createStore(stores)
+window.store = store
+
+// dispatch increment every second
 setInterval(function() {
   store.dispatch({ type: 'increment' })
 }, 1000)
@@ -28,6 +37,7 @@ setInterval(function() {
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
 render((
+  // HAHA - Use react-redux with Fluxury stores!
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={PixelsApp}>

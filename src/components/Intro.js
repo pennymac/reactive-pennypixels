@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 // demo how to connect using react-redux binding
 
-function IntroPage({ number }) {
+function IntroPage({number}) {
   return (
     <div className="bs-docs-section">
       <div className="row">
@@ -18,5 +18,5 @@ function IntroPage({ number }) {
 }
 
 export default connect(
-  state => ({ number: state[0] })
+  state => ({ number: state.count })
 )(IntroPage)

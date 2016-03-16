@@ -6,4 +6,6 @@ let CounterStore = createStore(
   decrement: (state) => state - 1
 });
 
+window.dispatch = dispatch
+window.CounterStore = CounterStore
 export default CounterStore;
