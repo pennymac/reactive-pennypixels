@@ -1,81 +1,69 @@
-import React from 'react'
-import {AnimatedComponent} from 'react-set-animate'
+import React from 'react';
+import { AnimatedComponent, Eases } from 'react-set-animate'
 
-export default class Demo extends AnimatedComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      x: 1000,
-      y: 0,
-      alpha: 1,
-      backgroundColor: 'green',
-      enableClick: false
+export default class EasingExamples extends AnimatedComponent {
+    constructor(props) {
+        super(props)
+            this.state = {
+                left: 0,
+                checked: false,
+                isAnimating: false,
+                ease: 'bounce-in-out'
+            }
     }
-  }
 
-
-
-  componentDidMount() {
-    this.setAnimate('x', 0, 3000)
-    .then( () => this.setState({ enableClick: true }))
-
-  }
-
-  componentWillUnmount() {
-    this.stopAnimate()
-  }
-
-  getAnimatedStyle() {
-    return {
-      position: 'relative',
-      color: 'white',
-      backgroundColor: this.state.backgroundColor,
-      textAlign: 'center',
-      paddingTop: 60,
-      fontSize: '2em',
-      opacity: this.state.alpha,
-      left: this.state.x,
-      height: this.state.y + 200,
-      width: 200,
-      cursor: 'pointer'
+    componentDidMount() {
+        this.setAnimate('left', 0, 4000, 'bounce-in-out')
+            this.handleHeadingClick = this.handleHeadingClick.bind(this)
     }
-  }
 
-  handleClick() {
-    if (this.state.enableClick) {
-      var last_alpha = this.state.alpha;
-      this.setAnimate('x', 550/*end value*/, 800/*duration(ms)*/)
-      .then(() => this.setAnimate('x', 0, 1600));
-
-      this.setAnimate('backgroundColor', 'red'/*end value*/, 800/*duration(ms)*/)
-      .then(() => this.setAnimate('backgroundColor', 'green', 1600));
+    handleHeadingClick(event) {
+        if (this.state.isAnimating) { return; }
+        this.state.isAnimating = true
+        var cmp = this;
+        cmp.setAnimate( 'left', +this.refs.distance.value, +this.refs.timeOut.value, this.state.ease)
+           .then( () => this.setAnimate( 'left', 0, +this.refs.timeIn.value, this.state.ease) )
+           .then( () => this.setState({isAnimating: false }))
     }
-  }
 
-  render() {
-    return (
-      <div className="bs-docs-section clearfix">
-        <div className="page-header">
-          <div className="row">
-            <div className="col-lg-12">
-              <h2 id="animation">Animation</h2>
+    render() {
+        var cmp = this;
+        return (
+            <div style={{ paddingTop: 70 }}>
+                <div style={{ zIndex: 999, position: 'fixed', top: 150, backgroundColor: 'white', height: 150, width: '100%'}}>
+                    <p>
+                        Time out:
+                        <input ref="timeOut" defaultValue={1000} />
+                        Time in:
+                        <input ref="timeIn" defaultValue={500} />
+                        Out distance
+                        <input ref="distance" defaultValue={768} />
+                        <hr />
+
+                        <select value={cmp.state.ease} onChange={(e) => this.setState({ ease: e.target.value }) }>
+                            {Eases.map(n => <option>{n}</option>)}
+                        </select>
+
+                        {'  '}
+                        <button onClick={cmp.handleHeadingClick} disabled={this.state.isAnimating}>Start</button>
+
+                    </p>
+                </div>
+                <div style={{ marginTop: 90, paddingTop: 10, paddingBottom: 10, borderTop: '2px solid #999' }}>
+                    <h2>{cmp.state.ease}</h2>
+                    <div style={{zIndex: 3, height: 60, backgroundColor: '#eef', border: '1px solid black', marginTop: 12 }}>
+                        <div style={{ zIndex: 2,
+                                      backgroundColor: '#000',
+                                      borderRadius: 25, width: 50,
+                                      height: 55, paddingTop: 15,
+                                      textAlign: 'center', color: '#FFF',
+                                      position: 'relative',
+                                      left: cmp.state.left }}>
+                            { cmp.state.left.toFixed(0) }
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div style={this.getAnimatedStyle()} onClick={this.handleClick.bind(this)}>
-          {this.state.enableClick ? '\nClick here\nto move' : 'Animated movement'}
-        </div>
-      </div>
-    )
-  }
-}
-
-Demo.propTypes = {
-  height: React.PropTypes.number,
-  width: React.PropTypes.number
-}
-
-Demo.defaultProps = {
-  width: 50,
-  height: 50
+        )
+    }
 }
