@@ -41,3 +41,7 @@ To lint the code:
 ```sh
 npm run lint
 ```
+
+## Deploy
+
+This project is setup to deploy to heroku.
