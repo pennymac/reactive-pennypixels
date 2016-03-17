@@ -44,6 +44,6 @@ npm run lint
 
 ## Deploy
 
-This project is ready to deploy to heroku.
+This project is configured to deploy to Heroku.
 
-Must set environment variable NPM_CONFIG_PRODUCTION = false
+You must set environment variable NPM_CONFIG_PRODUCTION = false in order to install the dev dependencies.
