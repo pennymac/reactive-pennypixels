@@ -7,7 +7,8 @@ var Highlight = require('react-highlight');
 const CustomerSupportPage = React.createClass({
   getInitialState() {
     return {
-      user: undefined
+      user: undefined,
+      isError: false
     }
   },
 
@@ -26,8 +27,21 @@ const CustomerSupportPage = React.createClass({
     console.log(uri)
     fetch(uri, { credentials: 'include' })
     .then(n => n.json()).then(user => {
-      console.log(user)
-      this.setState({ user: user })
+      if (typeof user.error_message !== 'undefined') {
+        this.setState({
+          user: user.error_message,
+          isError: true
+        })
+        return;
+      }
+
+      this.setState({ user: user, isError: false })
+    })
+    .catch(err => {
+      this.setState({
+        user: 'Error',
+        isError: true
+      })
     })
   },
 
@@ -36,7 +50,6 @@ const CustomerSupportPage = React.createClass({
     console.log(uri)
     fetch(uri, { credentials: 'include' })
     .then(n => n.json()).then(user => {
-      console.log(user)
       this.setState({ user: Object.assign({}, this.state.user, { is_active: user.is_active }) })
     })
   },
@@ -80,10 +93,10 @@ const CustomerSupportPage = React.createClass({
           </div>
         </div>
         <p></p>
-        <button className="btn btn-primary" onClick={this.handleClickDeactivate} disabled={typeof this.state.user === 'undefined'}>
+        <button className="btn btn-primary" onClick={this.handleClickDeactivate} disabled={typeof this.state.user === 'undefined' || this.state.isError}>
           { this.state.user && this.state.user.is_active ? 'Deactivate' : 'Activate' }
         </button>{' '}
-        <button className="btn btn-primary" onClick={this.handleClickResetMFA} disabled={typeof this.state.user === 'undefined'}>
+        <button className="btn btn-primary" onClick={this.handleClickResetMFA} disabled={typeof this.state.user === 'undefined' || this.state.isError}>
           Reset MFA to email
         </button>
       </div>

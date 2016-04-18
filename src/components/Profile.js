@@ -12,7 +12,7 @@ const ProfilePage = React.createClass({
   componentDidMount() {
     setHeader('Sample App Profile')
 
-    this.token = UserStore.addListener(this.handleUserChange)
+    this.remove = UserStore.subscribe(this.handleUserChange)
 
     loadProfile()
     .then(profile => {
@@ -22,7 +22,7 @@ const ProfilePage = React.createClass({
 
   },
   componentWillUnmount() {
-    this.token.remove()
+    this.remove()
   },
   handleUserChange() {
     this.setState({
@@ -77,7 +77,7 @@ const ProfilePage = React.createClass({
           </div>
           <div col="col-md-6">
             <b>Has TCPA?: </b>
-            <span>{this.state.user.phone_tcpa ? 'Yes' : 'No' }</span>
+            <span>{this.state.user.tcpa_flag ? 'Yes' : 'No' }</span>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const ProfilePage = React.createClass({
 
         <div className="row">
           <div col="col-md-6">
-            <b>Security options: </b>{this.state.user.current_mfa_type}
+            <b>Security options: </b>{this.state.user.selected_mfa_type}
             &nbsp;&nbsp;
             <a href="/profile/security_options">Edit</a>
           </div>

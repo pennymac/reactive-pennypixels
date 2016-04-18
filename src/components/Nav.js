@@ -12,11 +12,11 @@ const Nav = React.createClass({
   },
 
   componentDidMount() {
-    this.token = UserStore.addListener(this.handleUserChange)
+    this.remove = UserStore.subscribe(this.handleUserChange)
   },
 
   componentWillUnmount() {
-    this.token.remove()
+    this.remove()
   },
 
   handleUserChange() {
