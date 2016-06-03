@@ -7,6 +7,7 @@ var Highlight = require('react-highlight');
 const CustomerSupportPage = React.createClass({
   getInitialState() {
     return {
+      init: true,
       user: undefined,
       isError: false
     }
@@ -14,6 +15,13 @@ const CustomerSupportPage = React.createClass({
 
   componentDidMount(){
     setHeader('Customer Service Sample Dashboard')
+
+    loadProfile()
+    .then(profile => {
+      console.log('app got profile', profile)
+      this.setState({ loaded: true })
+    })
+
   },
 
   handleKeyUp(event) {
@@ -23,52 +31,115 @@ const CustomerSupportPage = React.createClass({
   },
 
   handleClick() {
-    let uri = `/profile/${this.refs.username.value}`
-    console.log(uri)
-    fetch(uri, { credentials: 'include' })
+
+    if (this.refs.username.value.length === 0) {
+      alert('Must provide a username!')
+      return;
+    }
+
+    this.setState({
+      init: false,
+      loading: true,
+      isError: false,
+      user: undefined
+    })
+
+    fetch('/full_profile', {
+      credentials: 'include',
+      method: 'post',
+      body: JSON.stringify({
+        username: this.refs.username.value,
+      })
+    })
     .then(n => n.json()).then(user => {
       if (typeof user.error_message !== 'undefined') {
         this.setState({
-          user: user.error_message,
+          loading: false,
+          error: user.error_message,
           isError: true
         })
         return;
       }
 
-      this.setState({ user: user, isError: false })
+      this.setState({
+        loading: false,
+        user: user,
+        isError: false
+      })
     })
     .catch(err => {
       this.setState({
-        user: 'Error',
+        loading: false,
+        error: 'Error',
         isError: true
       })
     })
+
   },
 
   handleClickDeactivate() {
-    let uri = `/profile/${this.state.user.username}/turn/${this.state.user.is_active ? 'off' : 'on' }`
-    console.log(uri)
-    fetch(uri, { credentials: 'include' })
+
+    fetch('/profile/mode', {
+      credentials: 'include',
+      method: 'post',
+      body: JSON.stringify({
+        username: this.refs.username.value,
+        mode: this.state.user.is_active ? 'off' : 'on'
+      })
+    })
     .then(n => n.json()).then(user => {
+
+      if (typeof user.error_message !== 'undefined') {
+        this.setState({
+          error: user.error_message,
+          isError: true
+        })
+        return;
+      }
+
       this.setState({ user: Object.assign({}, this.state.user, { is_active: user.is_active }) })
     })
   },
+
   handleClickResetMFA() {
-    let uri = `/profile/reset_mfa_option/${this.state.user.username}`
-    console.log(uri)
-    fetch(uri, { credentials: 'include' })
-    .then(n => n.json()).then(user => {
-      console.log(user)
+    fetch('/profile/reset_mfa_option', {
+      credentials: 'include',
+      method: 'post',
+      body: JSON.stringify({
+        username: this.state.user.username,
+      })
+    })
+    .then(n => n.json())
+    .then(user => {
+
+      if (typeof user.error_message !== 'undefined') {
+        this.setState({
+          error: user.error_message,
+          isError: true
+        })
+        return;
+      }
+
       this.setState({ user: Object.assign({}, this.state.user, { current_mfa_type: 'email' }) })
     })
   },
   render() {
 
-    let UserProfile = (
-      <Highlight className='YAML'>
-        {YAML.dump(this.state.user, null, 4)}
-      </Highlight>
-    )
+    let UserProfile
+
+    if (this.state.init) {
+      UserProfile = "Please enter a username."
+    } else if (this.state.loading) {
+      UserProfile = "Loading..."
+    } else if (this.state.isError) {
+      UserProfile = this.state.error
+    } else {
+      UserProfile = (
+        <Highlight className='YAML'>
+          {YAML.dump(this.state.user, null, 4)}
+        </Highlight>
+      )
+    }
 
     return (
       <div>
@@ -80,7 +151,9 @@ const CustomerSupportPage = React.createClass({
               <div className="input-group">
                 <input ref="username" type="text" className="form-control" onKeyUp={this.handleKeyUp} />
                 <span className="input-group-btn">
-                  <button onClick={this.handleClick} className="btn btn-default" type="button">Lookup</button>
+                  <button
+                    onClick={this.handleClick}
+                    className="btn btn-default" type="button">Lookup</button>
                 </span>
               </div>
             </div>
@@ -89,7 +162,7 @@ const CustomerSupportPage = React.createClass({
         <p></p>
         <div className="row">
           <div className="col-lg-12">
-            { this.state.user ? UserProfile : "Please enter a username."}
+            { UserProfile }
           </div>
         </div>
         <p></p>
